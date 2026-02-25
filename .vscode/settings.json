@@ -1,0 +1,32 @@
+{
+  "cSpell.words": [
+    "allauth",
+    "ANYMAIL",
+    "asgi",
+    "authtoken",
+    "axllent",
+    "celerybeat",
+    "celeryworker",
+    "corsheaders",
+    "csrfmiddlewaretoken",
+    "csrftoken",
+    "DJOSER",
+    "enctype",
+    "favicons",
+    "fullhash",
+    "Gunicorn",
+    "htmlcov",
+    "ifidel",
+    "loglevel",
+    "mailpit",
+    "makemigrations",
+    "nosetests",
+    "pixrem",
+    "pytest",
+    "runserver",
+    "simplejwt",
+    "SOCIALACCOUNT",
+    "staticfiles",
+    "webpackbar"
+  ]
+}

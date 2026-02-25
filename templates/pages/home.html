@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block title %}Cyberpress - Upload. Share. Print.{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="display-5 mb-4">
+            Upload. Share Passkey.<br>
+            <span class="text-primary">Print Anywhere.</span>
+        </h1>
+        <p class="mb-5 col-lg-7 mx-auto">
+            Securely upload your PDF files, protect them with a passkey,
+            and access them from any cyber café. No login required.
+            Files automatically delete after 24 hours.
+        </p>
+
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <a href="{% url 'upload' %}" class="btn btn-primary btn-lg">
+                <i class="bi bi-cloud-upload me-2"></i>Start Upload
+            </a>
+            <a href="{% url 'access' %}" class="btn btn-outline-primary btn-lg">
+                Access Files
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-padding">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-5">How It Works</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card card-modern p-4 h-100">
+                    <div class="icon-circle">
+                        <i class="bi bi-cloud-arrow-up"></i>
+                    </div>
+                    <h5 class="fw-bold">Upload PDFs</h5>
+                    <p class="text-muted">
+                        Upload one or multiple PDF files in seconds.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-modern p-4 h-100">
+                    <div class="icon-circle">
+                        <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <h5 class="fw-bold">Set a Passkey</h5>
+                    <p class="text-muted">
+                        Protect your files with a secure passkey.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-modern p-4 h-100">
+                    <div class="icon-circle">
+                        <i class="bi bi-printer"></i>
+                    </div>
+                    <h5 class="fw-bold">Access & Print</h5>
+                    <p class="text-muted">
+                        Enter the passkey anywhere and print instantly.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SECURITY SECTION -->
+<section class="section-padding">
+    <div class="container">
+        <div class="security-box text-center">
+            <h3 class="fw-bold mb-4">Secure & Private by Design</h3>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <i class="bi bi-lock-fill fs-2 text-primary mb-2"></i>
+                    <p class="fw-semibold mb-1">Passkey Protected</p>
+                    <small class="text-muted">
+                        Only those with the passkey can access files.
+                    </small>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="bi bi-clock-history fs-2 text-primary mb-2"></i>
+                    <p class="fw-semibold mb-1">Auto Delete</p>
+                    <small class="text-muted">
+                        Files automatically removed after 24 hours.
+                    </small>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="bi bi-person-x fs-2 text-primary mb-2"></i>
+                    <p class="fw-semibold mb-1">No Accounts</p>
+                    <small class="text-muted">
+                        No login. No tracking. Just simple printing.
+                    </small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
