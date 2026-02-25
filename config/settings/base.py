@@ -90,6 +90,7 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
     "webpack_loader",
     "django_browser_reload",
+    'widget_tweaks',
 ]
 
 LOCAL_APPS = [
@@ -202,6 +203,7 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "ifidel.users.context_processors.allauth_settings",
             ],
+            "builtins": ["widget_tweaks.templatetags.widget_tweaks"],
         },
     },
 ]

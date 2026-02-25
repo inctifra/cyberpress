@@ -35,23 +35,20 @@
                   <strong>{{ file.name }}</strong>
                   <div class="small text-muted">{{ file.size|floatformat:1 }} bytes</div>
                 </div>
-
-                <a href="{{ file.file.url }}" class="btn btn-primary rounded-pill px-4" download><i class="bi bi-download"></i></a>
+                <a href="{{ file.file.url }}" target="_blank" class="btn btn-primary rounded-pill px-4" download><i class="bi bi-download"></i></a>
               </div>
             {% endfor %}
           </div>
 
           <div class="alert alert-warning text-center small">⏳ Files auto-delete 24 hours after upload.</div>
-
-          <!-- Passkey Form -->
         {% else %}
           <form method="post" novalidate>
             {% csrf_token %}
 
             <div class="mb-4">
-              <label class="form-label fw-semibold">Passkey</label>
+              <label class="form-label fw-semibold">Access Code</label>
               <div class="input-group input-group-lg">
-                {{ form.passkey }}
+                {{ form.access_code }}
                 <button class="btn btn-outline-secondary" type="button" id="toggleAccessPasskey"><i class="bi bi-eye"></i></button>
               </div>
             </div>
@@ -65,21 +62,4 @@
       </div>
     </div>
   </div>
-
-  {% if not files %}
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const toggleBtn = document.getElementById('toggleAccessPasskey')
-        const passkeyInput = document.querySelector('input[name="passkey"]')
-      
-        if (toggleBtn && passkeyInput) {
-          toggleBtn.addEventListener('click', function () {
-            const isPassword = passkeyInput.type === 'password'
-            passkeyInput.type = isPassword ? 'text' : 'password'
-            toggleBtn.innerHTML = isPassword ? '<i class="bi bi-eye-slash"></i>' : '<i class="bi bi-eye"></i>'
-          })
-        }
-      })
-    </script>
-  {% endif %}
 {% endblock %}

@@ -11,15 +11,14 @@ class FileInline(admin.TabularInline):
 @admin.register(PrintSession)
 class PrintSessionAdmin(admin.ModelAdmin):
     list_display = (
-        "code",
         "created_at",
         "expires_at",
         "expired_status",
+        "access_code",
     )
 
     list_filter = ("created_at", "expires_at")
-    search_fields = ("code",)
-    readonly_fields = ("id", "code", "passkey_hash", "created_at", "expires_at")
+    readonly_fields = ("id", "created_at", "expires_at", "access_code")
     inlines = [FileInline]
 
     def expired_status(self, obj):

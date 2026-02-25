@@ -1,0 +1,34 @@
+<form method="post" action="{{ request.path }}" enctype="multipart/form-data" id="uploadForm">
+  {% csrf_token %}
+
+  <div class="mb-4 text-center">
+    <div class="form-text">
+      An access code will be generated upon successful upload. <br /> You'll need it to access your files.
+    </div>
+  </div>
+
+  <div class="mb-4">
+    {% render_field form.files|attr:'class:form-control form-control-lg'|attr:'multiple' %}
+    {% if files_error %}
+      <div class="text-danger small mt-1">{{ files_error }}</div>
+    {% endif %}
+    {% if form.files.errors %}
+      <div class="text-danger small mt-1">{{ form.files.errors|striptags }}</div>
+    {% endif %}
+  </div>
+
+  {% if non_field_error %}
+    <div class="alert alert-danger">{{ non_field_error }}</div>
+  {% endif %}
+
+  <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 fw-bold"><i class="bi bi-lock"></i> Secure & Upload</button>
+  <div class="text-center mt-3 small text-muted">🔐 Encrypted session • Auto deletion in 24 hours</div>
+
+  {% if success %}
+    <div class="alert alert-success">
+      Files uploaded successfully! Your access code: <strong>{{ access_code }}</strong>
+      <br />
+      <small class="text-muted">Share this code to retrieve files. It expires in 24 hours.</small>
+    </div>
+  {% endif %}
+</form>

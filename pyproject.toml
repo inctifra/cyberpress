@@ -76,6 +76,8 @@ dependencies = [
     "pyjwt>=2.10.1",
     "djoser>=2.3.3",
     "djangorestframework-simplejwt>=5.5.1",
+    "bcrypt>=5.0.0",
+    "django-widget-tweaks>=1.5.1",
 ]
 
 # ==== pytest ====

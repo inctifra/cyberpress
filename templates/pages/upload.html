@@ -13,34 +13,7 @@
           <h2 class="fw-bold mb-2">Create Secure Print Session</h2>
           <p class="text-muted">Upload PDFs securely. Files auto-delete after 24 hours.</p>
         </div>
-
-        <form method="post" enctype="multipart/form-data" id="uploadForm">
-          {% csrf_token %}
-
-          <!-- Passkey -->
-          <div class="mb-4">
-            <label class="form-label fw-semibold">Passkey</label>
-            <div class="input-group input-group-lg">
-              {{ form.passkey }}
-              <button class="btn btn-outline-secondary" type="button" id="togglePasskey"><i class="bi bi-eye"></i></button>
-            </div>
-            <div class="form-text">Share this passkey with whoever needs access.</div>
-          </div>
-
-          <!-- Drop Zone -->
-          <div class="mb-4">
-            <label class="form-label fw-semibold">PDF Files</label>
-            <input type="file" name="files" id="id_files" class="form-control form-control-lg" multiple accept="application/pdf" />
-          </div>
-
-          {% if form.non_field_errors %}
-            <div class="alert alert-danger">{{ form.non_field_errors }}</div>
-          {% endif %}
-
-          <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 fw-bold" id="submitBtn"><i class="bi bi-lock"></i> Secure & Upload</button>
-
-          <div class="text-center mt-3 small text-muted">🔐 Encrypted session • Auto deletion in 24 hours</div>
-        </form>
+        {% include "pages/components/upload_forms.html" %}
       </div>
     </div>
   </div>
