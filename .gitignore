@@ -57,7 +57,8 @@ staticfiles/
 
 # Sphinx documentation
 docs/_build/
-
+gunicorn
+nginx
 # PyBuilder
 target/
 

@@ -23,6 +23,7 @@
     "hashpw",
     "htmlcov",
     "ifidel",
+    "jeks",
     "loglevel",
     "mailpit",
     "makemigrations",
@@ -34,6 +35,8 @@
     "simplejwt",
     "SOCIALACCOUNT",
     "staticfiles",
-    "webpackbar"
+    "venv",
+    "webpackbar",
+    "wsgi"
   ]
 }
