@@ -1,7 +1,7 @@
 [project]
-name = "cyberpress"
+name = "cyberconnect"
 version = "0.1.0"
-description = "cyberpress"
+description = "cyberconnect"
 authors = [
     { name = "kwasa", email = "kwasa@localhost" }
 ]
@@ -10,7 +10,7 @@ maintainers = [
 ]
 keywords = [
     "django",
-    "cyberpress",
+    "cyberconnect",
 ]
 license = { file = "LICENSE" }
 readme = { file = "README.md" }

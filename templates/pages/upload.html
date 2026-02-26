@@ -1,23 +1,8 @@
 {% extends 'base.html' %}
 {% block title %}
-  Upload PDFs - Cyberpress
+  Upload PDFs - {{ block.super }}
 {% endblock %}
 {% block content %}
-  {% comment %} <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8">
-      <div class="modern-card p-5">
-        <div class="text-center mb-4">
-          <div class="mb-3">
-            <i class="bi bi-cloud-arrow-up fs-1 text-primary"></i>
-          </div>
-          <h2 class="fw-bold mb-2">Create Secure Print Session</h2>
-          <p class="text-muted">Upload PDFs securely. Files auto-delete after 24 hours.</p>
-        </div>
-        {% include 'pages/components/upload_forms.html' %}
-      </div>
-    </div>
-  </div> {% endcomment %}
-
   <div class="section pb-0 overflow-visible position-relative" style="z-index: 4;">
     <div class="r-container d-flex flex-column gap-md-3 gap-4 align-items-center justify-content-center">
       <div class="row row-cols-xl-2 row-cols-1 w-100">
