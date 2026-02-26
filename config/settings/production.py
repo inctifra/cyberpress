@@ -46,6 +46,7 @@ CACHES = {
 if not DEBUG:
     try:
         from . import security as prod_security
+
         for attr in dir(prod_security):
             if attr.isupper():
                 globals()[attr] = getattr(prod_security, attr)
@@ -80,31 +81,34 @@ AWS_S3_CUSTOM_DOMAIN = env("DJANGO_AWS_S3_CUSTOM_DOMAIN", default=None)
 aws_s3_domain = AWS_S3_CUSTOM_DOMAIN or f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
 # STATIC & MEDIA
 # ------------------------
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024      # 50 MB
+FILE_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024      # 50 MB
+
+
+LOCAL_BACKEND_STORAGES = {
+    "BACKEND": "django.core.files.storage.FileSystemStorage",
+    "OPTIONS": {
+        "location": Path(APPS_DIR / "media"),
+    },
+}
+
+AWS_BACKEND_STORAGES = {
+    "BACKEND": "storages.backends.s3.S3Storage",
+    "OPTIONS": {
+        "location": "media",
+        "file_overwrite": False,
+    },
+}
+
 STORAGES = {
+    "default": LOCAL_BACKEND_STORAGES if DEBUG else AWS_BACKEND_STORAGES,
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
 
-if DEBUG:
-    # Local development
-    STORAGES["default"] = {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
-        "OPTIONS": {
-            "location": Path(APPS_DIR / "media"),
-        },
-    }
-    MEDIA_URL = "/media/"
-else:
-    # Production (AWS S3)
-    STORAGES["default"] = {
-        "BACKEND": "storages.backends.s3.S3Storage",
-        "OPTIONS": {
-            "location": "media",
-            "file_overwrite": False,
-        },
-    }
-    MEDIA_URL = f"https://{aws_s3_domain}/media/"
+MEDIA_URL = "/media/" if DEBUG else f"https://{aws_s3_domain}/media/"
 
 # EMAIL
 # ------------------------------------------------------------------------------
@@ -185,7 +189,10 @@ sentry_sdk.init(
 # -------------------------------------------------------------------------------
 # Tools that generate code samples can use SERVERS to point to the correct domain
 SPECTACULAR_SETTINGS["SERVERS"] = [
-    {"url": "https://ifidel.albinismnetwork.org/api", "description": "Production server"},
+    {
+        "url": "https://ifidel.albinismnetwork.org/api",
+        "description": "Production server",
+    },
 ]
 # Your stuff...
 # ------------------------------------------------------------------------------

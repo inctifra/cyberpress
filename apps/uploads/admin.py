@@ -15,6 +15,9 @@ class PrintSessionAdmin(admin.ModelAdmin):
         "expires_at",
         "expired_status",
         "access_code",
+        "age_hours",
+        "remaining_hours",
+        "total_lifetime_hours",
     )
 
     list_filter = ("created_at", "expires_at")

@@ -61,6 +61,27 @@ class PrintSession(models.Model):
 
     def is_expired(self):
         return timezone.now() > self.expires_at
+    @property
+    def age_hours(self) -> int:
+        """
+        How many hours since this session was created
+        """
+        return int((timezone.now() - self.created_at).total_seconds() // 3600)
+
+    @property
+    def remaining_hours(self) -> int:
+        """
+        How many hours until expiration (0 if expired)
+        """
+        remaining = (self.expires_at - timezone.now()).total_seconds()
+        return max(0, int(remaining // 3600))
+
+    @property
+    def total_lifetime_hours(self) -> int:
+        """
+        Total lifetime of the session in hours (e.g. 24)
+        """
+        return int((self.expires_at - self.created_at).total_seconds() // 3600)
 
 
 class File(models.Model):
