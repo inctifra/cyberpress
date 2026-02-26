@@ -23,6 +23,6 @@ class PrintSessionForm(forms.ModelForm):
 
 class AccessSessionForm(forms.Form):
     access_code = forms.CharField(
-        widget=forms.PasswordInput(attrs={"class": "form-control"}),
+        widget=forms.PasswordInput(attrs={"class": "form-control py-3"}),
         required=True,
     )

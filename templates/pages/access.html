@@ -1,64 +1,54 @@
 {% extends 'base.html' %}
-
-{% block title %}
-  Access Files - Cyberpress
-{% endblock %}
-
 {% block content %}
-  <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8">
-      <div class="modern-card p-5">
-        <!-- Header -->
-        <div class="text-center mb-4">
-          <i class="bi bi-shield-lock fs-1 text-primary mb-3"></i>
-          <h2 class="fw-bold">Access Your Files</h2>
-          <p class="text-muted">Enter your passkey to retrieve files.</p>
-        </div>
-
-        <!-- Error Message -->
-        {% if error %}
-          <div class="alert alert-danger text-center">
-            <i class="bi bi-exclamation-triangle"></i>
-            {{ error }}
-          </div>
-        {% endif %}
-
-        <!-- Files List -->
-        {% if files %}
-          <h5 class="fw-bold mb-3 text-center">Session Files</h5>
-
-          <div class="mb-4">
-            {% for file in files %}
-              <div class="file-download-card d-flex justify-content-between align-items-center mb-3 p-3 border rounded">
-                <div>
-                  <i class="bi bi-file-earmark-pdf text-danger me-2"></i>
-                  <strong>{{ file.name }}</strong>
-                  <div class="small text-muted">{{ file.size|floatformat:1 }} bytes</div>
-                </div>
-                <a href="{{ file.file.url }}" target="_blank" class="btn btn-primary rounded-pill px-4" download><i class="bi bi-download"></i></a>
-              </div>
-            {% endfor %}
-          </div>
-
-          <div class="alert alert-warning text-center small">⏳ Files auto-delete 24 hours after upload.</div>
-        {% else %}
-          <form method="post" novalidate>
-            {% csrf_token %}
-
-            <div class="mb-4">
-              <label class="form-label fw-semibold">Access Code</label>
-              <div class="input-group input-group-lg">
-                {{ form.access_code }}
-                <button class="btn btn-outline-secondary" type="button" id="toggleAccessPasskey"><i class="bi bi-eye"></i></button>
-              </div>
+  <div class="container mt-md-4 mt-3 pb-0 overflow-visible position-relative" style="z-index:4;">
+    <div class="r-container d-flex flex-column gap-4 align-items-center justify-content-center">
+      <div class="row row-cols-xl-2 row-cols-1 w-100 mt-4">
+        <div class="col col-xl-7 mb-3">
+          <div class="d-flex flex-column gap-4 rounded-3 bg-accent-color-3 p-5">
+            <!-- ACCESS HEADER -->
+            <div class="text-center">
+              <h6 class="text-accent">Secure File Access</h6>
+              <h3 class="fw-bold">Retrieve Your Files</h3>
+              <p class="small">Enter your passkey to access or delete your uploaded files.</p>
             </div>
+            <form method="post" action="{{ request.path }}" id="fileAccessForm" class="d-flex flex-column gap-3">
+              {% csrf_token %}
+              <input type="hidden" name="action" value="access" />
 
-            <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 fw-bold">
-              <i class="bi bi-unlock"></i>
-              Unlock Files
-            </button>
-          </form>
-        {% endif %}
+              <div>
+                <label class="form-label fw-semibold">Access Code</label>
+                <div class="input-group input-group-lg">
+                  {{ form.access_code }}
+                  <button class="btn btn-outline-secondary" type="button" id="toggleAccessPasskey"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-accent green py-3 d-flex justify-content-center gap-2 w-100">
+                <span>Unlock Files</span>
+                <i class="rtmicon rtmicon-arrow-up-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-5 mb-3">
+          <div class="d-flex flex-column gap-4 rounded-3 bg-accent-color-3 p-5">
+            <div class="text-center">
+              <h6 class="text-danger">Delete Session Files</h6>
+              <h3 class="fw-bold">Delete Files</h3>
+              <p class="small">You can delete your files before the 24-hour expiry.</p>
+            </div>
+            <form method="post" action="{% url 'delete_files' %}" id="fileDeleteForm" class="d-flex flex-column gap-3">
+              {% csrf_token %}
+
+              <div>
+                <label class="form-label fw-semibold">Enter Access Code</label>
+                {{ form.access_code }}
+              </div>
+
+              <button type="submit" class="btn btn-danger py-3 w-100 rounded-pill"><i class="bi bi-trash"></i> Delete My Files</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>

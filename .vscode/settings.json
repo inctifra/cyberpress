@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
+    "addedfile",
     "allauth",
     "ANYMAIL",
     "asgi",
@@ -19,6 +20,7 @@
     "endfor",
     "errormultiple",
     "favicons",
+    "filesizeformat",
     "floatformat",
     "fullhash",
     "gensalt",
@@ -30,10 +32,12 @@
     "loglevel",
     "mailpit",
     "makemigrations",
+    "maxfilesexceeded",
     "nosetests",
     "novalidate",
     "pixrem",
     "pytest",
+    "rgba",
     "rtmicon",
     "runserver",
     "scrollanimation",
@@ -41,6 +45,9 @@
     "SOCIALACCOUNT",
     "staticfiles",
     "successmultiple",
+    "Swal",
+    "sweetalert",
+    "timesince",
     "venv",
     "webpackbar",
     "wsgi"

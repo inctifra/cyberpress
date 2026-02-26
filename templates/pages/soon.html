@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  coming soon | {{ block.super }}
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block main_style %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="section bg-banner">
+    <div class="container-banner flex-column align-items-center text-center gap-5">
+      <h1 class="scrollanimation animated fadeInUp adr-5">
+        Manage Files Securely <br />
+        <span class="text-accent">Coming Soon</span>
+      </h1>
+      <p class="scrollanimation animated fadeInUp adr-5 adl-1" style="max-width: 520px">Securely upload and manage your documents through your profile. Generate unique passkeys for controlled access and print with confidence. Temporary storage with automatic file deletion.</p>
+
+      <div class="d-flex flex-xl-row flex-column gap-3 countdown">
+        <div class="card-coming">
+          <h3 id="days">30</h3>
+          <p>Days</p>
+        </div>
+        <div class="card-coming">
+          <h3 id="hours">5</h3>
+          <p>Hours</p>
+        </div>
+        <div class="card-coming">
+          <h3 id="minutes">11</h3>
+          <p>Minutes</p>
+        </div>
+        <div class="card-coming">
+          <h3 id="seconds">24</h3>
+          <p>Seconds</p>
+        </div>
+      </div>
+
+      <div class="elipse banner"></div>
+      <div class="elipse banner-2"></div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

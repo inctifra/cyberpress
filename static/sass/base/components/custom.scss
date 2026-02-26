@@ -1,0 +1,96 @@
+  .dark-modal .modal-content {
+    background-color: #080a09;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+  }
+  
+  .dark-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .modal-backdrop.show {
+    background-color: #000;
+    opacity: 0.85;
+  }
+  
+  .dark-modal small,
+  .dark-modal .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  
+  .dark-modal .file-card {
+    background-color: #0d1110;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .dark-modal .file-card:hover {
+    background-color: #121716;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  }
+  .dark-modal .modal-content {
+    backdrop-filter: blur(10px);
+    background: rgba(8, 10, 9, 0.95);
+  }
+  .file-card {
+    background-color: #080a09;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.25s ease;
+
+  }
+  
+  .file-card:hover {
+    background-color: #0d1110;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  .file-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #121716;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .btn-dark-action {
+    background-color: #121716;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+  }
+  
+  .btn-dark-action:hover {
+    background-color: #1a201f;
+    color: white;
+  }
+  
+  .btn-accent {
+    background: linear-gradient(135deg, #00c896, #00a87d);
+    border: none;
+    color: white;
+    font-weight: 500;
+    > i,
+    > span {
+      color: black;
+    }
+  }
+  
+  .btn-accent:hover {
+    opacity: 0.9;
+    color: white;
+    > i,
+    > span {
+      color: white;
+    }
+  }
+  
+  .dark-alert {
+    background-color: #121716;
+    border: 1px solid rgba(255, 193, 7, 0.25);
+    color: #ffc107;
+    padding: 10px 20px;
+  }
+  
+  .dark-error {
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    color: #ff6b81;
+  }

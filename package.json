@@ -57,6 +57,7 @@
     "dotenv": "^17.2.2",
     "dropzone": "6.0.0-beta.2",
     "jquery": "^3.7.1",
+    "sweetalert2": "^11.26.20",
     "swiper": "^12.1.2",
     "terser-webpack-plugin": "^5.3.14",
     "toaster-ui": "^1.1.5",

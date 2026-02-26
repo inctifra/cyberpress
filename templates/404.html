@@ -1,13 +1,46 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-{% block title %}Page not found{% endblock title %}
+{% block title %}
+  Page not found
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+{% block main_style %}
+
+{% endblock %}
+
 {% block content %}
-  <h1>Page not found</h1>
-  <p>
-    {% if exception %}
-      {{ exception }}
-    {% else %}
-      This is not the page you were looking for.
-    {% endif %}
-  </p>
-{% endblock content %}
+  <div class="section bg-banner">
+    <div class="container align-items-center justify-content-center">
+      <div class="row row-cols-xl-2 row-cols-1 w-100">
+        <div class="col mb-3">
+          <div class="text-404 text-accent w-100">404</div>
+        </div>
+        <div class="col mb-3 d-flex justify-content-xl-start justify-content-center align-items-center">
+          <div class="card-404">
+            <h4 class="scrollanimation animated zoomIn adr-5">Page Not Found</h4>
+            <p class="scrollanimation animated zoomIn adr-5 adl-1">
+              {% if exception %}
+                {{ exception }}
+              {% else %}
+                The page you’re looking for doesn’t exist or may have been moved.
+              {% endif %}
+            </p>
+            <a href="{% url 'home' %}" class="btn btn-accent green mx-auto scrollanimation animated zoomIn adr-5 adl-2">
+              Back to Homepage
+              <i class="rtmicon rtmicon-arrow-right"></i>
+              <span class="gradient-container"><span class="gradient"></span></span>
+            </a>
+            <div class="elipse about"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

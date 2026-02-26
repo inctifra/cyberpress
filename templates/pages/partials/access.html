@@ -1,0 +1,37 @@
+<div class="d-flex flex-column gap-4 ps-xl-4 pt-xl-4">
+  <div class="text-center">
+    <h4 class="fw-bold mb-1 text-white">Your Session Files</h4>
+    <p class="text-muted">Download or manage your documents below</p>
+  </div>
+ 
+  <div class="d-flex flex-wrap gap-3 align-items-stretch justify-content-center">
+    {% for file in files %}
+      <div class="file-card d-flex align-items-center justify-content-between px-3 py-3 rounded-4">
+        <div class="d-flex align-items-center gap-3">
+          <div class="file-icon d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-file-earmark-text text-white"></i>
+          </div>
+
+          <div class="d-flex flex-column">
+            <strong class="file-name text-white text-truncate">{{ file.name|truncatechars:'15' }}</strong>
+            <small class="text-muted">
+              Uploaded {{ file.uploaded_at|timesince }} ago ·
+              {{ file.size|filesizeformat }}
+            </small>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <a href="{{ file.file.url }}" target="_blank" class="btn btn-dark-action rounded-pill px-3"><i class="bi bi-eye"></i></a>
+
+          <a href="{{ file.file.url }}" download class="btn btn-accent rounded-pill px-4">
+            <i class="bi bi-download me-1"></i>
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="dark-alert text-center small rounded-pill mt-3">⏳ Files are automatically deleted 24 hours after upload.</div>
+</div>

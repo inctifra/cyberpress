@@ -19,7 +19,7 @@
     <meta name="author" content="CyberConnect" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="{{ request.build_absolute_uri }}" />
-    <link rel="icon" href="{% webpack_static 'images/favicon.ico' %}" />
+    <link rel="icon" href="{% webpack_static 'images/image/favicon.png' %}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="CyberConnect – Secure Passkey-Based Printing" />
     <meta property="og:description" content="Upload once, get a passkey, and print securely at any cybercafé. Your documents stay private." />
@@ -47,7 +47,9 @@
       {% block header %}
         {% include 'components/header.html' %}
       {% endblock %}
-      <main  style="margin-top: 8rem!important;">
+      <main style="{% block main_style %}
+          margin-top: 8rem!important;
+        {% endblock %}">
         <div class="container">
           {% if messages %}
             {% for message in messages %}
@@ -69,8 +71,9 @@
     {% endblock %}
     <!-- /container -->
     {% block modal %}
-
+      {% include 'pages/components/modal/access.html' %}
     {% endblock %}
+
     {% block inline_javascript %}
 
     {% endblock %}
