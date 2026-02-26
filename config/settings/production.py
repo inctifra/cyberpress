@@ -102,13 +102,13 @@ AWS_BACKEND_STORAGES = {
 }
 
 STORAGES = {
-    "default": LOCAL_BACKEND_STORAGES if DEBUG else AWS_BACKEND_STORAGES,
+    "default": AWS_BACKEND_STORAGES,
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
 
-MEDIA_URL = "/media/" if DEBUG else f"https://{aws_s3_domain}/media/"
+MEDIA_URL = f"https://{aws_s3_domain}/media/"
 
 # EMAIL
 # ------------------------------------------------------------------------------
