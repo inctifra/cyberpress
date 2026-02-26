@@ -1,0 +1,376 @@
+@font-face {
+  font-family: "Sora";
+  src:
+    url("~@fonts/Sora/Sora-Thin.woff2") format("woff2"),
+    url("~@fonts/Sora/Sora-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("~@fonts/Sora/Sora-ExtraLight.woff2") format("woff2"),
+    url("~@fonts/Sora/Sora-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("~@fonts/Sora/Sora-Light.woff2") format("woff2"),
+    url("~@fonts/Sora/Sora-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("~@fonts/Sora/Sora-Regular.woff2") format("woff2"),
+    url("~@fonts/Sora/Sora-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("~@fonts/Sora/Sora-Medium.woff2") format("woff2"),
+    url("~@fonts/Sora/Sora-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("~@fonts/Sora/Sora-SemiBold.woff2") format("woff2"),
+    url("~@fonts/Sora/Sora-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("~@fonts/Sora/Sora-Bold.woff2") format("woff2"),
+    url("~@fonts/Sora/Sora-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src:
+    url("~@fonts/Sora/Sora-ExtraBold.woff2") format("woff2"),
+    url("~@fonts/Sora/Sora-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src:
+    url("~@fonts/Manrope/Manrope-SemiBold.woff2") format("woff2"),
+    url("~@fonts/Manrope/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src:
+    url("~@fonts/Manrope/Manrope-Medium.woff2") format("woff2"),
+    url("~@fonts/Manrope/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src:
+    url("~@fonts/Manrope/Manrope-Regular.woff2") format("woff2"),
+    url("~@fonts/Manrope/Manrope-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src:
+    url("~@fonts/Manrope/Manrope-ExtraBold.woff2") format("woff2"),
+    url("~@fonts/Manrope/Manrope-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src:
+    url("~@fonts/Manrope/Manrope-ExtraLight.woff2") format("woff2"),
+    url("~@fonts/Manrope/Manrope-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src:
+    url("~@fonts/Manrope/Manrope-Bold.woff2") format("woff2"),
+    url("~@fonts/Manrope/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src:
+    url("~@fonts/Manrope/Manrope-Light.woff2") format("woff2"),
+    url("~@fonts/Manrope/Manrope-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-ExtraLight.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-ExtraLightItalic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-Italic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-LightItalic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-Light.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-Medium.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-MediumItalic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-Regular.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-SemiBold.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-SemiBoldItalic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-Thin.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-ThinItalic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-Black.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-BlackItalic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-Bold.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-BoldItalic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-ExtraBoldItalic.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    url("~@fonts/WorkSans/WorkSans-ExtraBold.woff2") format("woff2"),
+    url("~@fonts/WorkSans/WorkSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*!
+ * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+:root,
+:host {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:
+    url("~@fonts/fa-regular-400.woff2") format("woff2"),
+    url("~@fonts/fa-regular-400.ttf") format("truetype");
+}
+
+.far,
+.fa-regular {
+  font-weight: 400;
+}
+
+:root,
+:host {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src:
+    url("~@fonts/fa-solid-900.woff2") format("woff2"),
+    url("~@fonts/fa-solid-900.ttf") format("truetype");
+}
+
+.fas,
+.fa-solid {
+  font-weight: 900;
+}

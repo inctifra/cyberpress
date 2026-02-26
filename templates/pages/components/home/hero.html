@@ -1,0 +1,59 @@
+{% load webpack_static from webpack_loader %}
+
+<div class="container overflow-hidden" style="margin-top: 7rem!important;">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-xl-start text-center">
+      <div class="col-xl-7 col-lg-7 mb-4">
+        <div class="d-flex flex-column gap-4">
+          <div>
+            <div class="title ms-4 mb-3 mb-md-2 ms-md-0">
+              <i class="rtmicon rtmicon-check icon-box"></i>
+              <h6 class="">Smart & Secure Printing</h6>
+            </div>
+
+            <h1>
+              Upload once, <br />
+              <span class="text-accent">Print anywhere</span>
+            </h1>
+          </div>
+
+          <p class="hero-description">Upload your document once and access it securely at any partnered cybercafe using a unique passkey.</p>
+
+          <div class="d-flex gap-3 flex-wrap justify-content-xl-start justify-content-center">
+            <a href="{% url 'upload' %}" class="btn-accent">
+              Upload Document
+              <i class="rtmicon rtmicon-arrow-right"></i>
+              <span class="gradient-container"><span class="gradient"></span></span>
+            </a>
+
+            <a href="{% url 'access' %}" class="btn btn-outline-light">Access Files</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-5 col-lg-5 mb-4 text-center d-md-block d-none">
+        <style>
+          .hero-image {
+            animation: float 3s ease-in-out infinite;
+            max-width: 420px;
+          }
+          @keyframes float {
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-20px);
+            }
+          }
+          @media (max-width: 768px) {
+            .hero-image {
+              max-width: 100%;
+            }
+          }
+        </style>
+        <img src="{% webpack_static 'images/image/img-27.png' %}" class="img-fluid hero-image" alt="Secure document printing" />
+      </div>
+    </div>
+  </div>
+</div>

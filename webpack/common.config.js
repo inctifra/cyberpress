@@ -12,6 +12,7 @@ module.exports = {
   entry: {
     project: path.resolve(__dirname, "../static/js/project"),
     vendors: path.resolve(__dirname, "../static/js/vendors"),
+    base: path.resolve(__dirname, "../static/js/base/index"),
   },
   output: {
     path: path.resolve(__dirname, "../assets/webpack_bundles/"),
@@ -86,6 +87,7 @@ module.exports = {
     extensions: [".js", ".jsx"],
     alias: {
       "@images": path.resolve(__dirname, "../static/images"),
+      "@fonts": path.resolve(__dirname, "../static/fonts"),
     },
   },
   devServer: {
@@ -96,4 +98,5 @@ module.exports = {
       },
     },
   },
+
 };

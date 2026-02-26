@@ -1,34 +1,27 @@
-<form method="post" action="{{ request.path }}" enctype="multipart/form-data" id="uploadForm">
+<form method="post" action="{{ request.path }}" enctype="multipart/form-data" id="uploadForm" class="d-flex flex-column gap-4">
   {% csrf_token %}
 
-  <div class="mb-4 text-center">
-    <div class="form-text">
-      An access code will be generated upon successful upload. <br /> You'll need it to access your files.
-    </div>
-  </div>
-
-  <div class="mb-4">
-    {% render_field form.files|attr:'class:form-control form-control-lg'|attr:'multiple' %}
-    {% if files_error %}
-      <div class="text-danger small mt-1">{{ files_error }}</div>
-    {% endif %}
-    {% if form.files.errors %}
-      <div class="text-danger small mt-1">{{ form.files.errors|striptags }}</div>
-    {% endif %}
-  </div>
-
-  {% if non_field_error %}
-    <div class="alert alert-danger">{{ non_field_error }}</div>
-  {% endif %}
-
-  <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 fw-bold"><i class="bi bi-lock"></i> Secure & Upload</button>
-  <div class="text-center mt-3 small text-muted">🔐 Encrypted session • Auto deletion in 24 hours</div>
-
-  {% if success %}
-    <div class="alert alert-success">
-      Files uploaded successfully! Your access code: <strong>{{ access_code }}</strong>
+  <div class="text-center">
+    <p class="small mb-0">
+      A secure access code will be generated after upload.
       <br />
-      <small class="text-muted">Share this code to retrieve files. It expires in 24 hours.</small>
+      Use it to print your document at any partner location.
+    </p>
+  </div>
+
+  <!-- Dropzone container ONLY -->
+  <div id="fileDropzone" class="custom-dropzone d-flex flex-column gap-2 align-items-center justify-content-center">
+    <div class="dz-message text-center">
+      <i class="bi bi-cloud-arrow-up fs-1 text-accent mb-2 d-block"></i>
+      <h6 class="fw-semibold">Drag & Drop files here</h6>
+      <p class="small">or click to browse</p>
     </div>
-  {% endif %}
+  </div>
+
+  <button type="submit" class="btn-accent green w-100 py-3 rounded-pill fw-semibold">
+    <i class="bi bi-shield-lock me-2"></i>
+    Secure & Upload
+  </button>
+
+  <div class="text-center small">🔐 Encrypted session • Files auto-delete in 24 hours</div>
 </form>

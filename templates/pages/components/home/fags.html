@@ -1,0 +1,72 @@
+{% load webpack_static from webpack_loader %}
+
+<div class="d-flex flex-column gap-5">
+  <div class="card-title">
+    <div class="title text">
+      <h6 class="text-accent">FAQ</h6>
+    </div>
+    <h3>
+      Frequently Asked <br />
+      Questions
+    </h3>
+    <p>Find quick answers about uploading documents, passkeys, and printing at any cybercafe.</p>
+  </div>
+
+  <div class="row row-cols-md-2 row-cols-1">
+    <!-- LEFT COLUMN -->
+    <div class="col mb-3">
+      <div class="accordion d-flex flex-column gap-4" id="faqAccordion1">
+        <div class="accordion-item faq">
+          <div class="accordion-header">
+            <button class="accordion-button faq" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">How does the platform work?</button>
+          </div>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body faq">Upload your document, receive a secure passkey, visit any cybercafe, enter your passkey, and print instantly.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item faq">
+          <h2 class="accordion-header"><button class="accordion-button collapsed faq" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Is my document secure?</button></h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body faq">Yes. Each upload is linked to a unique passkey. Only someone with the passkey can access and print the file.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item faq">
+          <h2 class="accordion-header"><button class="accordion-button collapsed faq" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Do I need a USB flash drive?</button></h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body faq">No. Everything is handled online. Just upload and use your passkey to print.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col mb-3">
+      <div class="accordion d-flex flex-column gap-4" id="faqAccordion2">
+        <div class="accordion-item faq">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed faq" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Where can I print my documents?</button>
+          </div>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body faq">You can print at any cybercafe. More locations are being added regularly.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item faq">
+          <h2 class="accordion-header"><button class="accordion-button collapsed faq" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">How long are documents stored?</button></h2>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body faq">Documents are stored temporarily for security and privacy purposes, then automatically deleted.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item faq">
+          <h2 class="accordion-header"><button class="accordion-button collapsed faq" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">Can I share my passkey?</button></h2>
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body faq">Yes. Anyone with the passkey can print the document, so share it carefully.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+{% load webpack_static from webpack_loader %}
+
+<div class="r-container">
+  <div class="d-flex flex-column gap-5">
+    <div class="card-title middle text-center">
+      <div class="title text">
+        <h6>Our <span class="text-accent">Mission</span></h6>
+      </div>
+      <h3>
+        Making Document Printing <br />
+        Simple, Secure & Accessible
+      </h3>
+      <p>We help people upload documents from anywhere and print them easily at trusted cybercafes using a secure passkey system.</p>
+    </div>
+
+    <div class="row row-cols-xl-2 row-cols-1">
+      <!-- Card 1 -->
+      <div class="col mb-3">
+        <div class="card-about">
+          <div class="text">
+            <h4>Secure File Handling</h4>
+            <p>Your uploaded documents are protected and linked to a unique passkey, ensuring only authorized access at the cybercafe.</p>
+          </div>
+          <div class="elipse about"></div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col mb-3">
+        <div class="card-about">
+          <div class="text">
+            <h4>Convenient Printing Anywhere</h4>
+            <p>No need for USB drives or email transfers. Simply visit a partnered cybercafe, enter your passkey, and print instantly.</p>
+          </div>
+          <div class="elipse about"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-xl-2 row-cols-1 card-about-row align-items-center">
+      <div class="col mb-3">
+        <div class="text">
+          <div class="top">
+            <h4>Designed for Students & Professionals</h4>
+            <p>Whether you're printing assignments, CVs, forms, or business documents, our platform makes the process fast and stress-free.</p>
+          </div>
+
+          <a href="{% url 'upload' %}" class="btn-accent green">
+            Upload Now
+            <i class="rtmicon rtmicon-arrow-right"></i>
+            <span class="gradient-container"><span class="gradient"></span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

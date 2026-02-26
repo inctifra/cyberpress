@@ -1,8 +1,8 @@
-@import "custom_bootstrap_vars";
-@import "~bootstrap/scss/bootstrap";
-@import "bootstrap-icons/font/bootstrap-icons.css";
-@import "styles.scss";
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+// @import "custom_bootstrap_vars";
+// @import "~bootstrap/scss/bootstrap";
+// @import "bootstrap-icons/font/bootstrap-icons.css";
+// @import "styles.scss";
+// @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 // project specific CSS goes here
 
 ::-webkit-scrollbar {
@@ -11,35 +11,4 @@
 
 body {
   font-family: "Inter", "DM Sans", sans-serif;
-}
-///////////////
-// Variables //
-///////////////
-
-// Alert colors
-
-$white: #fff;
-$mint-green: #d6e9c6;
-$black: #000;
-$pink: #f2dede;
-$dark-pink: #eed3d7;
-$red: #b94a48;
-
-////////////
-// Alerts //
-////////////
-
-// bootstrap alert CSS, translated to the django-standard levels of
-// debug, info, success, warning, error
-
-.alert-debug {
-  background-color: $white;
-  border-color: $mint-green;
-  color: $black;
-}
-
-.alert-error {
-  background-color: $pink;
-  border-color: $dark-pink;
-  color: $red;
 }

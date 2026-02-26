@@ -3,7 +3,7 @@
   Upload PDFs - Cyberpress
 {% endblock %}
 {% block content %}
-  <div class="row justify-content-center">
+  {% comment %} <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8">
       <div class="modern-card p-5">
         <div class="text-center mb-4">
@@ -13,8 +13,74 @@
           <h2 class="fw-bold mb-2">Create Secure Print Session</h2>
           <p class="text-muted">Upload PDFs securely. Files auto-delete after 24 hours.</p>
         </div>
-        {% include "pages/components/upload_forms.html" %}
+        {% include 'pages/components/upload_forms.html' %}
       </div>
     </div>
+  </div> {% endcomment %}
+
+<div class="section pb-0 overflow-visible position-relative" style="z-index: 4;">
+  <div class="r-container d-flex flex-column gap-md-3 gap-4 align-items-center justify-content-center">
+    <div class="row row-cols-xl-2 row-cols-1 w-100">
+
+      <!-- LEFT SIDE - Upload Form -->
+      <div class="col col-xl-7 mb-3 rounded-4 bg-accent-color-3 shadow-sm">
+
+        <div class="modern-card py-4 px-0 p-md-5 text-center">
+
+          <div class="mb-4">
+            <div class="mb-3">
+              <i class="bi bi-cloud-arrow-up fs-1 text-accent"></i>
+            </div>
+            <h2 class="fw-bold mb-2 fs-normal-m">Create Secure Print Session</h2>
+            <p class="">
+              Upload your PDF securely. Your file will automatically delete after 24 hours.
+            </p>
+          </div>
+
+          {% include 'pages/components/upload_forms.html' %}
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE - Info -->
+      <div class="col col-xl-5 mb-3">
+        <div class="d-flex flex-column gap-4 ps-xl-5 pt-xl-4">
+
+          <div class="d-flex flex-row gap-3 align-items-center">
+            <div class="icon-box social">
+              <i class="rtmicon rtmicon-lock fw-bold"></i>
+            </div>
+            <div class="d-flex flex-column">
+              <h5>Secure Upload</h5>
+              <h6>Your documents are encrypted and protected.</h6>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row gap-3 align-items-center">
+            <div class="icon-box social">
+              <i class="rtmicon rtmicon-key fw-bold"></i>
+            </div>
+            <div class="d-flex flex-column">
+              <h5>Instant Passkey</h5>
+              <h6>Receive a secure code to print anywhere.</h6>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row gap-3 align-items-center">
+            <div class="icon-box social">
+              <i class="rtmicon rtmicon-time fw-bold"></i>
+            </div>
+            <div class="d-flex flex-column">
+              <h5>Auto Delete</h5>
+              <h6>Files are automatically removed after 24 hours.</h6>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
+</div>
 {% endblock %}

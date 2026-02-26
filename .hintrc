@@ -8,5 +8,15 @@
     "not ie <= 11",
     "not ios_saf <= 18",
     "not safari <= 18"
-  ]
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "speak"
+        ]
+      }
+    ]
+  }
 }

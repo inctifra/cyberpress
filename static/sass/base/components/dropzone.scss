@@ -1,0 +1,48 @@
+/* Custom Dropzone Styling */
+.custom-dropzone {
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.custom-dropzone:hover {
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Flex wrap previews */
+.custom-dropzone .dz-preview {
+  width: auto;
+  margin: 8px;
+}
+
+.custom-dropzone .dz-preview-container,
+.custom-dropzone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Smaller file cards */
+.custom-dropzone .dz-preview {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Remove success & error icons */
+.dz-success-mark,
+.dz-error-mark {
+  display: none !important;
+}
+
+/* Remove progress bar */
+.dz-progress {
+  display: none !important;
+}

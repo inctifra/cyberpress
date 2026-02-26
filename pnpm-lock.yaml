@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      animate-on-scroll:
+        specifier: github:shishirraven/animate-on-scroll
+        version: https://codeload.github.com/shishirraven/animate-on-scroll/tar.gz/6d4b25654259b2e1aa037b7030b0de46e52bd257
+      animate.css:
+        specifier: ^4.1.1
+        version: 4.1.1
       axios:
         specifier: ^1.12.2
         version: 1.12.2
@@ -20,12 +26,21 @@ importers:
       dotenv:
         specifier: ^17.2.2
         version: 17.2.2
+      dropzone:
+        specifier: 6.0.0-beta.2
+        version: 6.0.0-beta.2
       jquery:
         specifier: ^3.7.1
         version: 3.7.1
+      swiper:
+        specifier: ^12.1.2
+        version: 12.1.2
       terser-webpack-plugin:
         specifier: ^5.3.14
         version: 5.3.14(webpack@5.101.3)
+      toaster-ui:
+        specifier: ^1.1.5
+        version: 1.1.5
       webpackbar:
         specifier: ^7.0.0
         version: 7.0.0(webpack@5.101.3)
@@ -1011,6 +1026,9 @@ packages:
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
 
+  '@swc/helpers@0.2.14':
+    resolution: {integrity: sha512-wpCQMhf5p5GhNg2MmGKXzUNwxe7zRiCsmqYsamez2beP7mKPCSiu+BjZcdN95yYSzO857kr0VfQewmGpS77nqA==}
+
   '@types/body-parser@1.19.6':
     resolution: {integrity: sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g==}
 
@@ -1207,6 +1225,13 @@ packages:
 
   ajv@8.17.1:
     resolution: {integrity: sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==}
+
+  animate-on-scroll@https://codeload.github.com/shishirraven/animate-on-scroll/tar.gz/6d4b25654259b2e1aa037b7030b0de46e52bd257:
+    resolution: {tarball: https://codeload.github.com/shishirraven/animate-on-scroll/tar.gz/6d4b25654259b2e1aa037b7030b0de46e52bd257}
+    version: 0.0.0
+
+  animate.css@4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
 
   ansi-html-community@0.0.8:
     resolution: {integrity: sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw==}
@@ -1632,6 +1657,9 @@ packages:
     resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
     engines: {node: '>=10'}
 
+  dropzone@6.0.0-beta.2:
+    resolution: {integrity: sha512-k44yLuFFhRk53M8zP71FaaNzJYIzr99SKmpbO/oZKNslDjNXQsBTdfLs+iONd0U0L94zzlFzRnFdqbLcs7h9fQ==}
+
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
@@ -2043,6 +2071,9 @@ packages:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
     hasBin: true
+
+  just-extend@5.1.1:
+    resolution: {integrity: sha512-b+z6yF1d4EOyDgylzQo5IminlUmzSeqR1hs/bzjBNjuGras4FXq/6TrzjxfN0j+TmI0ltJzTNlqXUMCniciwKQ==}
 
   kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
@@ -2925,6 +2956,10 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
+  swiper@12.1.2:
+    resolution: {integrity: sha512-4gILrI3vXZqoZh71I1PALqukCFgk+gpOwe1tOvz5uE9kHtl2gTDzmYflYCwWvR4LOvCrJi6UEEU+gnuW5BtkgQ==}
+    engines: {node: '>= 4.7.0'}
+
   tapable@2.2.3:
     resolution: {integrity: sha512-ZL6DDuAlRlLGghwcfmSn9sK3Hr6ArtyudlSAiCqQ6IfE+b+HHbydbYDIG15IfS5do+7XQQBdBiubF/cV2dnDzg==}
     engines: {node: '>=6'}
@@ -2966,6 +3001,9 @@ packages:
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
+
+  toaster-ui@1.1.5:
+    resolution: {integrity: sha512-gyZtP9sxpo10+sdd5bP9CiK1e+nmq2PmmbWIKWpT0vTBBsSZ7IB4b77Snu3XDw8PI7ymcVRp1lCFX1wKhg/XkA==}
 
   toidentifier@1.0.1:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
@@ -4241,6 +4279,8 @@ snapshots:
 
   '@sinclair/typebox@0.27.8': {}
 
+  '@swc/helpers@0.2.14': {}
+
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
@@ -4477,6 +4517,10 @@ snapshots:
       fast-uri: 3.1.0
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
+
+  animate-on-scroll@https://codeload.github.com/shishirraven/animate-on-scroll/tar.gz/6d4b25654259b2e1aa037b7030b0de46e52bd257: {}
+
+  animate.css@4.1.1: {}
 
   ansi-html-community@0.0.8: {}
 
@@ -4910,6 +4954,11 @@ snapshots:
 
   dotenv@8.6.0: {}
 
+  dropzone@6.0.0-beta.2:
+    dependencies:
+      '@swc/helpers': 0.2.14
+      just-extend: 5.1.1
+
   dunder-proto@1.0.1:
     dependencies:
       call-bind-apply-helpers: 1.0.2
@@ -5295,6 +5344,8 @@ snapshots:
   json-schema-traverse@1.0.0: {}
 
   json5@2.2.3: {}
+
+  just-extend@5.1.1: {}
 
   kind-of@6.0.3: {}
 
@@ -6210,6 +6261,8 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.4.1
 
+  swiper@12.1.2: {}
+
   tapable@2.2.3: {}
 
   terser-webpack-plugin@5.3.14(webpack@5.101.3):
@@ -6242,6 +6295,8 @@ snapshots:
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
+
+  toaster-ui@1.1.5: {}
 
   toidentifier@1.0.1: {}
 

@@ -1,0 +1,23 @@
+{% load webpack_static from webpack_loader %}
+
+<div class="bg-cta">
+  <h2>
+    Ready to Print? <br />
+    <span class="text-accent">Upload Once. Print Anywhere.</span>
+  </h2>
+
+  <p>Upload your document securely, receive your unique passkey, and print instantly at any partnered cybercafe.</p>
+
+  <div class="d-flex gap-3 justify-content-center flex-wrap">
+    <a href="{% url 'upload' %}" class="btn btn-accent green">
+      <span>Upload Document</span>
+      <i class="rtmicon rtmicon-arrow-right"></i>
+      <span class="gradient-container"><span class="gradient"></span></span>
+    </a>
+
+    <a href="{% url 'access' %}" class="btn btn-outline-light">Enter Passkey</a>
+  </div>
+
+  <div class="elipse cta"></div>
+  <div class="elipse cta-2"></div>
+</div>

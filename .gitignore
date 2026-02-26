@@ -59,6 +59,7 @@ staticfiles/
 docs/_build/
 gunicorn
 nginx
+fortexa/
 # PyBuilder
 target/
 

@@ -1,10 +1,46 @@
-<footer class="py-4 mt-5">
-  <div class="container text-center text-muted">
-    <div class="mb-2 fw-semibold">Cyberpress</div>
-    <small>Files auto-delete after 24 hours · No account required</small>
-    <div class="mt-2">
-      <a href="{% url 'upload' %}" class="text-decoration-none me-3">Upload</a>
-      <a href="{% url 'access' %}" class="text-decoration-none">Access</a>
+{% load webpack_static from webpack_loader %}
+<footer>
+  <div class="section pb-4">
+    <div class="bg-footer">
+      <img src="{% webpack_static 'images/image/favicon.png' %}" style="width: 100px; height: auto;" class="img-fluid scrollanimation animated fadeInUp adr-5" alt="Print Service Logo" />
+      <div class="d-flex flex-wrap gap-3 justify-content-center" style="max-width: 800px">
+        <div class="title">
+          <i class="rtmicon rtmicon-check icon-box"></i>
+          <h6>Upload From Anywhere</h6>
+        </div>
+
+        <div class="title">
+          <i class="rtmicon rtmicon-check icon-box"></i>
+          <h6>Secure Passkey Access</h6>
+        </div>
+
+        <div class="title">
+          <i class="rtmicon rtmicon-check icon-box"></i>
+          <h6>No USB Required</h6>
+        </div>
+
+        <div class="title">
+          <i class="rtmicon rtmicon-check icon-box"></i>
+          <h6>Partnered Cybercafes</h6>
+        </div>
+
+        <div class="title">
+          <i class="rtmicon rtmicon-check icon-box"></i>
+          <h6>Fast & Stress-Free Printing</h6>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="d-flex flex-xl-row flex-column align-items-center justify-content-between w-100" style="max-width: 800px">
+        <a href="{% url 'home' %}" class="link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+        <a href="{% url 'upload' %}" class="link {% if request.resolver_match.url_name == 'upload' %}active{% endif %}">Upload</a>
+        <a href="{% url 'access' %}" class="link {% if request.resolver_match.url_name == 'access' %}active{% endif %}">Enter Passkey</a>
+        <a href="{% url 'about' %}" class="link {% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
+        <a href="" class="link">Contact</a>
+      </div>
+      <p class="accent-color-4">© 2026 CyberConnect. All Rights Reserved.</p>
+      <div class="elipse footer"></div>
     </div>
   </div>
 </footer>
