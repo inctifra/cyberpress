@@ -1,6 +1,6 @@
 {% load webpack_static from webpack_loader %}
 
-<div class="bg-cta">
+{% comment %} <div class="bg-cta">
   <h2>
     Ready to Print? <br />
     <span class="text-accent">Upload Once. Print Anywhere.</span>
@@ -16,6 +16,26 @@
     </a>
 
     <a href="{% url 'access' %}" class="btn btn-outline-light">Enter Passkey</a>
+  </div>
+
+  <div class="elipse cta"></div>
+  <div class="elipse cta-2"></div>
+</div> {% endcomment %}
+
+<div class="bg-cta">
+  <h2>
+    Get QR Code <br />
+    <span class="text-accent">For Customer Access</span>
+  </h2>
+
+  <p>Cyber attendants can download the official QR code and display it at the shop. Customers simply scan it to open the platform and upload their documents quickly.</p>
+
+  <div class="d-flex gap-3 justify-content-center flex-wrap">
+    <a href="{{ qrcode.file.url }}" target="_blank" class="btn btn-accent green">
+      <span>Download QR Code</span>
+      <i class="rtmicon rtmicon-arrow-right"></i>
+      <span class="gradient-container"><span class="gradient"></span></span>
+    </a>
   </div>
 
   <div class="elipse cta"></div>

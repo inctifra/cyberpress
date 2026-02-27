@@ -202,6 +202,7 @@ TEMPLATES = [
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
                 "ifidel.users.context_processors.allauth_settings",
+                "apps.core.context_processors.qrcodes_context_processor",
             ],
             "builtins": ["widget_tweaks.templatetags.widget_tweaks"],
         },

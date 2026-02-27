@@ -9,10 +9,12 @@ from django.views.generic import TemplateView
 from drf_spectacular.views import SpectacularAPIView
 from drf_spectacular.views import SpectacularSwaggerView
 from rest_framework.authtoken.views import obtain_auth_token
+from apps.core._admin import _admin_site
+
 
 urlpatterns = [
     path("", include("apps.urls")),
-    path(settings.ADMIN_URL, admin.site.urls),
+    path(settings.ADMIN_URL, _admin_site.urls),
     # User management
     path("users/", include("ifidel.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),

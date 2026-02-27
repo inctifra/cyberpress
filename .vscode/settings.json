@@ -37,6 +37,8 @@
     "novalidate",
     "pixrem",
     "pytest",
+    "qrcode",
+    "qrcodes",
     "rgba",
     "rtmicon",
     "runserver",

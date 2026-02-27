@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import PrintSession, File
 
+from apps.core._admin import _admin_site
+
 
 class FileInline(admin.TabularInline):
     model = File
@@ -8,7 +10,7 @@ class FileInline(admin.TabularInline):
     readonly_fields = ("name", "size", "file")
 
 
-@admin.register(PrintSession)
+@admin.register(PrintSession, site=_admin_site)
 class PrintSessionAdmin(admin.ModelAdmin):
     list_display = (
         "created_at",
@@ -31,7 +33,7 @@ class PrintSessionAdmin(admin.ModelAdmin):
     expired_status.short_description = "Expired"
 
 
-@admin.register(File)
+@admin.register(File, site=_admin_site)
 class FileAdmin(admin.ModelAdmin):
     list_display = ("name", "session", "size")
     search_fields = ("name", "session__code")
