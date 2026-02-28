@@ -71,6 +71,7 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.humanize",
     "django.contrib.admin",
+    "django.contrib.sitemaps",
     "django.forms",
 ]
 THIRD_PARTY_APPS = [
@@ -90,16 +91,42 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
     "webpack_loader",
     "django_browser_reload",
-    'widget_tweaks',
+    "widget_tweaks",
 ]
 
 LOCAL_APPS = [
     "ifidel.users",
     "apps.core",
     "apps.uploads",
+    "apps.news",
+    "apps.feeds",
+]
+
+
+WAGTAIL_APPS = [
+    "wagtail.contrib.forms",
+    "wagtail.contrib.redirects",
+    "wagtail.embeds",
+    "wagtail.sites",
+    "wagtail.users",
+    "wagtail.snippets",
+    "wagtail.documents",
+    "wagtail.images",
+    "wagtail.search",
+    "wagtail.admin",
+    "wagtail",
+    "modelcluster",
+    "taggit",
+    
+    "wagtailmetadata",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS = [
+    *DJANGO_APPS,
+    *THIRD_PARTY_APPS,
+    *LOCAL_APPS,
+    *WAGTAIL_APPS,
+]
 
 # MIGRATIONS
 # ------------------------------------------------------------------------------
@@ -156,6 +183,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
     "django_browser_reload.middleware.BrowserReloadMiddleware",
+    "wagtail.contrib.redirects.middleware.RedirectMiddleware",
 ]
 
 # STATIC

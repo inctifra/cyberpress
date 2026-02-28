@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load wagtailimages_tags wagtailcore_tags %}
+{% load wagtailmetadata_tags %}
+
+{% block meta %}
+  {% meta_tags %}
+{% endblock %}
+
+{% block main_style %}
+
+{% endblock %}
+{% block content %}
+  <div class="section mt-5">
+    <div class="r-container">
+      <div class="d-flex flex-column gap-5">
+        <div class="card-title middle">
+          <div class="title text scrollanimation animated fadeInUp adr-5">
+            <h6 class="text-accent">Blog & News</h6>
+          </div>
+          <h3 class="scrollanimation animated fadeInUp adr-5 adl-1">{{ page.tagline|default:''|striptags }}</h3>
+          <p class="scrollanimation animated fadeInUp adr-5 adl-2">{{ page.intro|default:''|striptags }}</p>
+        </div>
+        <div class="d-flex flex-column gap-2">
+          <div class="row row-cols-xl-3 row-cols-1">
+            {% for entry in articles %}
+              <div class="col mb-3">
+                <a href="{{ entry.url }}" class="card-blog">
+                  {% if entry.cover %}
+                    {% image entry.cover fill - 800 x500 as cover_img %}
+                    <img src="{{ cover_img.url }}" alt="{{ entry.title }}" style="border-radius:20px;" />
+                  {% endif %}
+
+                  <div class="content">
+                    <h5>{{ entry.title }}</h5>
+
+                    <div class="text-row">
+                      <div class="item">
+                        <i class="rtmicon rtmicon-calendar"></i>
+                        <p>{{ entry.date }}</p>
+                      </div>
+                      <div class="item">
+                        <i class="rtmicon rtmicon-users"></i>
+                        <p>by : RTM</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

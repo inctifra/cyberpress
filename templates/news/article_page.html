@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
+
+{% block title %}
+  {{ block.super }} | {{ page.title }}
+{% endblock %}
+
+{% block meta %}
+  {% include 'seo/article_schema.html' %}
+{% endblock %}
+
+{% block main_style %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="section floating-single-post mt-3">
+    <div class="r-container">
+      <div class="container-single-post">
+        {{ page.body|richtext }}
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -25,10 +25,24 @@ ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["localhost"])
 # ------------------------------------------------------------------------------
 DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)
 
+
 # CACHES
 # ------------------------------------------------------------------------------
-CACHES = {
-    "default": {
+BACKEND_CACHE_DB_AVAILABLE = env.bool("BACKEND_CACHE_DB_AVAILABLE", default=False)
+
+DB_CACHE_ALIASES = {
+    "default": "default",
+    "offline": "offline_cache",
+}
+
+
+_OFFLINE_CACHE_BACKEND = {
+    "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+    "LOCATION": DB_CACHE_ALIASES["offline"],
+}
+
+_ONLINE_CACHE_BACKEND = (
+    {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": REDIS_URL,
         "OPTIONS": {
@@ -38,6 +52,12 @@ CACHES = {
             "IGNORE_EXCEPTIONS": True,
         },
     },
+)
+
+CACHES = {
+    "default": _ONLINE_CACHE_BACKEND
+    if BACKEND_CACHE_DB_AVAILABLE
+    else _OFFLINE_CACHE_BACKEND,
 }
 
 
@@ -82,8 +102,8 @@ aws_s3_domain = AWS_S3_CUSTOM_DOMAIN or f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws
 # STATIC & MEDIA
 # ------------------------
 
-DATA_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024      # 50 MB
-FILE_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024      # 50 MB
+DATA_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024  # 50 MB
+FILE_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024  # 50 MB
 
 
 LOCAL_BACKEND_STORAGES = {
@@ -190,9 +210,19 @@ sentry_sdk.init(
 # Tools that generate code samples can use SERVERS to point to the correct domain
 SPECTACULAR_SETTINGS["SERVERS"] = [
     {
-        "url": "https://ifidel.albinismnetwork.org/api",
+        "url": "http://localhost:8000",
         "description": "Production server",
     },
 ]
-# Your stuff...
+# WAGTAIL SETTINGS
 # ------------------------------------------------------------------------------
+
+try:
+    from . import wagtail as wagtail_prod_settings
+
+    for attr in dir(wagtail_prod_settings):
+        if attr.isupper():
+            globals()[attr] = getattr(wagtail_prod_settings, attr)
+except ImportError as e:
+    msg = "Production wagtail settings not found!"
+    raise ImportError(msg) from e

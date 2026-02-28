@@ -10,6 +10,9 @@ from drf_spectacular.views import SpectacularAPIView
 from drf_spectacular.views import SpectacularSwaggerView
 from rest_framework.authtoken.views import obtain_auth_token
 from apps.core._admin import _admin_site
+from wagtail.admin import urls as wagtailadmin_urls
+from wagtail import urls as wagtail_urls
+from wagtail.documents import urls as wagtaildocs_urls
 
 
 urlpatterns = [
@@ -18,6 +21,11 @@ urlpatterns = [
     # User management
     path("users/", include("ifidel.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    # Wagtail URLs
+    # ------------------------------------------------------------------------------
+    path("cms/", include(wagtailadmin_urls)),
+    path("documents/", include(wagtaildocs_urls)),
+    path("news/", include(wagtail_urls)),
     # Your stuff: custom urls includes go here
     # ...
     # Media files
@@ -72,3 +80,4 @@ if settings.DEBUG:
             path("__debug__/", include(debug_toolbar.urls)),
             *urlpatterns,
         ]
+

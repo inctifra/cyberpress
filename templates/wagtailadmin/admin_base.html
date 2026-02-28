@@ -1,0 +1,10 @@
+{% extends 'wagtailadmin/admin_base.html' %}
+{% load webpack_static from webpack_loader %}
+
+{% block branding_favicon %}
+  <link rel="shortcut icon" href="{% webpack_static 'images/image/favicon.png' %}" />
+{% endblock %}
+
+{% block branding_title %}
+  Cyberconnect Press
+{% endblock %}

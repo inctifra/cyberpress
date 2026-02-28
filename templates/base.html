@@ -38,6 +38,10 @@
       {% render_bundle 'project' 'js' attrs='defer' %}
       {% render_bundle 'base' 'js' attrs='defer' %}
     {% endblock %}
+
+    {% block meta %}
+
+    {% endblock %}
   </head>
 
   <body class="{% block bodyclass %}
@@ -48,7 +52,11 @@
         {% include 'components/header.html' %}
       {% endblock %}
       <main style="{% block main_style %}
+          
+          
           margin-top: 8rem!important;
+
+
         {% endblock %}">
         <div class="container">
           {% if messages %}
@@ -80,5 +88,31 @@
     {% block extra_js %}
 
     {% endblock %}
+
+    <a href="https://wa.me/0705797745?text=Hello%20I%20am%20interested%20in%20your%20services" class="whatsapp-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 25px;
+        right: 25px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .whatsapp-float:hover {
+        background-color: #1ebe5d;
+        color: white;
+      }
+    </style>
   </body>
 </html>

@@ -78,6 +78,8 @@ dependencies = [
     "djangorestframework-simplejwt>=5.5.1",
     "bcrypt>=5.0.0",
     "django-widget-tweaks>=1.5.1",
+    "wagtail>=7.3",
+    "wagtail-metadata>=5.0.0",
 ]
 
 # ==== pytest ====

@@ -1,0 +1,38 @@
+{% load wagtailimages_tags %}
+
+
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "{{ page.title|escapejs }}",
+ "description": "{{ page.search_description|default:page.body|striptags|truncatechars:160|escapejs }}",
+ "datePublished": "{{ page.date|date:'Y-m-d' }}",
+ "dateModified": "{{ page.last_published_at|date:'Y-m-d' }}",
+ "author": {
+   "@type": "Organization",
+   "name": "CyberConnect"
+ },
+ "publisher": {
+   "@type": "Organization",
+   "name": "CyberConnect",
+   {% if page.cover %}
+   , "logo": {
+       "@type": "ImageObject",
+       "url": "{{ request.scheme }}://{{ request.get_host }}/static/logo.png"
+   }
+   {% endif %}
+ },
+ "mainEntityOfPage": {
+   "@type": "WebPage",
+   "@id": "{{ request.build_absolute_uri }}"
+ }
+ {% if page.cover %}
+ ,
+ "image": [
+     "{{ request.scheme }}://{{ request.get_host }}{% image page.cover width-1200 %}"
+ ]
+ {% endif %}
+}
+</script>

@@ -36,6 +36,7 @@
         <a href="{% url 'home' %}" class="link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
         <a href="{% url 'upload' %}" class="link {% if request.resolver_match.url_name == 'upload' %}active{% endif %}">Upload</a>
         <a href="{% url 'access' %}" class="link {% if request.resolver_match.url_name == 'access' %}active{% endif %}">Access</a>
+        <a href="/news/" class="link {% if request.path == '/news/' %}active{% endif %}">News</a>
         <a href="" class="link">Contact</a>
       </div>
       <p class="accent-color-4">© 2026 CyberConnect. All Rights Reserved.</p>
