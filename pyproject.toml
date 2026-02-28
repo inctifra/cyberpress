@@ -58,7 +58,7 @@ dependencies = [
     "watchfiles==1.1.0",
     "mypy==1.17.0",
     "django-stubs[compatible-mypy]==5.2.2",
-    "pytest==8.4.1",
+    "pytest==9.0.2",
     "pytest-sugar==1.0.0",
     "djangorestframework-stubs==3.16.0",
     "sphinx==8.2.3",
