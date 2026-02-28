@@ -210,7 +210,9 @@ sentry_sdk.init(
 # Tools that generate code samples can use SERVERS to point to the correct domain
 SPECTACULAR_SETTINGS["SERVERS"] = [
     {
-        "url": "http://localhost:8000",
+        "url": "http://localhost:8000"
+        if DEBUG
+        else env("DJANGO_PRODUCTION_URL", default="https://www.cyberconnect.cloud"),
         "description": "Production server",
     },
 ]
