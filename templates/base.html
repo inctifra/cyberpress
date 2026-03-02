@@ -39,6 +39,8 @@
       {% render_bundle 'base' 'js' attrs='defer' %}
     {% endblock %}
 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2313717454
+304156" crossorigin="anonymous"></script>
     {% block meta %}
 
     {% endblock %}
@@ -47,6 +49,7 @@
   <body class="{% block bodyclass %}
 
     {% endblock %}">
+    <div id="toast-root"></div>
     {% block body %}
       {% block header %}
         {% include 'components/header.html' %}
@@ -54,7 +57,13 @@
       <main style="{% block main_style %}
           
           
+          
+          
+          
           margin-top: 8rem!important;
+
+
+
 
 
         {% endblock %}">
@@ -77,6 +86,8 @@
         {% include 'components/footer.html' %}
       {% endblock %}
     {% endblock %}
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2313717454304156" data-ad-slot="4406967377" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
     <!-- /container -->
     {% block modal %}
       {% include 'pages/components/modal/access.html' %}
@@ -114,5 +125,8 @@
         color: white;
       }
     </style>
+    <script>
+      ;(adsbygoogle = window.adsbygoogle || []).push({})
+    </script>
   </body>
 </html>

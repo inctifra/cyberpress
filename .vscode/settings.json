@@ -24,6 +24,7 @@
     "floatformat",
     "fullhash",
     "gensalt",
+    "goey",
     "Gunicorn",
     "hashpw",
     "htmlcov",
