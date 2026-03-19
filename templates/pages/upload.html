@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
-{% block title %}
-  Upload PDFs - {{ block.super }}
-{% endblock %}
-{% block content %}
 
-  <div class="section pb-0 overflow-visible position-relative" style="z-index: 4;">
+{% block title %}Upload PDFs - {{ block.super }}{% endblock %}
+{% block content %}
+  <div class="section pb-0 overflow-visible position-relative"
+       style="z-index: 4">
     <div class="r-container d-flex flex-column gap-md-3 gap-4 align-items-center justify-content-center">
       <div class="row row-cols-xl-2 row-cols-1 w-100">
         <!-- LEFT SIDE - Upload Form -->
@@ -14,14 +13,10 @@
               <h2 class="fw-bold mb-2 fs-normal-m w-100">create secure print session</h2>
               <p class="">Upload your PDF securely. Your file will automatically delete after 24 hours.</p>
             </div>
-
             {% include 'pages/components/upload_forms.html' %}
           </div>
         </div>
-
-        <div class="col col-xl-5 mb-3">
-          {% include 'pages/components/upload/guidance.html' %}
-        </div>
+        <div class="col col-xl-5 mb-3">{% include 'pages/components/upload/guidance.html' %}</div>
       </div>
     </div>
   </div>

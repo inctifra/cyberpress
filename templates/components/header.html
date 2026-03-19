@@ -1,34 +1,52 @@
 {% load webpack_static from webpack_loader %}
 
 <div id="header" class="fixed-top mx-auto" style="top: 20px;">
-  <div class="bg-header container" style="border-radius: 50px; background: rgba(255, 255, 255, 0.09); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
+  <div class="bg-header container"
+       style="border-radius: 50px;
+              background: rgba(255, 255, 255, 0.09);
+              backdrop-filter: blur(12px);
+              -webkit-backdrop-filter: blur(12px)">
     <nav class="navbar navbar-expand-xl">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand" href="/"><img src="{% webpack_static 'images/image/favicon.png' %}" style="width: 50px;" alt="CyberConnect" class="img-fluid" /></a>
-
+        <a class="navbar-brand" href="/">
+          <img src="{% webpack_static 'images/image/favicon.png' %}"
+               style="width: 50px"
+               alt="CyberConnect"
+               class="img-fluid" />
+        </a>
         <!-- Toggle -->
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="fa-solid fa-bars-staggered"></i></button>
-
+        <button class="navbar-toggler text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
         <!-- Collapsible Content -->
-        <div class="collapse navbar-collapse mt-3 mt-xl-0" id="navbarNav">
+        <div class="navbar-collapse flex-column flex-md-row align-items-center justify-content-center mt-3 mt-xl-0 collapse"
+             id="navbarNav">
           <ul class="navbar-nav mx-auto gap-xl-4 gap-2 text-center">
             <li class="nav-item">
               <a class="nav-link" href="javascript:void(0)">How It Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'access' %}">Access</a>
+              <a class="nav-link {% if request.resolver_match.url_name == 'access' %}active{% endif %}"
+                 href="{% url 'access' %}">Access</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'coming_soon' %}">Enterprise</a>
+              <a class="nav-link {% if request.resolver_match.url_name == 'coming_soon' %}active{% endif %}"
+                 href="{% url 'coming_soon' %}">Enterprise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.url_name == 'pricing' %}active{% endif %}"
+                 href="{% url 'pricing' %}">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="javascript:void(0)">Contact</a>
             </li>
           </ul>
-
-          <!-- CTA inside collapse -->
-          <div class="text-center mt-3" style="transform: translateY(-10px);">
+          <!-- CTA -->
+          <div class="text-center mt-3 mt-md-0">
             <a href="{% url 'upload' %}" class="btn-accent green rounded-5">Upload Now</a>
           </div>
         </div>

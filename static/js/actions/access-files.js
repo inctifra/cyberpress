@@ -4,7 +4,6 @@ import { Modal } from "bootstrap";
 
 setupAjaxForm("#fileAccessForm", {
   onSuccess: (data) => {
-    console.log("Access form success");
     const modalBody = document.querySelector("#filesModal .modal-body");
 
     if (!modalBody) {
@@ -13,13 +12,6 @@ setupAjaxForm("#fileAccessForm", {
     }
 
     modalBody.innerHTML = data;
-    // if (modalBody.querySelector(".alert-danger")) {
-    //   showToast({
-    //     message: "Access failed. Check your passkey.",
-    //     type: "error",
-    //   });
-    //   return;
-    // }
 
     const elem = document.querySelector("#filesModal");
     const modal = new Modal(elem, {

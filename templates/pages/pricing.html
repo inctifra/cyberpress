@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-md-4 mt-3 pb-0 overflow-visible position-relative" style="z-index:4">
+    <div class="r-container d-flex flex-column gap-4 align-items-center justify-content-center">
+      <!-- HEADER -->
+      <div class="text-center mb-5">
+        <h6 class="text-accent">Cloud Printing Plans</h6>
+        <h3 class="fw-bold">
+          Choose a Plan That
+          <br />
+          Fits Your Needs
+        </h3>
+        <p class="small text-light">
+          Flexible options for casual users,
+          <br />
+          professionals, and cyber shop operators.
+        </p>
+      </div>
+      <!-- PRICING CARDS -->
+      <div class="row row-cols-xl-3 row-cols-1 g-4 w-100">
+        <!-- FREE PLAN -->
+        <div class="col">
+          <div class="d-flex flex-column gap-3 rounded-3 bg-accent-color-3 p-4 h-100 text-center">
+            <h5 class="fw-bold">Free</h5>
+            <p class="text-light small mb-2">Upload & Print</p>
+            <h3 class="fw-bold">KES 0</h3>
+
+            <!-- FEATURE LIST -->
+            <ul class="list-unstyled text-start mt-3 mb-0 text-light">
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Upload and print documents
+              </li>
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Files auto-delete after 24 hours
+              </li>
+              <li class="d-flex align-items-center py-2">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Access from any cyber
+              </li>
+            </ul>
+
+            <a role="button" class="btn-accent green py-3 rounded-5 mt-auto w-100">Start Free</a>
+          </div>
+        </div>
+
+        <!-- BASIC PLAN -->
+        <div class="col">
+          <div class="d-flex flex-column gap-3 rounded-3 bg-accent-color-3 p-4 h-100 text-center border border-accent-color-4">
+            <h5 class="fw-bold">Basic</h5>
+            <p class="text-light small mb-2">Enhanced Cloud Features</p>
+            <h3 class="fw-bold">KES 500 <br /> monthly</h3>
+
+            <!-- FEATURE LIST -->
+            <ul class="list-unstyled text-start mt-3 mb-0 text-light">
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Upload and store files indefinitely
+              </li>
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Share files with others securely
+              </li>
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                AI document analysis
+              </li>
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Sell documents to other users
+              </li>
+              <li class="d-flex align-items-center py-2">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Access from any device
+              </li>
+            </ul>
+
+            <a role="button" class="btn-accent green py-3 rounded-5 mt-auto w-100">Subscribe Basic</a>
+          </div>
+        </div>
+
+        <!-- STANDARD PLAN -->
+        <div class="col">
+          <div class="d-flex flex-column gap-3 rounded-3 bg-accent-color-3 p-4 h-100 text-center">
+            <h5 class="fw-bold">Standard</h5>
+            <p class="text-light small mb-2">Cyber & Enterprise Features</p>
+            <h3 class="fw-bold">KES 1,500 <br /> monthly</h3>
+
+            <!-- FEATURE LIST -->
+            <ul class="list-unstyled text-start mt-3 mb-0 text-light">
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                All Basic plan features
+              </li>
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Cyber attendant account
+              </li>
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Direct customer uploads to session
+              </li>
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Real-time print management
+              </li>
+              <li class="d-flex align-items-center py-2 border-bottom border-secondary">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                AI document insights & analytics
+              </li>
+              <li class="d-flex align-items-center py-2">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                Priority support
+              </li>
+            </ul>
+
+            <a role="button" class="btn-accent green py-3 rounded-5 mt-auto w-100">Subscribe Standard</a>
+          </div>
+        </div>
+      </div>
+      <!-- ADDITIONAL NOTE -->
+      <div class="text-center mt-5">
+        <p class="small text-light">All plans allow access from any cyber café connected to our network. Choose a plan that fits your printing needs and enjoy hassle-free cloud printing.</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

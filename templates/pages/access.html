@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
-{% block content %}
 
-  <div class="container mt-md-4 mt-3 pb-0 overflow-visible position-relative" style="z-index:4;">
+{% block content %}
+  <div class="container mt-md-4 mt-3 pb-0 overflow-visible position-relative"
+       style="z-index:4">
     <div class="r-container d-flex flex-column gap-4 align-items-center justify-content-center">
       <div class="row row-cols-xl-2 row-cols-1 w-100 mt-4">
         <div class="col col-xl-7 mb-3">
@@ -12,19 +13,25 @@
               <h3 class="fw-bold">Retrieve Your Files</h3>
               <p class="small">Enter your passkey to access or delete your uploaded files.</p>
             </div>
-            <form method="post" action="{{ request.path }}" id="fileAccessForm" class="d-flex flex-column gap-3">
+            <form method="post"
+                  action="{{ request.path }}"
+                  id="fileAccessForm"
+                  class="d-flex flex-column gap-3">
               {% csrf_token %}
               <input type="hidden" name="action" value="access" />
-
               <div>
                 <label class="form-label fw-semibold">Access Code</label>
                 <div class="input-group input-group-lg">
                   {{ form.access_code }}
-                  <button class="btn btn-outline-secondary" type="button" id="toggleAccessPasskey"><i class="bi bi-eye"></i></button>
+                  <button class="btn btn-outline-secondary"
+                          type="button"
+                          id="toggleAccessPasskey">
+                    <i class="bi bi-eye"></i>
+                  </button>
                 </div>
               </div>
-
-              <button type="submit" class="btn-accent green py-3 d-flex justify-content-center gap-2 w-100">
+              <button type="submit"
+                      class="btn-accent green py-3 d-flex justify-content-center gap-2 w-100">
                 <span>Unlock Files</span>
                 <i class="rtmicon rtmicon-arrow-up-right"></i>
               </button>
@@ -38,15 +45,18 @@
               <h3 class="fw-bold">Delete Files</h3>
               <p class="small">You can delete your files before the 24-hour expiry.</p>
             </div>
-            <form method="post" action="{% url 'delete_files' %}" id="fileDeleteForm" class="d-flex flex-column gap-3">
+            <form method="post"
+                  action="{% url 'delete_files' %}"
+                  id="fileDeleteForm"
+                  class="d-flex flex-column gap-3">
               {% csrf_token %}
-
               <div>
                 <label class="form-label fw-semibold">Enter Access Code</label>
                 {{ form.access_code }}
               </div>
-
-              <button type="submit" class="btn btn-danger py-3 w-100 rounded-pill"><i class="bi bi-trash"></i> Delete My Files</button>
+              <button type="submit" class="btn btn-danger py-3 w-100 rounded-pill">
+                <i class="bi bi-trash"></i> Delete My Files
+              </button>
             </form>
           </div>
         </div>

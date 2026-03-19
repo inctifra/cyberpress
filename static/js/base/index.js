@@ -9,6 +9,7 @@ $(async () => {
     import("../libs/axios"),
     import("../libs/formHandler"),
     import("../libs/toast"),
+    import("./store"),
   ]);
   initUploadForm();
 });

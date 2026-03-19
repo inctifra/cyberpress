@@ -10,97 +10,81 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-      {% block title %}
-        CyberConnect | Secure Document Upload & Passkey Printing
-      {% endblock %}
+      {% block title %}CyberConnect | Secure Document Upload & Passkey Printing{% endblock %}
     </title>
-    <meta name="description" content="Upload documents securely, receive a temporary passkey, and print your files safely at any cybercafé. No account required. Fast, private, and reliable." />
-    <meta name="keywords" content="secure document upload, cybercafe printing, passkey printing, secure file sharing, PDF printing, temporary file access" />
+    <meta name="description"
+          content="Upload documents securely, receive a temporary passkey, and print your files safely at any cybercafé. No account required. Fast, private, and reliable." />
+    <meta name="keywords"
+          content="secure document upload, cybercafe printing, passkey printing, secure file sharing, PDF printing, temporary file access" />
     <meta name="author" content="CyberConnect" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="{{ request.build_absolute_uri }}" />
     <link rel="icon" href="{% webpack_static 'images/image/favicon.png' %}" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CyberConnect – Secure Passkey-Based Printing" />
-    <meta property="og:description" content="Upload once, get a passkey, and print securely at any cybercafé. Your documents stay private." />
+    <meta property="og:title"
+          content="CyberConnect – Secure Passkey-Based Printing" />
+    <meta property="og:description"
+          content="Upload once, get a passkey, and print securely at any cybercafé. Your documents stay private." />
     <meta property="og:url" content="{{ request.build_absolute_uri }}" />
     <meta property="og:site_name" content="CyberConnect" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="CyberConnect – Secure Document Printing" />
-    <meta name="twitter:description" content="Secure document upload with passkey-based access for safe cybercafé printing." />
+    <meta name="twitter:title"
+          content="CyberConnect – Secure Document Printing" />
+    <meta name="twitter:description"
+          content="Secure document upload with passkey-based access for safe cybercafé printing." />
     {% block css %}
       {% render_bundle 'project' 'css' %}
       {% render_bundle 'base' 'css' %}
     {% endblock %}
-
     {% block javascript %}
       {% render_bundle 'vendors' 'js' attrs='defer' %}
       {% render_bundle 'project' 'js' attrs='defer' %}
       {% render_bundle 'base' 'js' attrs='defer' %}
     {% endblock %}
-
-
-    {% block meta %}
-
-    {% endblock %}
-    <meta name="google-adsense-account" content="ca-pub-2313717454304156">
+    {% block meta %}{% endblock %}
+    <meta name="google-adsense-account" content="ca-pub-2313717454304156" />
   </head>
-
-  <body class="{% block bodyclass %}
-
-    {% endblock %}">
+  <body class="{% block bodyclass %}  {% endblock %}">
     <div id="toast-root"></div>
     {% block body %}
       {% block header %}
         {% include 'components/header.html' %}
       {% endblock %}
-      <main style="{% block main_style %}
-          
-          
-          
-          
-          
-          margin-top: 8rem!important;
-
-
-
-
-
-        {% endblock %}">
+      <main style="{% block main_style %}  margin-top: 8rem!important;
+                   {% endblock %}">
         <div class="container">
           {% if messages %}
             {% for message in messages %}
-              <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+              <div class="alert alert-{{ message.tags }} alert-dismissible fade show"
+                   role="alert">
                 {{ message }}
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
               </div>
             {% endfor %}
           {% endif %}
         </div>
-        {% block content %}
-
-        {% endblock %}
+        {% block content %}{% endblock %}
       </main>
-
       {% block footer %}
         {% include 'components/footer.html' %}
       {% endblock %}
     {% endblock %}
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2313717454304156" data-ad-slot="4406967377" data-ad-format="auto" data-full-width-responsive="true"></ins>
-
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2313717454304156"
+         data-ad-slot="4406967377"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
     <!-- /container -->
     {% block modal %}
       {% include 'pages/components/modal/access.html' %}
     {% endblock %}
-
-    {% block inline_javascript %}
-
-    {% endblock %}
-    {% block extra_js %}
-
-    {% endblock %}
-
-    <a href="https://wa.me/+2540705797745?text=Hello%20I%20am%20interested%20in%20your%20services" class="whatsapp-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    {% block inline_javascript %}{% endblock %}
+    {% block extra_js %}{% endblock %}
+    <a x-data
+       :href="$store.app.whatsappLink"
+       class="whatsapp-float"
+       target="_blank"><i class="fab fa-whatsapp"></i></a>
     <style>
       .whatsapp-float {
         position: fixed;
@@ -119,12 +103,11 @@
         align-items: center;
         justify-content: center;
       }
-      
+
       .whatsapp-float:hover {
         background-color: #1ebe5d;
         color: white;
       }
     </style>
-
   </body>
 </html>

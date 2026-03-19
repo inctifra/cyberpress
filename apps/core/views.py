@@ -80,7 +80,6 @@ class AccessView(TemplateView):
         if form.is_valid():
             access_code = form.cleaned_data.get("access_code")
             session = PrintSession.objects.filter(access_code=access_code).first()
-            print(f"Access code: {access_code}, Session found: {session}")
             if session:
                 if session.is_expired():
                     session.delete()
@@ -126,7 +125,10 @@ class DeleteFilesView(View):
         if session:
             session.delete()
             return JsonResponse({"detail": "Files deleted successfully."}, status=200)
-        return JsonResponse({"detail": "Invalid access code."}, status=400)
+        return JsonResponse(
+            {"detail": "Could not delete. Invalid access code."},
+            status=400,
+        )
 
 
 delete_files_view = DeleteFilesView.as_view()
@@ -135,8 +137,11 @@ delete_files_view = DeleteFilesView.as_view()
 class ComingSoonView(TemplateView):
     template_name = "pages/soon.html"
 
-
 coming_soon_view = ComingSoonView.as_view()
+class PricingView(TemplateView):
+    template_name = "pages/pricing.html"
 
+
+pricing_view = PricingView.as_view()
 
 

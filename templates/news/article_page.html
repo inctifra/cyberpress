@@ -1,24 +1,23 @@
 {% extends 'base.html' %}
+
 {% load wagtailcore_tags %}
 {% load wagtailimages_tags %}
 
-{% block title %}
-  {{ block.super }} | {{ page.title }}
-{% endblock %}
-
+{% block title %}{{ block.super }} | {{ page.title }}{% endblock %}
 {% block meta %}
   {% include 'seo/article_schema.html' %}
 {% endblock %}
-
-{% block main_style %}
-
-{% endblock %}
-
+{% block main_style %}{% endblock %}
 {% block content %}
   <div class="section floating-single-post mt-3">
     <div class="r-container">
       <div class="container-single-post">{{ page.body|richtext }}</div>
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2313717454304156" data-ad-slot="4406967377" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2313717454304156"
+           data-ad-slot="4406967377"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
     </div>
   </div>
 {% endblock %}
