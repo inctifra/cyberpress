@@ -1,6 +1,10 @@
 import { setupAjaxForm } from "../libs/formHandler";
 import { showToast } from "../libs/toast";
 import { Modal } from "bootstrap";
+import { toast, ToastProvider } from "../libs/toast/toast";
+
+ToastProvider("top-right");
+
 
 setupAjaxForm("#fileAccessForm", {
   onSuccess: (data) => {
@@ -24,9 +28,6 @@ setupAjaxForm("#fileAccessForm", {
 
   onError: (err) => {
     console.error("Access form error:", err);
-    showToast({
-      message: "Something went wrong. Try again.",
-      type: "error",
-    });
+    toast.error("Access failed", "Something went wrong. Try again.")
   },
 });

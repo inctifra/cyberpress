@@ -1,7 +1,9 @@
 import { setupAjaxForm } from "../libs/formHandler";
-import { showToast } from "../libs/toast";
 import { createDropzone } from "../libs/createDropzone";
 import { showPasskeyAlert } from "../libs/passkeyAlert";
+import { toast, ToastProvider } from "../libs/toast/toast";
+
+ToastProvider("top-right");
 
 export function initUploadForm() {
   const dropzoneElement = document.querySelector("#fileDropzone");
@@ -19,10 +21,8 @@ export function initUploadForm() {
   setupAjaxForm("#uploadForm", {
     modifyFormData: (formData, form) => {
       if (dropzone.files.length === 0) {
-        showToast({
-          message: "Please select at least one file.",
-          type: "error",
-        });
+        const message = "Please select at least one file.";
+        toast.error("Upload failure", message)
         return false;
       }
 
@@ -37,22 +37,17 @@ export function initUploadForm() {
 
     onSuccess: (data) => {
       const { message,access_code } = data;
-      showToast({
-        message: message || "Files uploaded successfully!",
-        type: "success",
-      });
+      const _message =  message || "Files uploaded successfully!";
+      toast.error("Upload success", _message)
       setTimeout(() => {
-      dropzone.removeAllFiles(true);
+        dropzone.removeAllFiles(true);
       }, 2000);
       showPasskeyAlert(access_code);
     },
-
+    
     onError: (err, values, form, cleanedError) => {
-        const errorMessage = cleanedError?.message || cleanedError?.error || cleanedError?.detail || "An error occurred while uploading files.";
-        showToast({
-          message: errorMessage,
-          type: "error",
-        });
+      const errorMessage = cleanedError?.message || cleanedError?.error || cleanedError?.detail || "An error occurred while uploading files.";
+      toast.error("Upload error", errorMessage)
       console.error("Upload error:", cleanedError?.message || cleanedError?.detail || "Unknown error");
     },
   });
