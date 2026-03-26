@@ -1,0 +1,23 @@
+#!/bin/sh
+# entrypoint
+
+set -e
+
+# Wait for database to be ready
+echo "Waiting for database..."
+wait-for-it db:5432 --timeout=30 --strict -- echo "Database ready!"
+
+# Run migrations
+echo "Running migrations..."
+python manage.py migrate
+
+# Collect static files
+echo "Collecting static files..."
+python manage.py collectstatic --noinput
+
+# Start Django
+echo "Starting Django server..."
+exec gunicorn config.wsgi:application \
+    --bind 0.0.0.0:8000 \
+    --workers 3
+

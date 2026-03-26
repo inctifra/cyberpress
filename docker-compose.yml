@@ -1,0 +1,55 @@
+services:
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: django
+    command: /entrypoint
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    env_file:
+      - ./.env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - .:/app
+    develop:
+      watch:
+        - action: rebuild
+          path: .
+  # celeryworker:
+  #   build:
+  #     context: ./compose/celery
+  #     dockerfile: Dockerfile.worker
+  #   container_name: celeryworker
+  #   depends_on:
+  #     - django
+  #     - redis
+
+  # celerybeat:
+  #   build:
+  #     context: ./compose/celery
+  #     dockerfile: Dockerfile.beat
+  #   container_name: celerybeat
+  #   depends_on:
+  #     - django
+  #     - redis
+
+  # flower:
+  #   build:
+  #     context: ./compose/celery
+  #     dockerfile: Dockerfile.flower
+  #   container_name: flower
+  #   ports:
+  #     - "5555:5555"
+  #   depends_on:
+  #     - django
+  #     - redis
+
+  redis:
+    image: redis:6
+    container_name: redis
+    ports:
+      - "6379:6379"

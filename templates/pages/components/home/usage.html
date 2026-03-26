@@ -1,11 +1,11 @@
 {% load webpack_static from webpack_loader %}
 
 <div class="d-flex flex-column align-items-center gap-5">
-  <h3 class="text-center" style="max-width: 900px">
+  <h3 class="text-center" style="max-width: 900px" data-aos="fade-up" data-aos-delay="100">
     Upload your document once and
-    <span class="text-accent">print it anywhere</span>
+    <span class="text-accent" data-aos="fade-right" data-aos-delay="200">print it anywhere</span>
     using a secure passkey.
-    <span class="customer-container">
+    <span class="customer-container" data-aos="fade-left" data-aos-delay="300">
       <div class="customer-item">
         <img src="{% webpack_static 'images/image/img-16.png' %}"
              class="img-fluid"
@@ -21,27 +21,33 @@
       </div>
     </span>
   </h3>
-  <div class="d-flex flex-wrap gap-3 justify-content-center"
-       style="max-width: 800px">
-    <div class="title">
-      <i class="rtmicon rtmicon-check icon-box"></i>
-      <h6>Upload From Any Device</h6>
-    </div>
-    <div class="title">
-      <i class="rtmicon rtmicon-check icon-box"></i>
-      <h6>Instant Secure Passkey</h6>
-    </div>
-    <div class="title">
-      <i class="rtmicon rtmicon-check icon-box"></i>
-      <h6>No Email Required</h6>
-    </div>
-    <div class="title">
-      <i class="rtmicon rtmicon-check icon-box"></i>
-      <h6>No USB Needed</h6>
-    </div>
-    <div class="title">
-      <i class="rtmicon rtmicon-check icon-box"></i>
-      <h6>Fast Printing at any CyberCafe</h6>
-    </div>
+<div class="d-flex flex-wrap gap-3 justify-content-center"
+     style="max-width: 800px">
+
+  <div class="title" data-aos="fade-up" data-aos-delay="0">
+    <i class="rtmicon rtmicon-check icon-box"></i>
+    <h6>Upload From Any Device</h6>
   </div>
+
+  <div class="title" data-aos="fade-up" data-aos-delay="100">
+    <i class="rtmicon rtmicon-check icon-box"></i>
+    <h6>Instant Secure Passkey</h6>
+  </div>
+
+  <div class="title" data-aos="fade-up" data-aos-delay="200">
+    <i class="rtmicon rtmicon-check icon-box"></i>
+    <h6>No Email Required</h6>
+  </div>
+
+  <div class="title" data-aos="fade-up" data-aos-delay="300">
+    <i class="rtmicon rtmicon-check icon-box"></i>
+    <h6>No USB Needed</h6>
+  </div>
+
+  <div class="title" data-aos="fade-up" data-aos-delay="400">
+    <i class="rtmicon rtmicon-check icon-box"></i>
+    <h6>Fast Printing at any CyberCafe</h6>
+  </div>
+
+</div>
 </div>

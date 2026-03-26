@@ -1,17 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import "goey-toast/styles.css";
-import { gooeyToast, GooeyToaster } from "goey-toast";
 import "../sass/project.scss";
 import $ from "jquery";
 
-// Render toaster once
-const container = document.getElementById("toast-root");
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-if (container) {
-  const root = ReactDOM.createRoot(container);
-  root.render(<GooeyToaster position="top-left" />);
-}
+AOS.init({ duration: 800,
+  easing: "ease-in-out",
+  once: true,
+  offset: 100,    });
+
+
 
 $(function () {
   const $toggleBtn = $("#toggleAccessPasskey");
@@ -29,9 +28,4 @@ $(function () {
       );
     });
   }
-
-  // Now this will work
-  gooeyToast.success("Changes saved", {
-    description: "Your changes have been saved and synced successfully.",
-  });
 });
