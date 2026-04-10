@@ -38,7 +38,7 @@ export function initUploadForm() {
     onSuccess: (data) => {
       const { message,access_code } = data;
       const _message =  message || "Files uploaded successfully!";
-      toast.error("Upload success", _message)
+      toast.success("Upload success", _message)
       setTimeout(() => {
         dropzone.removeAllFiles(true);
       }, 2000);
@@ -52,6 +52,3 @@ export function initUploadForm() {
     },
   });
 }
-
-// a58bb3
-// 8c2f40
