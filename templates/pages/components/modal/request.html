@@ -1,0 +1,21 @@
+<div class="modal fade dark-modal" id="requestPrintModal">
+  <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-0">
+
+      <!-- HEADER -->
+      <div class="modal-header border-secondary">
+        <div>
+          <h4 class="fw-bold mb-0">Send Print Request</h4>
+          <small class="text-light opacity-75">Choose a cybercafe and send instructions</small>
+        </div>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body" data-temp-url="{% url 'partials:request_print_form_view' %}">
+       
+      </div>
+
+    </div>
+  </div>
+</div>

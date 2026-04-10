@@ -100,6 +100,7 @@ LOCAL_APPS = [
     "apps.uploads",
     "apps.news",
     "apps.feeds",
+    "apps.api",
 ]
 
 
@@ -117,7 +118,6 @@ WAGTAIL_APPS = [
     "wagtail",
     "modelcluster",
     "taggit",
-    
     "wagtailmetadata",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -436,8 +436,8 @@ WEBPACK_LOADER = {
         "IGNORE": [r".+\.hot-update.js", r".+\.map"],
     },
 }
-# Your stuff...
-# ------------------------------------------------------------------------------
+
+
 
 CORS_ALLOW_ALL_ORIGINS = env.bool("CORS_ALLOW_ALL_ORIGINS", default=True)
 CORS_ALLOW_CREDENTIALS = True

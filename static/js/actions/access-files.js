@@ -1,9 +1,7 @@
 import { setupAjaxForm } from "../libs/formHandler";
-import { showToast } from "../libs/toast";
 import { Modal } from "bootstrap";
-import { toast, ToastProvider } from "../libs/toast/toast";
+import { toast } from "../libs/toast/toast";
 
-ToastProvider("top-right");
 
 
 setupAjaxForm("#fileAccessForm", {

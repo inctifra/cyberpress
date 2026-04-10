@@ -6,6 +6,7 @@ $(async () => {
     import("../actions/upload-files"),
     import("../actions/access-files"),
     import("../actions/delete-files"),
+    import("../actions/request-print"),
     import("../libs/axios"),
     import("../libs/formHandler"),
     import("../libs/toast"),

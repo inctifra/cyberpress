@@ -80,6 +80,8 @@ dependencies = [
     "django-widget-tweaks>=1.5.1",
     "wagtail>=7.3",
     "wagtail-metadata>=5.0.0",
+    "channels>=4.3.2",
+    "channels-redis>=4.3.0",
 ]
 
 # ==== pytest ====

@@ -1,9 +1,13 @@
+import uuid
+
 from django.shortcuts import render
 from apps.uploads.forms import AccessSessionForm, PrintSessionForm
 from apps.uploads.models import File, PrintSession
 from django.views.generic import TemplateView, View
 from django.http import HttpRequest, JsonResponse
 from django.db import IntegrityError
+
+from config.redis.jobs import FilePayload, publish_job, JobPayload
 
 
 def home(request):
@@ -77,6 +81,14 @@ class AccessView(TemplateView):
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
+        publish_job(
+            JobPayload(
+                id=str(uuid.uuid4()),
+                cafe_id=123,
+                file=FilePayload(url="http://localhost:8000/media/files/kwasa.jpg"),
+                status="pending",
+            ),
+        )
         if form.is_valid():
             access_code = form.cleaned_data.get("access_code")
             session = PrintSession.objects.filter(access_code=access_code).first()
@@ -137,11 +149,12 @@ delete_files_view = DeleteFilesView.as_view()
 class ComingSoonView(TemplateView):
     template_name = "pages/soon.html"
 
+
 coming_soon_view = ComingSoonView.as_view()
+
+
 class PricingView(TemplateView):
     template_name = "pages/pricing.html"
 
 
 pricing_view = PricingView.as_view()
-
-

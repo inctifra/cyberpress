@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from apps.core import views
 
 
@@ -10,4 +10,5 @@ urlpatterns = [
     path("delete-files/", views.delete_files_view, name="delete_files"),
     path("coming-soon/", views.coming_soon_view, name="coming_soon"),
     path("pricing/", views.pricing_view, name="pricing"),
+    path("partials/", include("apps.core.partials.urls", namespace="partials")),
 ]

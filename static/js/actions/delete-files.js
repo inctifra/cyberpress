@@ -1,7 +1,5 @@
 import { setupAjaxForm } from "../libs/formHandler";
-import { toast, ToastProvider } from "../libs/toast/toast";
-
-ToastProvider("top-right");
+import { toast } from "../libs/toast/toast";
 
 
 setupAjaxForm("#fileDeleteForm", {

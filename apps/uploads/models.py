@@ -1,40 +1,10 @@
-import secrets
 import uuid
-from datetime import timedelta
 
-import bcrypt
-from django.contrib.auth.hashers import check_password
-from django.contrib.auth.hashers import make_password
 from django.db import models
 from django.utils import timezone
 
-# example password
-password = "passwordabc"
-
-# converting password to array of bytes
-bytes = password.encode("utf-8")
-salt = bcrypt.gensalt()
-hash = bcrypt.hashpw(bytes, salt)
-userPassword = "password000"
-userBytes = userPassword.encode("utf-8")
-
-result = bcrypt.checkpw(userBytes, hash)
-
-
-def default_expiry():
-    return timezone.now() + timedelta(hours=24)
-
-
-def generate_session_code():
-    return secrets.token_hex(3)
-
-
-def _ensure_passkey_encode_hash(passkey: str) -> str:
-    return bcrypt.hashpw(passkey.encode("utf-8"), bcrypt.gensalt())
-
-
-def _check_passkey(passkey: str, passkey_hash: str) -> bool:
-    return bcrypt.checkpw(passkey.encode("utf-8"), passkey_hash.encode("utf-8"))
+from apps.uploads.helpers import default_expiry
+from apps.uploads.helpers import generate_session_code
 
 
 class PrintSession(models.Model):

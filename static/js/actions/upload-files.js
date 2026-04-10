@@ -1,9 +1,8 @@
 import { setupAjaxForm } from "../libs/formHandler";
 import { createDropzone } from "../libs/createDropzone";
 import { showPasskeyAlert } from "../libs/passkeyAlert";
-import { toast, ToastProvider } from "../libs/toast/toast";
+import { toast } from "../libs/toast/toast";
 
-ToastProvider("top-right");
 
 export function initUploadForm() {
   const dropzoneElement = document.querySelector("#fileDropzone");
