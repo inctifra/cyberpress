@@ -1,7 +1,6 @@
 <div class="modal fade dark-modal" id="requestPrintModal">
   <div class="modal-dialog modal-fullscreen modal-dialog-centered">
     <div class="modal-content bg-dark text-light border-0">
-
       <!-- HEADER -->
       <div class="modal-header border-secondary">
         <div>
@@ -13,9 +12,55 @@
 
       <!-- BODY -->
       <div class="modal-body" data-temp-url="{% url 'partials:request_print_form_view' %}">
-       
+        {% comment %}Injected from the backend view render{% endcomment %}
       </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal fade dark-modal modify-request" id="filesModal">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content rounded-4 border-0">
+      <div class="modal-header border-0">
+        <div>
+          <h6 class="modal-title fw-bold d-flex align-items-center gap-2 mb-1"><i class="bi bi-pencil-square text-info"></i> Modify Order</h6>
+          <p class="text-truncate small text-warning mb-0" id="editOrderId">#PRNT-8492</p>
+        </div>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-info bg-info bg-opacity-10 border border-info border-opacity-25 text-info small p-3 mb-4 d-flex gap-2">
+          <i class="bi bi-info-circle-fill mt-1"></i>
+          <div>Changes submitted here will instantly update the cybercafe's queue. Modifying page counts may adjust your final balance upon collection.</div>
+        </div>
+
+        <h6 class="fw-bold mb-3 small text-muted text-uppercase">Page Adjustments</h6>
+        <div class="p-3 rounded mb-4 modify-card">
+          <label class="form-label small text-white">Specific Pages to Print (Optional)</label>
+          <input type="text" class="form-control pro-input form-control-sm mb-2" placeholder="e.g., 1-5, 8, 11-13" />
+          <small class="text-muted" style="font-size: 0.75rem;">Leave blank to print the entire document.</small>
+        </div>
+
+        <h6 class="fw-bold mb-3 small text-muted text-uppercase">Order Status Actions</h6>
+        <div class="p-3 rounded mb-4 modify-card">
+          <div class="form-check form-switch mb-3 d-flex align-items-center gap-3">
+            <input class="form-check-input mt-0" type="checkbox" role="switch" id="togglePrintLater" style="width: 2.5rem; height: 1.2rem;" />
+            <label class="form-check-label small fw-medium" for="togglePrintLater">
+              Hold & Print Later<br />
+              <span class="text-muted" style="font-size: 0.75rem;">Keep files in queue but don't print until I arrive.</span>
+            </label>
+          </div>
+          <hr class="border-secondary border-opacity-25" />
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <div>
+              <span class="d-block small fw-bold text-danger">Cancel Order</span>
+              <span class="text-muted" style="font-size: 0.75rem;">This action cannot be undone.</span>
+            </div>
+            <button class="btn btn-outline-danger btn-sm px-3 py-2">Cancel Request</button>
+          </div>
+        </div>
+        <button class="btn bg-accent-color-3  text-white py-2 w-100 py-2 fs-6"><i class="bi bi-cloud-arrow-up-fill me-2"></i> Submit Changes</button>
+      </div>
     </div>
   </div>
 </div>

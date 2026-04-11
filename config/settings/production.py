@@ -228,3 +228,6 @@ try:
 except ImportError as e:
     msg = "Production wagtail settings not found!"
     raise ImportError(msg) from e
+
+
+PRINT_SESSION_MODEL = "uploads.PrintSession"

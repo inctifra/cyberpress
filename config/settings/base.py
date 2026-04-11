@@ -92,6 +92,8 @@ THIRD_PARTY_APPS = [
     "webpack_loader",
     "django_browser_reload",
     "widget_tweaks",
+    # Shared cybercafe models
+    "cyberpress_cybercafe",
 ]
 
 LOCAL_APPS = [
@@ -436,7 +438,6 @@ WEBPACK_LOADER = {
         "IGNORE": [r".+\.hot-update.js", r".+\.map"],
     },
 }
-
 
 
 CORS_ALLOW_ALL_ORIGINS = env.bool("CORS_ALLOW_ALL_ORIGINS", default=True)

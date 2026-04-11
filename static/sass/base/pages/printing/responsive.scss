@@ -1,0 +1,20 @@
+@media (max-width: 992px) {
+
+    .layout-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100vh;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        height: auto;
+    }
+
+    .layout-wrapper--content {
+        overflow-y: auto;
+    }
+}

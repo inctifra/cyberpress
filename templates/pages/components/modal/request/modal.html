@@ -1,0 +1,201 @@
+<div class="modal fade" id="quickModifyModal" tabindex="-1" style="z-index: 1068;">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content mini-modal-content">
+      <div class="modal-header border-bottom border-secondary border-opacity-25 pb-2">
+        <h6 class="modal-title fw-bold d-flex align-items-center gap-2 small"><i class="bi bi-pencil-square text-warning"></i> Quick Edit</h6>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" style="font-size: 0.7rem;"></button>
+      </div>
+      <div class="modal-body p-3">
+        <p class="text-truncate small text-light fw-medium mb-3 pb-2 border-bottom border-secondary border-opacity-25" id="quickModifyFileName">document_name.pdf</p>
+        <input type="hidden" id="quickModifyFileId" />
+
+        <label class="form-label small text-muted mb-1" style="font-size: 0.8rem;">Copies</label>
+        <div class="input-group input-group-sm mb-3">
+          <button class="btn btn-pro-outline" type="button" onclick="quickAdjustCopies(-1)">-</button>
+          <input type="number" class="form-control pro-input text-center" id="quickModifyCopies" value="1" min="1" />
+          <button class="btn btn-pro-outline" type="button" onclick="quickAdjustCopies(1)">+</button>
+        </div>
+
+        <label class="form-label small text-muted mb-1" style="font-size: 0.8rem;">Color Mode</label>
+        <select class="form-select form-select-sm pro-input mb-4" id="quickModifyColor">
+          <option value="bw">Black &amp; White</option>
+          <option value="color">Full Color</option>
+        </select>
+
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-danger btn-sm w-50" onclick="quickRemoveFile()"><i class="bi bi-trash"></i> Remove</button>
+          <button class="btn btn-pro-primary btn-sm w-50 py-1" onclick="saveQuickModify()">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="deliveryAgreementModal" tabindex="-1" style="z-index: 1065;" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content mini-modal-content text-center p-4">
+      <div class="mb-3">
+        <i class="bi bi-bicycle text-info" style="font-size: 3.5rem;"></i>
+      </div>
+      <h5 class="fw-bold text-white mb-2">Delivery Service</h5>
+      <p class="text-muted small mb-3">You have opted for document delivery.</p>
+      <div class="p-3 mb-4 rounded text-start" style="background-color: var(--bg-deep); border: 1px solid var(--border-color);">
+        <div class="d-flex justify-content-between mb-2">
+          <span class="text-muted small">Delivery Fee:</span>
+          <strong class="text-warning">KES 50</strong>
+        </div>
+        <hr class="border-secondary border-opacity-25 my-2" />
+        <small class="text-muted d-block" style="font-size: 0.75rem;"><i class="bi bi-info-circle text-info me-1"></i> Ensure you pay the full total <b>before</b> the parcel is handed to you by the rider.</small>
+      </div>
+      <button class="btn btn-pro-primary w-100 mb-2" onclick="confirmDeliveryOrder()">I Agree, Place Order</button>
+      <button class="btn btn-pro-outline w-100" data-bs-dismiss="modal">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editOrderModal" tabindex="-1" style="z-index: 1065;" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content mini-modal-content">
+      <div class="modal-header border-bottom border-secondary border-opacity-25 pb-3 align-items-start">
+        <div>
+          <h6 class="modal-title fw-bold d-flex align-items-center gap-2 mb-1"><i class="bi bi-pencil-square text-info"></i> Modify Order</h6>
+          <p class="text-truncate small text-warning mb-0" id="editOrderId">#PRNT-8492</p>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="alert alert-info bg-info bg-opacity-10 border border-info border-opacity-25 text-info small p-3 mb-4 d-flex gap-2">
+          <i class="bi bi-info-circle-fill mt-1"></i>
+          <div>Changes submitted here will instantly update the cybercafe's queue. Modifying page counts may adjust your final balance upon collection.</div>
+        </div>
+        <h6 class="fw-bold mb-3 small text-muted text-uppercase">Page Adjustments</h6>
+        <div class="p-3 rounded mb-4" style="background-color: var(--bg-deep); border: 1px solid var(--border-color);">
+          <label class="form-label small text-white">Specific Pages to Print (Optional)</label>
+          <input type="text" class="form-control pro-input form-control-sm mb-2" placeholder="e.g., 1-5, 8, 11-13" />
+          <small class="text-muted" style="font-size: 0.75rem;">Leave blank to print the entire document.</small>
+        </div>
+        <h6 class="fw-bold mb-3 small text-muted text-uppercase">Order Status Actions</h6>
+        <div class="p-3 rounded mb-4" style="background-color: var(--bg-deep); border: 1px solid var(--border-color);">
+          <div class="form-check form-switch mb-3 d-flex align-items-center gap-3">
+            <input class="form-check-input mt-0" type="checkbox" role="switch" id="togglePrintLater" style="width: 2.5rem; height: 1.2rem;" />
+            <label class="form-check-label small fw-medium" for="togglePrintLater">
+              Hold &amp; Print Later<br />
+              <span class="text-muted" style="font-size: 0.75rem;">Keep files in queue but don't print until I arrive.</span>
+            </label>
+          </div>
+          <hr class="border-secondary border-opacity-25" />
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <div>
+              <span class="d-block small fw-bold text-danger">Cancel Order</span>
+              <span class="text-muted" style="font-size: 0.75rem;">This action cannot be undone.</span>
+            </div>
+            <button class="btn btn-outline-danger btn-sm px-3" onclick="confirmCancelOrder()">Cancel Request</button>
+          </div>
+        </div>
+        <button class="btn btn-pro-primary w-100 py-2 fs-6" onclick="submitOrderChanges()"><i class="bi bi-cloud-arrow-up-fill me-2"></i> Submit Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fileSettingsModal" tabindex="-1" style="z-index: 1060;">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content mini-modal-content">
+      <div class="modal-header border-bottom border-secondary border-opacity-25 pb-3 align-items-start">
+        <div>
+          <h6 class="modal-title fw-bold d-flex align-items-center gap-2 mb-1"><i class="bi bi-sliders text-success"></i> Document Configuration</h6>
+          <p class="text-truncate small text-info mb-0" id="settingsFileName" style="max-width: 350px;">filename.pdf</p>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4">
+        <input type="hidden" id="settingFileId" />
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <label class="form-label small text-muted"><i class="bi bi-palette me-1"></i>Color Mode</label>
+            <select class="form-select pro-input" id="settingColor">
+              <option value="bw">Black &amp; White</option>
+              <option value="color">Full Color</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small text-muted"><i class="bi bi-files me-1"></i>Copies</label>
+            <div class="input-group">
+              <button class="btn btn-pro-outline" type="button" onclick="adjustCopies(-1)">-</button>
+              <input type="number" class="form-control pro-input text-center" id="settingCopies" value="1" min="1" />
+              <button class="btn btn-pro-outline" type="button" onclick="adjustCopies(1)">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <label class="form-label small text-muted"><i class="bi bi-grid me-1"></i>Pages per Sheet</label>
+            <select class="form-select pro-input" id="settingPagesPerSheet">
+              <option value="1">1 Page (Default)</option>
+              <option value="2">2 Pages</option>
+              <option value="4">4 Pages</option>
+              <option value="6">6 Pages</option>
+              <option value="9">9 Pages</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small text-muted"><i class="bi bi-star me-1"></i>Print Quality</label>
+            <select class="form-select pro-input" id="settingQuality">
+              <option value="normal">Normal (Standard)</option>
+              <option value="draft">Draft (Ink Saver)</option>
+              <option value="high">High (Best Quality)</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <label class="form-label small text-muted"><i class="bi bi-aspect-ratio me-1"></i>Paper Size</label>
+            <select class="form-select pro-input" id="settingPaperSize">
+              <option value="a4">A4 (Standard)</option>
+              <option value="a3">A3 (Large)</option>
+              <option value="letter">US Letter</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label small text-muted"><i class="bi bi-phone-landscape me-1"></i>Orientation</label>
+            <select class="form-select pro-input" id="settingOrientation">
+              <option value="portrait">Portrait</option>
+              <option value="landscape">Landscape</option>
+            </select>
+          </div>
+        </div>
+        <div class="p-3 rounded mb-4" style="background-color: var(--bg-deep); border: 1px solid var(--border-color);">
+          <div class="form-check pro-check mb-2">
+            <input class="form-check-input" type="checkbox" id="settingDoubleSided" />
+            <label class="form-check-label small fw-medium" for="settingDoubleSided">Print Double Sided (Duplex)</label>
+          </div>
+          <div class="form-check pro-check">
+            <input class="form-check-input" type="checkbox" id="settingCollate" checked="" />
+            <label class="form-check-label small fw-medium" for="settingCollate">Collate Pages (1,2,3... 1,2,3)</label>
+          </div>
+        </div>
+        <button class="btn btn-pro-primary w-100 py-2 fs-6" onclick="appState.saveFileSettings()"><i class="bi bi-check2-circle me-2"></i>Apply Configuration</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" style="z-index: 1070;" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content mini-modal-content text-center p-5">
+      <div id="loadingState">
+        <div class="spinner-border text-success mb-3" style="width: 3rem; height: 3rem;" role="status"></div>
+        <h5 class="fw-bold">Encrypting &amp; Sending...</h5>
+        <p class="text-muted small mb-0">Connecting to secure print node.</p>
+      </div>
+      <div id="successState" class="d-none">
+        <i class="bi bi-check-circle-fill text-success mb-3 d-block" style="font-size: 4rem;"></i>
+        <h4 class="fw-bold text-white">Order Confirmed</h4>
+        <p class="text-muted small mb-4">
+          Code: <strong class="text-success">#PRNT-8492</strong><br />You will be notified when your order is processed.
+        </p>
+        <button class="btn btn-pro-outline w-100" onclick="window.location.reload()">Return Home</button>
+      </div>
+    </div>
+  </div>
+</div>

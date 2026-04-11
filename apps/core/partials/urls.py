@@ -8,5 +8,10 @@ urlpatterns = [
         "request-print-form-view/",
         views.request_print_partial_form_view,
         name="request_print_form_view",
-    )
+    ),
+    path(
+        "search-cafe-view/",
+        views.search_cafe_partials_view,
+        name="search_cafe_view",
+    ),
 ]

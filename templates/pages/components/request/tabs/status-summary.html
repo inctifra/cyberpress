@@ -1,0 +1,55 @@
+<div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom border-secondary border-opacity-25">
+  <div>
+    <h4 class="fw-bold mb-1">Print Queues &amp; History</h4>
+    <p class="text-muted small mb-0">Track active orders or modify them within 3 minutes of placement.</p>
+  </div>
+  <button class="btn btn-pro-outline btn-sm"><i class="bi bi-arrow-clockwise me-2"></i>Refresh Status</button>
+</div>
+
+<div class="file-item align-items-start p-4 mb-4 file-item-gradient">
+  <div class="d-flex flex-md-row flex-column gap-md-3 w-100">
+    <div class="file-icon-box text-success" style="width: 60px; height: 60px;">
+      <i class="bi bi-receipt-cutoff fs-2"></i>
+    </div>
+
+    <div class="flex-grow-1">
+      <div class="d-flex justify-content-between mb-1">
+        <h5 class="fw-bold mb-0">Order #PRNT-8492</h5>
+        <span class="badge bg-success bg-opacity-25 text-success border border-success px-2 py-1">In Queue</span>
+      </div>
+      <p class="text-muted small mb-3">Nairobi CBD Print Hub • 2 Documents • KES 150</p>
+
+      <div class="p-3 rounded" style="background-color: var(--bg-deep); border: 1px dashed var(--accent-primary);">
+        <div class="d-flex justify-content-between mb-2">
+          <small class="text-info fw-bold"><i class="bi bi-unlock-fill me-1"></i> Edit Window Open</small>
+          <small class="text-muted font-monospace" id="timerDisplay">02:14 remaining</small>
+        </div>
+        <div class="progress" style="height: 6px; background-color: #31323f;">
+          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 35%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ms-md-4 d-flex flex-column gap-2 border-md-start border-secondary border-opacity-25 ps-md-4 pt-2">
+      <button class="btn btn-pro-primary btn-sm py-2 px-4 modify-request"><i class="bi bi-pencil-square me-2"></i>Modify</button>
+      <button class="btn btn-pro-outline btn-sm py-2 text-muted" onclick="alert('Receipt downloading...')"><i class="bi bi-download me-2"></i>Receipt</button>
+    </div>
+  </div>
+</div>
+
+<h5 class="fw-bold mb-3 mt-5">Past Orders</h5>
+
+<div class="file-item align-items-start p-3 opacity-75">
+  <div class="d-flex gap-3 w-100">
+    <div class="file-icon-box text-muted">
+      <i class="bi bi-check2-all"></i>
+    </div>
+    <div class="flex-grow-1">
+      <div class="d-flex justify-content-between mb-1">
+        <h6 class="fw-bold mb-0 text-muted">Order #PRNT-7710</h6>
+        <span class="badge bg-secondary">Completed</span>
+      </div>
+      <p class="text-muted small mb-0">Juja Campus Cyber • Printed Today at 10:30 AM</p>
+    </div>
+  </div>
+</div>

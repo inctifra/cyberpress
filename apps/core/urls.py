@@ -10,5 +10,6 @@ urlpatterns = [
     path("delete-files/", views.delete_files_view, name="delete_files"),
     path("coming-soon/", views.coming_soon_view, name="coming_soon"),
     path("pricing/", views.pricing_view, name="pricing"),
+    path("request-printing/", views.request_printing_view, name="request-printing"),
     path("partials/", include("apps.core.partials.urls", namespace="partials")),
 ]

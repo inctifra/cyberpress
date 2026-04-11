@@ -18,6 +18,7 @@ from wagtail.documents import urls as wagtaildocs_urls
 urlpatterns = [
     path("", include("apps.urls")),
     path(settings.ADMIN_URL, _admin_site.urls),
+    path("superadmin/", admin.site.urls),
     # User management
     path("users/", include("ifidel.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
@@ -80,4 +81,3 @@ if settings.DEBUG:
             path("__debug__/", include(debug_toolbar.urls)),
             *urlpatterns,
         ]
-

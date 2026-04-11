@@ -3,11 +3,12 @@ import uuid
 from django.shortcuts import render
 from apps.uploads.forms import AccessSessionForm, PrintSessionForm
 from apps.uploads.models import File, PrintSession
-from django.views.generic import TemplateView, View
+from django.views.generic import TemplateView, View, ListView
 from django.http import HttpRequest, JsonResponse
 from django.db import IntegrityError
 
 from config.redis.jobs import FilePayload, publish_job, JobPayload
+from cyberpress_cybercafe.models import CyberCafe
 
 
 def home(request):
@@ -144,6 +145,14 @@ class DeleteFilesView(View):
 
 
 delete_files_view = DeleteFilesView.as_view()
+
+class RequestPrintingView(ListView):
+    template_name = "pages/request.html"
+    queryset = CyberCafe.objects.filter(is_active=True)
+    context_object_name = "cafes"
+
+
+request_printing_view = RequestPrintingView.as_view()
 
 
 class ComingSoonView(TemplateView):

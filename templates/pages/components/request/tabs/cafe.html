@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-between align-items-end mb-4">
+  <div>
+    <h4 class="fw-bold mb-1">Nearby Print Hubs</h4>
+    <p class="text-muted mb-0">Select a destination for your documents</p>
+  </div>
+  <div class="d-flex gap-2">
+    <input id="search-cafe-input" type="text" class="form-control pro-input form-control-sm" placeholder="Search locations..." data-action-href="{% url 'partials:search_cafe_view' %}" />
+    <button type="button" id="search-cafe-button" class="btn btn-pro-outline btn-sm"><i class="bi bi-filter"></i></button>
+  </div>
+</div>
+
+<div class="cyber-grid py-2" id="cyberGridContainer">
+  {% include 'pages/components/request/partials/cafe.html' %}
+</div>
+
+{% if cafes %}
+  <div class="d-flex justify-content-end mt-5">
+    <button class="btn view-map-action px-5 py-3 navigationForward">Continue to Files <i class="bi bi-arrow-right ms-2"></i></button>
+  </div>
+{% endif %}

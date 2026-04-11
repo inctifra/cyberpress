@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+
+{% block css %}
+  {{ block.super }}
+  {% render_bundle 'printingRequest' 'css' %}
+{% endblock %}
+
+{% block javascript %}
+  {{ block.super }}
+  {% render_bundle 'printingRequest' 'js' attrs='defer' %}
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+{% block main_style %}
+  margin-top: 1rem!important;
+{% endblock %}
+{% block content %}
+  {% include 'pages/components/request/index.html' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'pages/components/modal/request.html' %}
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
