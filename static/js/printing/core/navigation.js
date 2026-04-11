@@ -2,6 +2,7 @@
 import $ from "jquery";
 import { initializeModalTrigger } from "../../libs/_modalTrigger";
 import { getState, updateState } from "../state";
+import {  toast } from "../../libs/toast/toast";
 
 $(function () {
   const $backBtn = $(".navigationBtnBack");
@@ -40,7 +41,7 @@ $(function () {
     const state = getState();
 
     if (step === 2 && !state.cafeId) {
-      alert("Please select a Cybercafe first.");
+      toast.error("Cafe required", "Please select a Cybercafe first.")
       return;
     }
 
@@ -59,8 +60,7 @@ $(function () {
 
     $("#headerStatus").text(headerTexts[step - 1] || "");
 
-    const updated = updateState({ currentStep: step });
-    console.log("Step updated:", updated);
+    updateState({ currentStep: step });
   }
 
   // ---------------------------

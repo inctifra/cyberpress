@@ -3,7 +3,6 @@ import { createDropzone } from "../libs/createDropzone";
 import { showPasskeyAlert } from "../libs/passkeyAlert";
 import { toast } from "../libs/toast/toast";
 
-
 export function initUploadForm() {
   const dropzoneElement = document.querySelector("#fileDropzone");
   if (!dropzoneElement) return;

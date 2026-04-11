@@ -1,7 +1,10 @@
 import "../../sass/base/styles.scss";
 import $ from "jquery";
+import { ToastProvider } from "../libs/toast/toast";
+
 
 $(async () => {
+  ToastProvider("top-right");
   const [{initUploadForm}] = await Promise.all([
     import("../actions/upload-files"),
     import("../actions/access-files"),
