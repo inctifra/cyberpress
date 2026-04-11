@@ -616,6 +616,7 @@ dependencies = [
     { name = "channels-redis" },
     { name = "coverage" },
     { name = "crispy-bootstrap5" },
+    { name = "cyberpress-cybercafe" },
     { name = "django" },
     { name = "django-allauth", extra = ["mfa"] },
     { name = "django-anymail" },
@@ -682,6 +683,7 @@ requires-dist = [
     { name = "channels-redis", specifier = ">=4.3.0" },
     { name = "coverage", specifier = "==7.9.2" },
     { name = "crispy-bootstrap5", specifier = "==2025.6" },
+    { name = "cyberpress-cybercafe", git = "https://github.com/inctifra/cyberpress-cybercafe-shared-module.git" },
     { name = "django", specifier = "==5.1.11" },
     { name = "django-allauth", extras = ["mfa"], specifier = "==65.10.0" },
     { name = "django-anymail", extras = ["mailgun"], specifier = "==13.0" },
@@ -738,6 +740,11 @@ dev = [
     { name = "djlint", specifier = ">=1.36.4" },
     { name = "rav", specifier = ">=0.1.1" },
 ]
+
+[[package]]
+name = "cyberpress-cybercafe"
+version = "0.1.1"
+source = { git = "https://github.com/inctifra/cyberpress-cybercafe-shared-module.git#fadc146e6585550527057b82056fdb30ff5fdff7" }
 
 [[package]]
 name = "decorator"

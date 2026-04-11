@@ -1,16 +1,14 @@
-import $ from 'jquery';
+import $ from "jquery";
+import "../base/pages/printingRequest";
 
-$(function(
+$(function () {
+  const init = async () => {
+    const [{}] = await Promise.all([
+      import("./actions/search"),
+      import("./cafes/select"),
+      import("./core/navigation"),
+    ]);
+  };
 
-){
-    const  init = async()=>{
-        const [{}] = await Promise.all([
-            import("../base/pages/printingRequest"),
-            import("./actions/search"),
-            import("./cafes/select"),
-            import("./core/navigation"),
-        ])
-    }
-
-    init();
-})
+  init();
+});

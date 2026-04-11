@@ -1,9 +1,12 @@
-<div class="container-fluid px-4">
+<div class="container-fluid px-md-4">
   <div class="pro-app-content">
     <div class="header-custom d-flex justify-content-between align-items-center">
       <div>
-        <h4 class="mb-1 fw-bold d-flex align-items-center gap-3"><i class="bi bi-layers text-success"></i> Remote Print Network</h4>
-        <p class="text-muted mb-0 small" id="headerStatus">Step 1: Locate a servicing cybercafe</p>
+        <h4 class="mb-1 fw-bold d-flex align-items-center gap-3">
+          <i class="bi bi-layers text-success"></i> 
+          <span class="d-none d-md-block">Remote Print Network</span>
+        </h4>
+        <p class="text-muted mb-0 small d-none d-md-block" id="headerStatus">Step 1: Locate a servicing cybercafe</p>
       </div>
       <a href="{% url 'home' %}" class="btn view-map-action px-3 py-2"><i class="bi bi-arrow-left ms-2"></i> Proceed home</a>
     </div>

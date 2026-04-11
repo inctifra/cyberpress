@@ -82,6 +82,7 @@ dependencies = [
     "wagtail-metadata>=5.0.0",
     "channels>=4.3.2",
     "channels-redis>=4.3.0",
+    "cyberpress-cybercafe",
 ]
 
 # ==== pytest ====
@@ -221,6 +222,9 @@ extend-unsafe-fixes = [
 
 [tool.ruff.lint.isort]
 force-single-line = true
+
+[tool.uv.sources]
+cyberpress-cybercafe = { git = "https://github.com/inctifra/cyberpress-cybercafe-shared-module.git" }
 
 [dependency-groups]
 dev = [
