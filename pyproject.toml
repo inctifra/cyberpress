@@ -224,5 +224,6 @@ force-single-line = true
 
 [dependency-groups]
 dev = [
+    "djlint>=1.36.4",
     "rav>=0.1.1",
 ]

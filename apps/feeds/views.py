@@ -1,6 +1,7 @@
-from django.utils.feedgenerator import Rss201rev2Feed
+from django.contrib.sitemaps import Sitemap
 from django.contrib.syndication.views import Feed
 from django.http import HttpResponse
+
 from apps.news.models import ArticlePage
 
 
@@ -27,7 +28,6 @@ class LatestArticlesFeed(Feed):
         return item.get_full_url()
 
 
-from django.contrib.sitemaps import Sitemap
 
 
 class ArticleSitemap(Sitemap):

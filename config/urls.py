@@ -5,15 +5,14 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import include
 from django.urls import path
 from django.views import defaults as default_views
-from django.views.generic import TemplateView
 from drf_spectacular.views import SpectacularAPIView
 from drf_spectacular.views import SpectacularSwaggerView
 from rest_framework.authtoken.views import obtain_auth_token
-from apps.core._admin import _admin_site
-from wagtail.admin import urls as wagtailadmin_urls
 from wagtail import urls as wagtail_urls
+from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
+from apps.core._admin import _admin_site
 
 urlpatterns = [
     path("", include("apps.urls")),
@@ -71,7 +70,8 @@ if settings.DEBUG:
         ),
         path("500/", default_views.server_error),
         path("__reload__/", include("django_browser_reload.urls")),
-        # Static file serving when using Gunicorn + Uvicorn for local web socket development
+        # Static file serving when using Gunicorn + Uvicorn for local web socket
+        # development
         *staticfiles_urlpatterns(),
     ]
     if "debug_toolbar" in settings.INSTALLED_APPS:

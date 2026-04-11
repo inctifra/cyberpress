@@ -1,6 +1,7 @@
-from django.utils import timezone
-from datetime import timedelta
 import secrets
+from datetime import timedelta
+
+from django.utils import timezone
 
 
 def default_expiry():

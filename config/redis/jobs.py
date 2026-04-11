@@ -1,8 +1,11 @@
 import json
-from .client import redis_client
-from dataclasses import dataclass, field
 import uuid
+from dataclasses import dataclass
+from dataclasses import field
+
 from faker import Faker
+
+from .client import redis_client
 
 faker = Faker()
 

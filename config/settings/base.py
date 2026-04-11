@@ -1,14 +1,12 @@
-# ruff: noqa: ERA001, E501
+# ruff: noqa: E501
 """Base settings to build other settings files upon."""
 
-from datetime import timedelta
 import ssl
+from datetime import timedelta
 from pathlib import Path
 
 import environ
 from django.utils.translation import gettext_lazy as _
-
-from config import settings
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # ifidel/

@@ -1,14 +1,21 @@
 import uuid
 
-from django.shortcuts import render
-from apps.uploads.forms import AccessSessionForm, PrintSessionForm
-from apps.uploads.models import File, PrintSession
-from django.views.generic import TemplateView, View, ListView
-from django.http import HttpRequest, JsonResponse
-from django.db import IntegrityError
-
-from config.redis.jobs import FilePayload, publish_job, JobPayload
 from cyberpress_cybercafe.models import CyberCafe
+from django.db import IntegrityError
+from django.http import HttpRequest
+from django.http import JsonResponse
+from django.shortcuts import render
+from django.views.generic import ListView
+from django.views.generic import TemplateView
+from django.views.generic import View
+
+from apps.uploads.forms import AccessSessionForm
+from apps.uploads.forms import PrintSessionForm
+from apps.uploads.models import File
+from apps.uploads.models import PrintSession
+from config.redis.jobs import FilePayload
+from config.redis.jobs import JobPayload
+from config.redis.jobs import publish_job
 
 
 def home(request):

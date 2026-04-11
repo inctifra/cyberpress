@@ -1,6 +1,8 @@
 from django.contrib import admin
-from .models import Category
+
 from apps.core._admin import _admin_site
+
+from .models import Category
 
 
 @admin.register(Category, site=_admin_site)

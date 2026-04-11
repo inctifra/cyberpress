@@ -26,7 +26,7 @@ class SocialAccountAdapter(DefaultSocialAccountAdapter):
     ) -> bool:
         return getattr(settings, "ACCOUNT_ALLOW_REGISTRATION", True)
 
-    def populate_user(
+    def populate_user(  # noqa: C901
         self,
         request: HttpRequest,
         sociallogin: SocialLogin,

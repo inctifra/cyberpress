@@ -1,11 +1,12 @@
 from django.db import models
-from wagtail.models import Page
-from wagtail.fields import RichTextField
-from wagtail.search import index
-from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel
 from modelcluster.contrib.taggit import ClusterTaggableManager
-from taggit.models import TaggedItemBase
 from modelcluster.fields import ParentalKey
+from taggit.models import TaggedItemBase
+from wagtail.admin.panels import FieldPanel
+from wagtail.admin.panels import MultiFieldPanel
+from wagtail.fields import RichTextField
+from wagtail.models import Page
+from wagtail.search import index
 from wagtailmetadata.models import MetadataPageMixin
 
 

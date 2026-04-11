@@ -1,4 +1,5 @@
 import redis
+
 from config.settings.base import env
 
 redis_client = redis.Redis(

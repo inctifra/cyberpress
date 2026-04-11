@@ -1,4 +1,3 @@
-# ruff: noqa: E501
 import logging
 
 import sentry_sdk
@@ -8,11 +7,15 @@ from sentry_sdk.integrations.logging import LoggingIntegration
 from sentry_sdk.integrations.redis import RedisIntegration
 
 from .base import *  # noqa: F403
+from .base import APP_NAME
+from .base import APPS_DIR
 from .base import DATABASES
+from .base import DEBUG
 from .base import INSTALLED_APPS
 from .base import REDIS_URL
 from .base import SPECTACULAR_SETTINGS
-from .base import env, DEBUG, Path, APPS_DIR, APP_NAME
+from .base import Path
+from .base import env
 
 # GENERAL
 # ------------------------------------------------------------------------------

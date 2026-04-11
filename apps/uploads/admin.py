@@ -1,7 +1,9 @@
 from django.contrib import admin
-from .models import PrintSession, File
 
 from apps.core._admin import _admin_site
+
+from .models import File
+from .models import PrintSession
 
 
 class FileInline(admin.TabularInline):

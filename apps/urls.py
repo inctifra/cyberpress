@@ -1,6 +1,10 @@
-from django.urls import path, include
 from django.contrib.sitemaps.views import sitemap
-from apps.feeds.views import ArticleSitemap, LatestArticlesFeed, robots_txt
+from django.urls import include
+from django.urls import path
+
+from apps.feeds.views import ArticleSitemap
+from apps.feeds.views import LatestArticlesFeed
+from apps.feeds.views import robots_txt
 
 sitemaps = {
     "articles": ArticleSitemap,

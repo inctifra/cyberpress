@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from .models import QRCode
 from ._admin import _admin_site
+from .models import QRCode
 
 
 @admin.register(QRCode, site=_admin_site)

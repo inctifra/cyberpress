@@ -669,6 +669,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "djlint" },
     { name = "rav" },
 ]
 
@@ -733,7 +734,10 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "rav", specifier = ">=0.1.1" }]
+dev = [
+    { name = "djlint", specifier = ">=1.36.4" },
+    { name = "rav", specifier = ">=0.1.1" },
+]
 
 [[package]]
 name = "decorator"

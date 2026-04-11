@@ -1,6 +1,8 @@
-from .models import PrintSession, File
-
 from rest_framework.serializers import ModelSerializer
+
+from .models import File
+from .models import PrintSession
+
 
 class FileMediaSerializer(ModelSerializer):
     class Meta:
