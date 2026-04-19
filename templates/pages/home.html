@@ -1,15 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'pages/base.html' %}
 
 {% block content %}
   <!-- HERO -->
   {% include 'pages/components/home/hero.html' %}
-  {% comment %}
-  {% endcomment %}
-  <div class="section">{% include 'pages/components/home/flow.html' %}</div>
-  <div class="section">{% include 'pages/components/home/mission.html' %}</div>
-  <div class="section">{% include 'pages/components/home/cta.html' %}</div>
+
+  {% include 'pages/components/home/how-it-work.html' %}
+
   <div class="section">
-    <div class="r-container">{% include 'pages/components/home/usage.html' %}</div>
+    {% include 'pages/components/home/flow.html' %}
+  </div>
+  <div class="section">
+    {% include 'pages/components/home/mission.html' %}
+  </div>
+  <div class="section">
+    {% include 'pages/components/home/cta.html' %}
+  </div>
+  <div class="section">
+    <div class="r-container">
+      {% include 'pages/components/home/usage.html' %}
+    </div>
   </div>
   <div class="section">
     <div class="r-container">
@@ -20,6 +29,8 @@
   </div>
   <!-- display ad -->
   <div class="section">
-    <div class="r-container">{% include 'pages/components/home/fags.html' %}</div>
+    <div class="r-container">
+      {% include 'pages/components/home/fags.html' %}
+    </div>
   </div>
 {% endblock %}

@@ -1,6 +1,7 @@
 import "goey-toast/styles.css";
 import "../sass/project.scss";
 import $ from "jquery";
+import "./utils/theme-provider";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,6 +10,7 @@ AOS.init({ duration: 800,
   easing: "ease-in-out",
   once: true,
   offset: 100,    });
+$('html').get(0).setAttribute('data-bs-theme', 'dark')
 
 
   function handleCountDown(){
@@ -79,5 +81,6 @@ $(function () {
   if($(".countdown").get(0)){
     handleCountDown();
   }
+  $("span#year").text(new Date().getUTCFullYear())
 
 });

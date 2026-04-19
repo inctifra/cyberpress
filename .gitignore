@@ -284,3 +284,4 @@ webpack-stats.json
 .env
 .envs/*
 !.envs/.local/
+templates/orisa-html.althemes.net/

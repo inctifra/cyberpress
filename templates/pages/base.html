@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+
+{% block main %}
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main class="control-main-section">
+        {% block content %}
+
+        {% endblock %}
+      </main>
+
+      {% block footer %}
+        {% include 'components/footer.html' %}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock %}

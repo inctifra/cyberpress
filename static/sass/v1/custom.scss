@@ -1,0 +1,113 @@
+.at-offcanvas-menu nav ul {
+  text-align: left;
+  padding-left: 0; /* remove default ul indent */
+}
+
+.at-offcanvas-menu nav ul li {
+  text-align: left;
+}
+
+.at-offcanvas-menu nav ul li a {
+  display: block;
+  text-align: left;
+}
+// Scrolling hoziozntall for the cybercafe gallary list
+.at-offcanvas-gallery-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding-bottom: 5px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+
+  gap: 8px;
+  padding-bottom: 6px;
+
+  scroll-behavior: smooth;
+}
+
+/* each item becomes a snap point */
+.at-offcanvas-gallery-img {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.at-offcanvas-gallery-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.at-offcanvas-gallery-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.at-offcanvas-gallery-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.at-offcanvas-gallery-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.at-mobile-menu-active ul li a.nav-link {
+}
+html,
+body,
+.body-overlay {
+  overflow-x: hidden !important;
+}
+
+:root {
+  --app-modal-bg: #1e2522;
+}
+
+.app-modal-theme {
+  padding: 50px 60px 60px;
+  border-radius: 16px;
+  background-color: var(--app-modal-bg);
+  backdrop-filter: blur(20px);
+  border: none;
+}
+
+/* Close button consistency */
+.app-modal-theme .btn-close,
+.app-modal-theme .at-search-close {
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+.app-modal-theme .btn-close:hover,
+.app-modal-theme .at-search-close:hover {
+  transform: rotate(180deg);
+}
+
+/* Input styling only */
+.app-modal-theme input {
+  font-size: 20px;
+}
+
+/* Tags (optional reuse) */
+.app-modal-theme .at-categories-item {
+  transition: all 0.3s ease;
+}
+
+.app-modal-theme .at-categories-item:hover {
+  transform: translateY(-2px);
+}
+.form-control:focus {
+  border-color: #2dfe87 !important;
+  box-shadow: 0 0 0 1px #2dfe87,
+              0 0 0 3px #2dfe87 !important;
+  outline: none !important;
+}

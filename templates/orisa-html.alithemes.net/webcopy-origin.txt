@@ -1,0 +1,876 @@
+Uri: https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap"
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Ck8qZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CkcqZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl0qZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cl8qZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClcqZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8ClsqZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8Cm8qZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CncqZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnMqZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqpG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAC5thTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAC5thTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAfJthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAfJthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAIpthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAIpthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAIpxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAIpxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAkJxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAop1hTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAop1hTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAopxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwARZthTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwA_JxhTg.ttf
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\s\dmsans\v17\rP2tp2ywxg089UriI5-g4vlH9VoD8CnsqZG40F9JadbnoEwA_JxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://orisa-html.alithemes.net/demo/404.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\404.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/about-1.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\about-1.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/about-2.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\about-2.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/about-3.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\about-3.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/archive-1.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\archive-1.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/archive-2.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\archive-2.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/archive-3.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\archive-3.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/archive-4.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\archive-4.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/main.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\main.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/vendors/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\vendors\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/vendors/carouselTicker.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\vendors\carouselTicker.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/vendors/font-awesome-pro.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\vendors\font-awesome-pro.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/vendors/magnific-popup.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\vendors\magnific-popup.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/vendors/nice-select.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\vendors\nice-select.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/vendors/odometer.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\vendors\odometer.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/vendors/spacing.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\vendors\spacing.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/css/vendors/swiper-bundle.min.css
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\css\vendors\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://orisa-html.alithemes.net/demo/assets/fonts/fa-light-300.woff2
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\fonts\fa-light-300.woff2
+Content Type: font/woff2
+
+Uri: https://orisa-html.alithemes.net/demo/assets/fonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\fonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/icons/badge-1.svg
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\icons\badge-1.svg
+Content Type: image/svg+xml
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/icons/brand-1.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\icons\brand-1.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/icons/brand-2.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\icons\brand-2.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/icons/brand-3.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\icons\brand-3.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/icons/brand-4.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\icons\brand-4.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/icons/brand-5.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\icons\brand-5.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/icons/brand-6.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\icons\brand-6.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/pages/img-27.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\pages\img-27.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/pages/img-51.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\pages\img-51.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/pages/img-52.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\pages\img-52.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/pages/img-53.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\pages\img-53.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/pages/img-54.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\pages\img-54.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/pages/img-55.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\pages\img-55.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/pages/img-56.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\pages\img-56.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/pages/img-57.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\pages\img-57.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-10.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-10.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-11.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-11.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-12.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-12.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-13.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-13.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-14.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-14.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-15.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-15.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-16.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-16.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-17.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-17.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-18.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-18.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-19.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-19.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-6.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-6.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-7.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-7.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/avatar/avatar-8.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\avatar\avatar-8.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/logo/favicon-dark.svg
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\logo\favicon-dark.svg
+Content Type: image/svg+xml
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/logo/favicon.svg
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\logo\favicon.svg
+Content Type: image/svg+xml
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/logo/logo-brand-01.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\logo\logo-brand-01.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/logo/logo-brand-02.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\logo\logo-brand-02.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/logo/logo-brand-03.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\logo\logo-brand-03.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/logo/logo-brand-05.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\logo\logo-brand-05.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/logo/logo-brand-06.webp
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\logo\logo-brand-06.webp
+Content Type: image/webp
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/template/logo/logo-w.svg
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\template\logo\logo-w.svg
+Content Type: image/svg+xml
+
+Uri: https://orisa-html.alithemes.net/demo/assets/imgs/video/live-bg.mov
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\imgs\video\live-bg.mov
+Content Type: video/quicktime
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/at-cursor.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\at-cursor.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/main.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\main.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/matter.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\matter.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/throwable.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\throwable.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/bootstrap.min.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\bootstrap.min.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/color-modes.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\color-modes.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/image-hover-effects.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\image-hover-effects.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/imagesloaded-pkgd.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\imagesloaded-pkgd.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/isotope.pkgd.min.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\isotope.pkgd.min.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/jquery-3.7.1.min.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\jquery-3.7.1.min.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/jquery.appear.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\jquery.appear.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/jquery.carouselTicker.min.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\jquery.carouselTicker.min.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/jquery.elevatezoom.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\jquery.elevatezoom.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/jquery.magnific-popup.min.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\jquery.magnific-popup.min.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/jquery.odometer.min.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\jquery.odometer.min.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/nice-select.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\nice-select.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/parallax.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\parallax.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/plugin.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\plugin.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/ripple-2.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\ripple-2.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/assets/js/vendors/swiper-bundle.min.js
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\assets\js\vendors\swiper-bundle.min.js
+Content Type: application/x-javascript
+
+Uri: https://orisa-html.alithemes.net/demo/blog-details.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\blog-details.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/coming-soon.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\coming-soon.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/contact-1.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\contact-1.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/contact-2.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\contact-2.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/faqs.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\faqs.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-2-dark.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-2-dark.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-2.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-2.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-3-dark.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-3-dark.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-3.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-3.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-4-dark.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-4-dark.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-4.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-4.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-5-dark.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-5-dark.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-5.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-5.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index-dark.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index-dark.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/index.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\index.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/portfolio-1.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\portfolio-1.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/portfolio-2.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\portfolio-2.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/portfolio-3.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\portfolio-3.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/portfolio-4.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\portfolio-4.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/portfolio-5.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\portfolio-5.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/portfolio-6.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\portfolio-6.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/portfolio-details-1.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\portfolio-details-1.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/portfolio-details-2.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\portfolio-details-2.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/pricing.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\pricing.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/product-archive.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\product-archive.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/product-cart.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\product-cart.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/product-checkout.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\product-checkout.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/product-details.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\product-details.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/services-1.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\services-1.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/services-2.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\services-2.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/services-3.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\services-3.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/services-details.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\services-details.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/team-details.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\team-details.html
+Content Type: text/html
+
+Uri: https://orisa-html.alithemes.net/demo/team.html
+File Name: C:\Downloaded Web Sites\orisa-html.alithemes.net\demo\team.html
+Content Type: text/html
+

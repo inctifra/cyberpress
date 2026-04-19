@@ -1,62 +1,139 @@
 {% load webpack_static from webpack_loader %}
 
-<div class="container overflow-hidden" style="margin-top: 7rem!important;">
-  <div class="container">
-    <div class="row justify-content-center align-items-center text-xl-start text-center">
-      <div class="col-xl-7 col-lg-7 mb-4" data-aos="fade-up" data-aos-delay="600">
-        <div class="d-flex flex-column gap-4">
-          <div>
-            <div class="title ms-4 mb-3 mb-md-2 ms-md-0">
-              <i class="rtmicon rtmicon-check icon-box"></i>
-              <h6 class="">Smart & Secure Printing</h6>
-            </div>
-            <h1>
-              Upload once,
-              <br />
-              <span class="text-accent">Print anywhere</span>
-            </h1>
+<div class="sec-1-home-3 pt-3 p-relative pt-md-5">
+  <div class="position-absolute w-100 h-100 d-grid top-0 md:grid-cols-7 gap-0 z-n1 opacity-10">
+    <div class="position-relative h-100 overflow-hidden d-md-block border-dark/01">
+      <div class="absolute bottom-0 left-0 right-0 border-white/10"></div>
+    </div>
+    <div class="position-relative h-100 overflow-hidden d-md-block border-dark/01">
+      <div class="absolute bottom-0 left-0 right-0 border-white/10"></div>
+    </div>
+    <div class="position-relative h-100 overflow-hidden d-md-block border-dark/01">
+      <div class="absolute bottom-0 left-0 right-0 border-white/10"></div>
+    </div>
+    <div class="position-relative h-100 border-r border-dark/01 md:border-none">
+      <div class="absolute bottom-0 left-0 right-0 border-white/10"></div>
+      <div class="absolute top-[20%] left-0 right-0 h-[30%] bg-gradient-to-b from-white/5 to-transparent pointer-events-none"></div>
+    </div>
+    <div class="position-relative h-100 overflow-hidden d-md-block border-dark/01">
+      <div class="absolute bottom-0 left-0 right-0 border-white/10"></div>
+    </div>
+    <div class="position-relative h-100 overflow-hidden d-md-block border-dark/01">
+      <div class="absolute bottom-0 left-0 right-0 border-white/10"></div>
+    </div>
+    <div class="position-relative h-100 overflow-hidden d-md-block border-dark/01">
+      <div class="absolute bottom-0 left-0 right-0 border-white/10"></div>
+    </div>
+  </div>
+
+  <div class="container pt-xxl-0 pt-110 mt-3">
+    <div class="row g-xxl-5 g-4 align-items-center">
+      <!-- LEFT TESTIMONIAL -->
+      <div class="col-lg-3 col-md-6 order-2 order-lg-1 mb-100">
+        <div class="testimonial-cart pe-xxl-5">
+          <div class="ripple-image ripples rounded-4 overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+            <img class="img-cover" src="{% webpack_static 'images/cafe/hero-avatar-item.webp' %}" alt="item" />
           </div>
-          <p class="hero-description">
-            Upload your document once and access it securely at any partnered cybercafe using a unique passkey.
-          </p>
-          <div class="d-flex gap-3 flex-wrap justify-content-xl-start justify-content-center">
-            <a href="{% url 'upload' %}" class="btn-accent">
-              Upload Document
-              <i class="rtmicon rtmicon-arrow-right"></i>
-              <span class="gradient-container"><span class="gradient"></span></span>
-            </a>
-            <a href="{% url 'access' %}" class="btn btn-outline-light">Access Files</a>
+          <div class="testimonial-content p-3">
+            <p class="h6 fw-400 reveal-text py-3 mb-0" data-aos="fade-up" data-aos-delay="600">“ I uploaded my documents and picked them up printed within minutes. Super convenient and fast. “</p>
+            <div class="testimonial-author d-flex align-items-start mb-0 gap-2" data-aos="fade-up" data-aos-delay="600">
+              <div class="testimonial-left-img size-30 rounded-2 overflow-hidden">
+                <img src="{% webpack_static 'images/cafe/avatar.webp' %}" alt="user" />
+              </div>
+              <div class="testimonial-content">
+                <p class="h6 testimonial-content-author-name fw-600 mb-0 fz-font-md">Brian Mwangi</p>
+                <p class="testimonial-content-author-position m-0 fz-font-label">Student</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-xl-5 col-lg-5 mb-4 text-center d-md-block d-none" data-aos="fade-up" data-aos-delay="200">
-        <style>
-          .hero-image {
-            animation: float 3s ease-in-out infinite;
-            max-width: 420px;
-          }
 
-          @keyframes float {
+      <!-- MAIN HERO TEXT -->
+      <div class="col-xxl-4 col-lg-5 align-self-center order-1 order-lg-2">
+        <span data-aos="fade-right" data-aos-delay="600" class="at-btn common-black text-uppercase bg-transparent mb-10 rounded-0 p-0 title mb-2 d-flex align-items-center justify-content-center">
+          <span class="text-uppercase">
+            <span class="text-1">Smart Printing Platform</span>
+            <span class="text-2">Smart Printing Platform</span>
+          </span>
+          <i>
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+              <path d="M0.21967 9.40717C-0.0732232 9.70006 -0.0732232 10.1749 0.21967 10.4678C0.512563 10.7607 0.987437 10.7607 1.28033 10.4678L0.21967 9.40717ZM10.6875 0.75C10.6875 0.335786 10.3517 0 9.9375 0L3.1875 0C2.77329 0 2.4375 0.335786 2.4375 0.75C2.4375 1.16421 2.77329 1.5 3.1875 1.5H9.1875V7.5C9.1875 7.91421 9.52329 8.25 9.9375 8.25C10.3517 8.25 10.6875 7.91421 10.6875 7.5V0.75ZM0.75 9.9375L1.28033 10.4678L10.4678 1.28033L9.9375 0.75L9.40717 0.21967L0.21967 9.40717L0.75 9.9375Z" fill="currentColor" />
+            </svg>
+          </i>
+        </span>
 
-            0%,
-            100% {
-              transform: translateY(0);
-            }
+        <h1 class="fw-900 lh-1 mt-10" data-aos="fade-right" data-aos-delay="600">
+          <span class="text-accent">Find • Upload <br /> Print Anywhere <br /></span>
+          <span class="theme-primary">Instantly</span>
+        </h1>
 
-            50% {
-              transform: translateY(-20px);
-            }
-          }
+        <p class="fz-font-lg neutral-500 mb-65 mt-25" data-aos="fade-right" data-aos-delay="600">Connect to nearby cybercafes, upload your documents, and get them printed fast — no queues, no hassle.</p>
 
-          @media (max-width: 768px) {
-            .hero-image {
-              max-width: 100%;
-            }
-          }
-        </style>
-        <img src="{% webpack_static 'images/image/img-27.png' %}"
-             class="img-fluid hero-image"
-             alt="Secure document printing" />
+        <div class="d-flex flex-wrap align-items-center gap-4" data-aos="fade-right" data-aos-delay="700">
+          <div class="at-btn-group at_fade_anim" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
+            <a class="at-btn-circle" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M0.0001297 8.99993L0 3.00407e-05L2 0L2.0001 6.99993L12.1719 7.00003L8.22224 3.05027L9.63644 1.63606L16.0003 8.00003L9.63644 14.364L8.22224 12.9497L12.1719 9.00003L0.0001297 8.99993Z" fill="currentColor" />
+              </svg>
+            </a>
+            <a class="at-btn z-index-1" href="#">Find a Cybercafe</a>
+            <a class="at-btn-circle" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M0.0001297 8.99993L0 3.00407e-05L2 0L2.0001 6.99993L12.1719 7.00003L8.22224 3.05027L9.63644 1.63606L16.0003 8.00003L9.63644 14.364L8.22224 12.9497L12.1719 9.00003L0.0001297 8.99993Z" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+
+          <a href="#" class="at-btn common-black border-bottom-900 text-uppercase bg-transparent rounded-0 p-0 pb-2">
+            <span class="text-uppercase">
+              <span class="text-1">How It Works</span>
+              <span class="text-2">How It Works</span>
+            </span>
+            <i>
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                <path d="M0.21967 9.40717C-0.0732232 9.70006 -0.0732232 10.1749 0.21967 10.4678C0.512563 10.7607 0.987437 10.7607 1.28033 10.4678L0.21967 9.40717ZM10.6875 0.75C10.6875 0.335786 10.3517 0 9.9375 0L3.1875 0C2.77329 0 2.4375 0.335786 2.4375 0.75C2.4375 1.16421 2.77329 1.5 3.1875 1.5H9.1875V7.5C9.1875 7.91421 9.52329 8.25 9.9375 8.25C10.3517 8.25 10.6875 7.91421 10.6875 7.5V0.75ZM0.75 9.9375L1.28033 10.4678L10.4678 1.28033L9.9375 0.75L9.40717 0.21967L0.21967 9.40717L0.75 9.9375Z" fill="currentColor" />
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-4 col-md-6 order-3">
+        <div class="p-relative rounded-4 fix cilent-word-wide changeless" style="height: 320px;">
+          <!-- VIDEO REPLACES IMAGE -->
+          <video class="img-cover" autoplay muted loop playsinline>
+            <source src="{% webpack_static 'media/videos/printing.mp4' %}" type="video/mp4" />
+          </video>
+
+          <div class="cilent-word-wide-content p-absolute rounded-5 bottom-0 end-0 m-lg-5 m-md-4 m-4">
+            <p class="h6 fz-font-md mb-0">Cybercafes Connected</p>
+            <div class="position-relative d-flex align-items-center gap-2">
+              {% for x in "12345" %}
+                <a role="button" class="avatar z-index-1"><img class="img-cover" src="{% webpack_static 'images/cafe/placeholder.jpeg' %}" alt="user" /></a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+           <div class="col-xxl-1 mt-5 order-lg-3 order-5 d-none d-xxl-block align-self-start pt-100">
+        <svg class="rotate-infinite" xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+          <path d="M4.4275 53.66C16.0138 44.9195 21.807 40.5492 28.5001 40.5492C35.1932 40.5492 40.9863 44.9195 52.5727 53.66L56.9999 56.9999L53.6601 52.5727C44.9195 40.9863 40.5492 35.1932 40.5492 28.5001C40.5492 21.807 44.9195 16.0138 53.66 4.42751L57 0.000133148L52.5727 3.34004C40.9863 12.0806 35.1932 16.4509 28.5001 16.4509C21.807 16.4509 16.0138 12.0806 4.4275 3.34004L0 0L3.34004 4.42749C12.0806 16.0138 16.4509 21.807 16.4509 28.5001C16.4509 35.1932 12.0806 40.9863 3.34005 52.5726L0.000112182 57L4.4275 53.66Z" fill="#CACACA"></path>
+        </svg>
+      </div>
+      <!-- BOTTOM TAGS -->
+      <div class="col-12 order-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-lg-between justify-content-center pb-50 gap-md-5 gap-2 at_fade_anim">
+          <p class="neutral-900 mb-0">[ Nearby Printing ]</p>
+          <p class="neutral-900 mb-0">[ Fast Uploads ]</p>
+          <p class="neutral-900 mb-0">[ No Queues ]</p>
+          <p class="neutral-900 mb-0">[ Affordable ]</p>
+          <p class="neutral-900 mb-0">[ Easy Access ]</p>
+        </div>
       </div>
     </div>
   </div>

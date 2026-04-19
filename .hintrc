@@ -14,7 +14,9 @@
       "default",
       {
         "ignore": [
-          "speak"
+          "speak",
+          "scrollbar-width",
+          "scrollbar-width: none"
         ]
       }
     ]

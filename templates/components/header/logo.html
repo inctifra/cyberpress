@@ -1,0 +1,8 @@
+{% load webpack_static from webpack_loader %}
+
+<a href="{% url 'home' %}">
+  <img data-width="30" style="width: 50px" src="{% webpack_static 'images/image/favicon.png' %}" alt="cyberconnect" />
+  <p class="h6 fw-700 fz-24 mb-0 d-none d-md-inline-flex">
+    cyber<span class="text-accent">connect</span>
+  </p>
+</a>

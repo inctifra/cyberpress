@@ -14,6 +14,7 @@ $(async () => {
     import("../libs/formHandler"),
     import("../libs/toast"),
     import("./store"),
+    import("../v1/index"),
   ]);
   initUploadForm();
 });
