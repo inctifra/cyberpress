@@ -111,3 +111,23 @@ body,
               0 0 0 3px #2dfe87 !important;
   outline: none !important;
 }
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#map::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* smooth transitions */
+#cafe-image, #cafe-avatar {
+  transition: all 0.4s ease;
+}
+.sec-2-home-2 .bg-coating {
+  min-height: 600px;
+}
