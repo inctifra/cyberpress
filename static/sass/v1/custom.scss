@@ -131,3 +131,11 @@ body,
 .sec-2-home-2 .bg-coating {
   min-height: 600px;
 }
+
+.card__process-card {
+  will-change: transform, opacity, filter;
+  transform: translateZ(0);
+}
+
+
+

@@ -1,5 +1,13 @@
 import $ from "jquery";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import SplitText from "gsap/SplitText";
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
+import "./anim/_howitworks";
+import "./anim/reveal";
+
+
 
 function AnimateHeadings() {
   const headings = document.querySelectorAll(".text-scale-anim");
@@ -180,6 +188,32 @@ function AnimateHeading2s() {
     });
   });
 }
+(function(){
+  SplitText.create(".hero-textsplit", {
+  type: "word",
+  autoSplit: true,
+  // onSplit: (self) => {
+  //   return gsap.from(self.lines, {
+  //     y: 100,
+  //     opacity: 0,
+  //     stagger: 0.05
+  //   });
+  // }
+});
+gsap.utils.toArray(".hero-textsplit").forEach((el) => {
+  let split = SplitText.create(el, { type: "chars" });
 
+  gsap.from(split.chars, {
+    y: 100,
+    autoAlpha: 0,
+    stagger: 0.05,
+    scrollTrigger: {
+      trigger: el,
+      start: "top 80%"
+    }
+  });
+});
+
+})()
 AnimateHeading2s();
 AnimateHeadings();

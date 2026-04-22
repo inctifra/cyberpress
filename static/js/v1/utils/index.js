@@ -1,5 +1,6 @@
 import $ from "jquery";
 import "./_animation";
+import "./anim/carousel";
 
 
 // $('.at-search-click').on('click', function () {
