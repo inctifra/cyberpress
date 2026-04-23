@@ -38,9 +38,15 @@ importers:
       gsap:
         specifier: ^3.15.0
         version: 3.15.0
+      imagesloaded:
+        specifier: ^5.0.0
+        version: 5.0.0
       jquery:
         specifier: ^3.7.1
         version: 3.7.1
+      jquery.ripples:
+        specifier: ^0.6.3
+        version: 0.6.3(jquery@3.7.1)
       leaflet:
         specifier: ^1.9.4
         version: 1.9.4
@@ -1952,6 +1958,9 @@ packages:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
 
+  ev-emitter@2.1.2:
+    resolution: {integrity: sha512-jQ5Ql18hdCQ4qS+RCrbLfz1n+Pags27q5TwMKvZyhp5hh2UULUYZUy1keqj6k6SYsdqIYjnmz7xyyEY0V67B8Q==}
+
   eventemitter3@4.0.7:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
 
@@ -2165,6 +2174,9 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
+  imagesloaded@5.0.0:
+    resolution: {integrity: sha512-/0JGSubc1MTCoDKVmonLHgbifBWHdyLkun+R/151E1c5n79hiSxcd7cB7mPXFgojYu8xnRZv7GYxzKoxW8BetQ==}
+
   immutable@4.3.8:
     resolution: {integrity: sha512-d/Ld9aLbKpNwyl0KiM2CT1WYvkitQ1TSvmRtkcV8FKStiDoA7Slzgjmb/1G2yhKM1p0XeNOieaTbFZmU1d3Xuw==}
 
@@ -2270,6 +2282,11 @@ packages:
   jiti@2.6.1:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
     hasBin: true
+
+  jquery.ripples@0.6.3:
+    resolution: {integrity: sha512-ZZQtIoPdesJCx59eDpmbUThZs8HkAxNWG7eFogdziqwFx19oktRbC5XNIjY1PKbSx4YtmoQLHfbl4NHR1z9Wmw==}
+    peerDependencies:
+      jquery: '>=1.7.0'
 
   jquery@3.7.1:
     resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
@@ -5545,6 +5562,8 @@ snapshots:
 
   etag@1.8.1: {}
 
+  ev-emitter@2.1.2: {}
+
   eventemitter3@4.0.7: {}
 
   events@3.3.0: {}
@@ -5777,6 +5796,10 @@ snapshots:
     dependencies:
       postcss: 8.5.9
 
+  imagesloaded@5.0.0:
+    dependencies:
+      ev-emitter: 2.1.2
+
   immutable@4.3.8: {}
 
   import-fresh@3.3.1:
@@ -5865,6 +5888,10 @@ snapshots:
       supports-color: 8.1.1
 
   jiti@2.6.1: {}
+
+  jquery.ripples@0.6.3(jquery@3.7.1):
+    dependencies:
+      jquery: 3.7.1
 
   jquery@3.7.1: {}
 

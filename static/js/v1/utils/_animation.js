@@ -6,6 +6,9 @@ import SplitText from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 import "./anim/_howitworks";
 import "./anim/reveal";
+import "./anim/scramble";
+import "./anim/ripple";
+
 
 
 

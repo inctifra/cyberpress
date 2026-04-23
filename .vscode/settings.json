@@ -50,6 +50,7 @@
     "nosetests",
     "novalidate",
     "offcanvas",
+    "perturbance",
     "pixrem",
     "pytest",
     "qrcode",
