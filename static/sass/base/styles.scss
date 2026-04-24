@@ -1,11 +1,11 @@
 @import "../custom_bootstrap_vars";
 @import "~bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
-@import "./fonts.scss";
 @import "./rtmicons.scss";
 @import "./vendors.scss";
 @import "./components/header.scss";
 @import "../v1/main.scss";
+@import "./fonts.scss";
 @keyframes load {
   to {
     --progress: var(--value);

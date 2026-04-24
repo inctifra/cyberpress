@@ -9,33 +9,13 @@
   {% comment %}Maps{% endcomment %}
   {% include 'pages/components/home/map.html' %}
   {% include 'pages/components/home/partners.html' %}
+  {% comment %}Pricing{% endcomment %}
+  {% include 'pages/components/home/pricing.html' %}
+  {% include 'pages/components/home/fags.html' %}
+  {% include 'pages/components/home/testimonials.html' %}
 
-
-  <div class="section">
-    {% include 'pages/components/home/flow.html' %}
-  </div>
-  <div class="section">
-    {% include 'pages/components/home/mission.html' %}
-  </div>
   <div class="section">
     {% include 'pages/components/home/cta.html' %}
   </div>
-  <div class="section">
-    <div class="r-container">
-      {% include 'pages/components/home/usage.html' %}
-    </div>
-  </div>
-  <div class="section">
-    <div class="r-container">
-      <div class="row row-cols-xl-2 row-cols-1 d-flex flex-md-row flex-column align-items-md-center">
-        {% include 'pages/components/home/why-us.html' %}
-      </div>
-    </div>
-  </div>
-  <!-- display ad -->
-  <div class="section">
-    <div class="r-container">
-      {% include 'pages/components/home/fags.html' %}
-    </div>
-  </div>
+  {% include 'pages/components/home/usage.html' %}
 {% endblock %}

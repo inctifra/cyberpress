@@ -6982,26 +6982,6 @@ background-image: url(~@images/utils/pill4.webp);
     margin-right: 30px;
   }
 }
-.at-faq-button::before, .at-faq-button:after {
-  content: "\f068";
-  font-family: "Font Awesome 6 Pro";
-  position: absolute;
-  right: 0;
-  top: -3px;
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  border-radius: 30px;
-  line-height: 35px;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--at-common-black);
-  transition: all 0.5s ease;
-}
-.at-faq-button.collapsed:after {
-  content: "\f067";
-}
-
 /*----------------------------------------*/
 /*  7.3 banner
 /*----------------------------------------*/
