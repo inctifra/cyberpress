@@ -11,9 +11,6 @@ importers:
       '@fortawesome/fontawesome-free':
         specifier: ^7.2.0
         version: 7.2.0
-      '@studio-freight/lenis':
-        specifier: ^1.0.42
-        version: 1.0.42
       alpinejs:
         specifier: ^3.15.8
         version: 3.15.11
@@ -56,9 +53,6 @@ importers:
       leaflet:
         specifier: ^1.9.4
         version: 1.9.4
-      lenis:
-        specifier: ^1.3.23
-        version: 1.3.23(react@19.2.5)
       matter-js:
         specifier: ^0.20.0
         version: 0.20.0
@@ -1228,10 +1222,6 @@ packages:
   '@sinclair/typebox@0.34.49':
     resolution: {integrity: sha512-brySQQs7Jtn0joV8Xh9ZV/hZb9Ozb0pmazDIASBkYKCjXrXU3mpcFahmK/z4YDhGkQvP9mWJbVyahdtU5wQA+A==}
 
-  '@studio-freight/lenis@1.0.42':
-    resolution: {integrity: sha512-HJAGf2DeM+BTvKzHv752z6Z7zy6bA643nZM7W88Ft9tnw2GsJSp6iJ+3cekjyMIWH+cloL2U9X82dKXgdU8kPg==}
-    deprecated: 'The ''@studio-freight/lenis'' package has been renamed to ''lenis''. Please update your dependencies: npm install lenis and visit the documentation: https://www.npmjs.com/package/lenis'
-
   '@swc/helpers@0.2.14':
     resolution: {integrity: sha512-wpCQMhf5p5GhNg2MmGKXzUNwxe7zRiCsmqYsamez2beP7mKPCSiu+BjZcdN95yYSzO857kr0VfQewmGpS77nqA==}
 
@@ -2343,20 +2333,6 @@ packages:
 
   leaflet@1.9.4:
     resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
-
-  lenis@1.3.23:
-    resolution: {integrity: sha512-YxYq3TJqj9sJNv0V9SkyQHejt14xwyIwgDaaMK89Uf9SxQfIszu+gTQSSphh6BWlLTNVKvvXAGkg+Zf+oFIevg==}
-    peerDependencies:
-      '@nuxt/kit': '>=3.0.0'
-      react: '>=17.0.0'
-      vue: '>=3.0.0'
-    peerDependenciesMeta:
-      '@nuxt/kit':
-        optional: true
-      react:
-        optional: true
-      vue:
-        optional: true
 
   lilconfig@3.1.3:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
@@ -4826,8 +4802,6 @@ snapshots:
 
   '@sinclair/typebox@0.34.49': {}
 
-  '@studio-freight/lenis@1.0.42': {}
-
   '@swc/helpers@0.2.14': {}
 
   '@types/body-parser@1.19.6':
@@ -5954,10 +5928,6 @@ snapshots:
       shell-quote: 1.8.3
 
   leaflet@1.9.4: {}
-
-  lenis@1.3.23(react@19.2.5):
-    optionalDependencies:
-      react: 19.2.5
 
   lilconfig@3.1.3: {}
 
