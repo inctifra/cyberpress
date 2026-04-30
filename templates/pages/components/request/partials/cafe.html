@@ -14,9 +14,7 @@
     </div>
     <div class="d-flex align-items-center justify-content-between gap-1 flex-wrap">
       <div class="d-flex flex-grow-1 flex-wrap gap-1">
-        {% for t in c.tags.all %}
-          <span class="badge-pro">{{ t.name }}</span>
-        {% endfor %}
+        {% for t in c.tags.all %}<span class="badge-pro">{{ t.name }}</span>{% endfor %}
       </div>
       <span class="view-map-action">
         <i class="bi bi-eye"></i>
@@ -30,16 +28,17 @@
       <div class="mb-4">
         <i class="bi bi-shop text-muted" style="font-size: 3rem; opacity: 0.6;"></i>
       </div>
-
       <h5 class="fw-bold mb-2">No Print Hubs Found</h5>
-
       <p class="text-muted small mb-4">
-        We couldn’t find any cybercafes matching your search.<br />
+        We couldn’t find any cybercafes matching your search.
+        <br />
         Try adjusting your keywords or location.
       </p>
-
       <div class="d-flex justify-content-center gap-2 flex-wrap">
-        <button  class="btn btn-pro-outline btn-sm reset-search" data-cafes-url="{% url 'partials:search_cafe_view' %}"><i class="bi bi-arrow-clockwise me-1"></i> Reset Search</button>
+        <button class="btn btn-pro-outline btn-sm reset-search"
+                data-cafes-url="{% url 'partials:search_cafe_view' %}">
+          <i class="bi bi-arrow-clockwise me-1"></i> Reset Search
+        </button>
       </div>
     </div>
   </div>

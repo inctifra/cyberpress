@@ -7,4 +7,6 @@ def qrcodes_context_processor(request):
     return {
         "app_name": "QR Codes",
         "qrcode": qrcode,
+        "mail": "hello@cyberconnect.cloud",
+        "phone": "+254 (745) 54-7755",
     }

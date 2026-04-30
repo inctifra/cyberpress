@@ -3,28 +3,30 @@
 <div class="at-offcanvas-area">
   <div class="at-offcanvas">
     <div class="at-offcanvas-top d-flex align-items-center justify-content-between">
-      <div class="at-offcanvas-logo">
-        {% include 'components/header/logo.html' %}
-      </div>
+      <div class="at-offcanvas-logo">{% include 'components/header/logo.html' %}</div>
       <div class="at-offcanvas-close-btn">
         <button class="close-btn">
-          <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="37"
+               height="38"
+               viewBox="0 0 37 38"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg">
             <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
       </div>
     </div>
-
     <div class="at-offcanvas-content d-none d-xl-block">
       <h3 class="at-offcanvas-title text-accent">Welcome!</h3>
-      <p class="fz-font-lg">We connect you to nearby cybercafés for fast, reliable printing, scanning, and document services — all in one place.</p>
+      <p class="fz-font-lg">
+        We connect you to nearby cybercafés for fast, reliable printing, scanning, and document services — all in one place.
+      </p>
     </div>
-
     <div class="at-offcanvas-menu d-xl-none pb-50 mb-3 mb-md-1">
-      <nav></nav>
+      <nav class="d-flex align-items-start justify-content-start">
+      </nav>
     </div>
-
     {% comment %} <div class="at-offcanvas-gallery d-none d-xl-block">
       <div class="sec-2-home-5__avatars-row d-flex gap-2">
         <div class="sec-2-home-5__avatar-sm at-offcanvas-gallery-img at-offcanvas-gallery-scroll">
@@ -32,17 +34,17 @@
         </div>
       </div>
     </div> {% endcomment %}
-
-   <div class="at-offcanvas-gallery d-none d-xl-block">
-  <div class="at-offcanvas-gallery-scroll">
-    {% for x in "12345678989393" %}
-    <div class="sec-2-home-5__avatar-sm at-offcanvas-gallery-img">
-      <img class="img-cover" src="{% webpack_static 'images/cafe/placeholder.jpeg' %}" alt="user" />
+    <div class="at-offcanvas-gallery d-none d-xl-block">
+      <div class="at-offcanvas-gallery-scroll">
+        {% for x in "12345678989393" %}
+          <div class="sec-2-home-5__avatar-sm at-offcanvas-gallery-img">
+            <img class="img-cover"
+                 src="{% webpack_static 'images/cafe/placeholder.jpeg' %}"
+                 alt="user" />
+          </div>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
-  </div>
-</div>
-
     <div class="at-offcanvas-contact">
       <h4 class="h5 at-offcanvas-title sm">Get in touch</h4>
       <ul>
@@ -54,13 +56,13 @@
         </li>
         <li>
           <a class="fz-font-lg" href="#">
-            Ruiru, Kiambu County <br />
+            Ruiru, Kiambu County
+            <br />
             Kenya
           </a>
         </li>
       </ul>
     </div>
-
     <div class="at-offcanvas-social">
       <h3 class="at-offcanvas-title sm">Follow Us</h3>
       <ul class="at-offcanvas-social__grid">
@@ -80,17 +82,14 @@
     </div>
   </div>
 </div>
-
 <div class="at-offcanvas-2-area">
   <div class="offcanvas-bg"></div>
-
   <div class="at-offcanvas-2-wrapper offcanvas-menu">
     <div class="at-offcanvas-2-left">
       <div class="at-header-logo d-flex justify-content-between align-items-center mb-40">
         {% include 'components/header/logo.html' %}
         <span class="hamburger-close-btn"></span>
       </div>
-
       <div class="at-offcanvas-menu mb-40">
         <nav>
           <ul>
@@ -112,7 +111,6 @@
           </ul>
         </nav>
       </div>
-
       <div class="offcanvas-features mb-40">
         <h6 class="mb-2">Platform Features</h6>
         <ul>
@@ -122,7 +120,6 @@
           <li>⚡ Save time by skipping queues</li>
         </ul>
       </div>
-
       <div class="offcanvas-partners mb-40">
         <h6 class="mb-2">For Cybercafé Owners</h6>
         <ul>
@@ -132,12 +129,10 @@
           <li>Manage orders efficiently</li>
         </ul>
       </div>
-
       <div class="offcanvas-cta mb-40">
         <a href="/register" class="btn btn-primary w-100">Get Started</a>
         <a href="/login" class="btn btn-outline w-100 mt-2">Login</a>
       </div>
-
       <div class="at-offcanvas-social">
         <ul class="at-offcanvas-social__grid">
           <li>
@@ -151,7 +146,6 @@
           </li>
         </ul>
       </div>
-
       <span class="hamburger-close-btn hamburger-mobile-close-btn d-md-none">CLOSE</span>
     </div>
   </div>

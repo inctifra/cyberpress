@@ -1,10 +1,9 @@
 {% extends "pages/base.html" %}
 
-{% block title %}
-  Upload PDFs - {{ block.super }}
-{% endblock %}
+{% block title %}Upload PDFs - {{ block.super }}{% endblock %}
 {% block content %}
-  <div class="section pb-0 overflow-visible position-relative" style="z-index: 4">
+  <div class="section pb-0 overflow-visible position-relative"
+       style="z-index: 4">
     <div class="r-container d-flex flex-column gap-md-3 gap-4 align-items-center justify-content-center">
       <div class="row row-cols-xl-2 row-cols-1 w-100">
         <!-- LEFT SIDE - Upload Form -->
@@ -17,26 +16,32 @@
             {% include 'pages/components/upload_forms.html' %}
           </div>
         </div>
-        <div class="col col-xl-5 mb-3">
-          {% include 'pages/components/upload/guidance.html' %}
-        </div>
+        <div class="col col-xl-5 mb-3">{% include 'pages/components/upload/guidance.html' %}</div>
       </div>
       <div class="row w-100 py-2">
-        <div class="col-12 rounded-5" style="border: 1px solid #101412;" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-12 rounded-5"
+             style="border: 1px solid #101412"
+             data-aos="fade-up"
+             data-aos-delay="300">
           <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 position-relative overflow-hidden">
             <!-- background decoration (fixed layering) -->
-            <div class="position-absolute top-0 end-0 opacity-25" style="font-size:6rem; transform: rotate(20deg); z-index:0; pointer-events:none;">🖨️</div>
-
+            <div class="position-absolute top-0 end-0 opacity-25"
+                 style="font-size:6rem;
+                        transform: rotate(20deg);
+                        z-index:0;
+                        pointer-events:none">🖨️</div>
             <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4 position-relative z-1">
               <!-- text section -->
               <div class="text-center text-md-start">
                 <h5 class="fw-bold mb-1 text-light">Request your favorite printer</h5>
-                <p class="small mb-0 text-light opacity-75">Send a quick notification request to your preferred cyber café printer. They’ll receive your file instantly so you can just walk in and pick it up.</p>
+                <p class="small mb-0 text-light opacity-75">
+                  Send a quick notification request to your preferred cyber café printer. They’ll receive your file instantly so you can just walk in and pick it up.
+                </p>
               </div>
-
               <!-- action button -->
               <div class="text-center">
-                <a href="{% url 'request-printing' %}" class="btn btn-success btn-lg px-4 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2">
+                <a href="{% url 'request-printing' %}"
+                   class="btn btn-success btn-lg px-4 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2">
                   <i class="bi bi-printer"></i>
                   <span>Send Request</span>
                 </a>

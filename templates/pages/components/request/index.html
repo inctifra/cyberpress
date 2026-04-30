@@ -3,17 +3,17 @@
     <div class="header-custom d-flex justify-content-between align-items-center">
       <div>
         <h4 class="mb-1 fw-bold d-flex align-items-center gap-3">
-          <i class="bi bi-layers text-success"></i> 
+          <i class="bi bi-layers text-success"></i>
           <span class="d-none d-md-block">Remote Print Network</span>
         </h4>
         <p class="text-muted mb-0 small d-none d-md-block" id="headerStatus">Step 1: Locate a servicing cybercafe</p>
       </div>
       <a href="{% url 'home' %}" class="btn view-map-action px-3 py-2"><i class="bi bi-arrow-left ms-2"></i> Proceed home</a>
     </div>
-
     <div class="layout-wrapper">
       <div class="sidebar-nav">
-        <div class="step-item active align-items-center align-items-md-start justify-content-center justify-content-md-start d-flex flex-md-row flex-column navigationStep1" id="navStep1">
+        <div class="step-item active align-items-center align-items-md-start justify-content-center justify-content-md-start d-flex flex-md-row flex-column navigationStep1"
+             id="navStep1">
           <div class="step-icon">
             <i class="bi bi-shop"></i>
           </div>
@@ -22,8 +22,8 @@
             <small class="text-muted text-center text-md-start" id="navSubtitle1"><span class="text-success">Juja Campus Cyber</span></small>
           </div>
         </div>
-
-        <div class="step-item align-items-center align-items-md-start justify-content-center justify-content-md-start d-flex flex-md-row flex-column navigationStep2" id="navStep2">
+        <div class="step-item align-items-center align-items-md-start justify-content-center justify-content-md-start d-flex flex-md-row flex-column navigationStep2"
+             id="navStep2">
           <div class="step-icon">
             <i class="bi bi-file-earmark-arrow-up"></i>
           </div>
@@ -32,8 +32,8 @@
             <small class="text-muted text-center text-md-start" id="navSubtitle2">Pending upload</small>
           </div>
         </div>
-
-        <div class="step-item align-items-center align-items-md-start justify-content-center justify-content-md-start d-flex flex-md-row flex-column navigationStep3" id="navStep3">
+        <div class="step-item align-items-center align-items-md-start justify-content-center justify-content-md-start d-flex flex-md-row flex-column navigationStep3"
+             id="navStep3">
           <div class="step-icon">
             <i class="bi bi-credit-card"></i>
           </div>
@@ -42,8 +42,8 @@
             <small class="text-muted text-center text-md-start">Review &amp; Pay</small>
           </div>
         </div>
-
-        <div class="step-item align-items-center align-items-md-start justify-content-center justify-content-md-start d-flex flex-md-row flex-column navigationStep4" id="navStep4">
+        <div class="step-item align-items-center align-items-md-start justify-content-center justify-content-md-start d-flex flex-md-row flex-column navigationStep4"
+             id="navStep4">
           <div class="step-icon">
             <i class="bi bi-clock-history"></i>
           </div>
@@ -52,7 +52,6 @@
             <small class="text-muted text-center text-md-start">Active &amp; Past</small>
           </div>
         </div>
-
         <div class="mt-auto pt-5 d-none d-md-block">
           <div class="p-3 bg-dark border rounded-3 border-secondary border-opacity-25">
             <small class="text-muted d-block mb-1">Total Estimated Cost</small>
@@ -60,23 +59,11 @@
           </div>
         </div>
       </div>
-
       <div class="position-relative mx-md-3 my-md-4 layout-wrapper--content">
-        <div class="content-pane active" id="paneStep1">
-          {% include 'pages/components/request/tabs/cafe.html' %}
-        </div>
-
-        <div class="content-pane" id="paneStep2">
-          {% include 'pages/components/request/tabs/upload.html' %}
-        </div>
-
-        <div class="content-pane" id="paneStep3">
-          {% include 'pages/components/request/tabs/review.html' %}
-        </div>
-
-        <div class="content-pane" id="paneStep4">
-          {% include 'pages/components/request/tabs/status-summary.html' %}
-        </div>
+        <div class="content-pane active" id="paneStep1">{% include 'pages/components/request/tabs/cafe.html' %}</div>
+        <div class="content-pane" id="paneStep2">{% include 'pages/components/request/tabs/upload.html' %}</div>
+        <div class="content-pane" id="paneStep3">{% include 'pages/components/request/tabs/review.html' %}</div>
+        <div class="content-pane" id="paneStep4">{% include 'pages/components/request/tabs/status-summary.html' %}</div>
       </div>
     </div>
   </div>

@@ -5,7 +5,6 @@ import $ from "jquery";
 gsap.registerPlugin(ScrollTrigger);
 
 function _loadAnimationBlur(selector) {
-  // ".sec-3-faqs"
   gsap.utils.toArray(selector).forEach((card, i) => {
     gsap.fromTo(
       card,

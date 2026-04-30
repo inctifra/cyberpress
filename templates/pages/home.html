@@ -3,9 +3,7 @@
 {% block content %}
   <!-- HERO -->
   {% include 'pages/components/home/hero.html' %}
-
   {% include 'pages/components/home/how-it-work.html' %}
-
   {% comment %}Maps{% endcomment %}
   {% include 'pages/components/home/map.html' %}
   {% include 'pages/components/home/partners.html' %}
@@ -13,9 +11,6 @@
   {% include 'pages/components/home/pricing.html' %}
   {% include 'pages/components/home/fags.html' %}
   {% include 'pages/components/home/testimonials.html' %}
-
-  <div class="section">
-    {% include 'pages/components/home/cta.html' %}
-  </div>
+  <div class="section">{% include 'pages/components/home/cta.html' %}</div>
   {% include 'pages/components/home/usage.html' %}
 {% endblock %}

@@ -25,7 +25,7 @@ class AccessSessionForm(forms.Form):
     access_code = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
-                "class": "form-control py-3",
+                "class": "form-control py-3 no-rounded-md",
                 "autocomplete": "access_code",
             },
         ),

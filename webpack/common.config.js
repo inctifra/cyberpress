@@ -13,7 +13,8 @@ module.exports = {
     project: path.resolve(__dirname, "../static/js/project"),
     vendors: path.resolve(__dirname, "../static/js/vendors"),
     base: path.resolve(__dirname, "../static/js/base/index"),
-    printingRequest: path.resolve(__dirname, "../static/js/printing/request")
+    printingRequest: path.resolve(__dirname, "../static/js/printing/request"),
+    access: path.resolve(__dirname, "../static/js/base/pages/access"),
   },
   output: {
     path: path.resolve(__dirname, "../assets/webpack_bundles/"),

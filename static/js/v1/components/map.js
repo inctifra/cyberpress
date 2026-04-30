@@ -5,93 +5,74 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import placeholder from "../../../images/cafe/placeholder.jpeg";
 
-delete L.Icon.Default.prototype._getIconUrl;
+const mapContainer = document.getElementById("map");
 
-L.Icon.Default.mergeOptions({
-  iconUrl: markerIcon,
-  iconRetinaUrl: markerIcon2x,
-  shadowUrl: markerShadow,
-});
+if (mapContainer) {
+  delete L.Icon.Default.prototype._getIconUrl;
 
-const map = L.map('map', {
-  zoomControl: false,
-  dragging: false,
-  scrollWheelZoom: false,
-  doubleClickZoom: false,
-  boxZoom: false,
-  keyboard: false,
-  tap: false
-}).setView([-1.146, 36.96], 13);
+  L.Icon.Default.mergeOptions({
+    iconUrl: markerIcon,
+    iconRetinaUrl: markerIcon2x,
+    shadowUrl: markerShadow,
+  });
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+  const map = L.map(mapContainer, {
+    zoomControl: false,
+    dragging: false,
+    scrollWheelZoom: false,
+    doubleClickZoom: false,
+    boxZoom: false,
+    keyboard: false,
+    tap: false
+  }).setView([-1.146, 36.96], 13);
 
-const cybercafes = [
-  {
-    name: "CyberConnect Ruiru",
-    lat: -1.146,
-    lng: 36.96,
-    image: placeholder,
-    avatar: placeholder
-  },
-  {
-    name: "QuickPrint Cyber",
-    lat: -1.150,
-    lng: 36.95,
-    image: placeholder,
-    avatar: placeholder
-  },
-  {
-    name: "Digital Hub Cyber",
-    lat: -1.140,
-    lng: 36.97,
-    image: placeholder,
-    avatar: placeholder
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  const cybercafes = [
+    { name: "CyberConnect Ruiru", lat: -1.146, lng: 36.96, image: placeholder, avatar: placeholder },
+    { name: "QuickPrint Cyber", lat: -1.150, lng: 36.95, image: placeholder, avatar: placeholder },
+    { name: "Digital Hub Cyber", lat: -1.140, lng: 36.97, image: placeholder, avatar: placeholder }
+  ];
+
+  const markers = [];
+  let index = 0;
+
+  cybercafes.forEach((cafe) => {
+    const marker = L.marker([cafe.lat, cafe.lng]).addTo(map);
+    markers.push(marker);
+  });
+
+  function updateCard(cafe) {
+    $("#cafe-name").text(cafe.name);
+    $("#cafe-image").attr("src", cafe.image);
+    $("#cafe-avatar").attr("src", cafe.avatar);
   }
-];
 
-// store markers
-const markers = [];
-let activeMarker = null;
-let index = 0;
+  function highlightMarker(i) {
+    markers.forEach(m => m.setOpacity(0.5));
+    markers[i].setOpacity(1);
+  }
 
-cybercafes.forEach((cafe, i) => {
-  const marker = L.marker([cafe.lat, cafe.lng]).addTo(map);
-  markers.push(marker);
-});
+  function flyTour() {
+    const cafe = cybercafes[index];
 
-function updateCard(cafe) {
-  $("#cafe-name").text(cafe.name);
-  $("#cafe-image").attr("src", cafe.image);
-  $("#cafe-avatar").attr("src", cafe.avatar);
+    map.flyTo([cafe.lat, cafe.lng], 16, {
+      animate: true,
+      duration: 2.5
+    });
+
+    updateCard(cafe);
+    highlightMarker(index);
+
+    index = (index + 1) % cybercafes.length;
+  }
+
+  flyTour();
+  setInterval(flyTour, 5000);
+
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 500);
 }
-
-function highlightMarker(i) {
-  markers.forEach(m => {
-    m.setOpacity(0.5);
-  });
-
-  markers[i].setOpacity(1);
-}
-
-function flyTour() {
-  const cafe = cybercafes[index];
-
-  map.flyTo([cafe.lat, cafe.lng], 16, {
-    animate: true,
-    duration: 2.5
-  });
-
-  updateCard(cafe);
-  highlightMarker(index);
-
-  index = (index + 1) % cybercafes.length;
-}
-
-flyTour();
-
-setInterval(flyTour, 5000);
-setTimeout(() => {
-  map.invalidateSize();
-}, 500);

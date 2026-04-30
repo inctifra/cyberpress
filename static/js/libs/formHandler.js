@@ -68,7 +68,6 @@ export function setupAjaxForm(selector, { onSuccess, onError, modifyFormData } =
 
       if (onSuccess) onSuccess(data, formValues, form);
     } catch (err) {
-      console.error("AJAX error:", err);
       const cleanedError = extractApiError(err)
       if (onError) onError(err, formValues, form, cleanedError);
 

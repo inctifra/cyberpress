@@ -60,8 +60,6 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
-.at-mobile-menu-active ul li a.nav-link {
-}
 html,
 body,
 .body-overlay {
@@ -107,8 +105,9 @@ body,
 }
 .form-control:focus {
   border-color: #2dfe87 !important;
-  box-shadow: 0 0 0 1px #2dfe87,
-              0 0 0 3px #2dfe87 !important;
+  box-shadow:
+    0 0 0 1px #2dfe87,
+    0 0 0 3px #2dfe87 !important;
   outline: none !important;
 }
 
@@ -121,11 +120,12 @@ body,
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* smooth transitions */
-#cafe-image, #cafe-avatar {
+#cafe-image,
+#cafe-avatar {
   transition: all 0.4s ease;
 }
 .sec-2-home-2 .bg-coating {
@@ -137,5 +137,54 @@ body,
   transform: translateZ(0);
 }
 
+.no-rounded-md {
+  border-top-right-radius: 0.685rem !important;
+  border-bottom-right-radius: 0.685rem !important;
+}
+@media (min-width: 768px) {
+  .no-rounded-md {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  #fileDeleteForm input#id_access_code {
+    border-top-right-radius: 0.35rem !important;
+    border-bottom-right-radius: 0.35rem !important;
+  }
+}
 
+.access-control-page {
+  @media (max-width: 767.98px) {
+    .form-panel {
+      display: none;
+    }
 
+    .form-panel.active-panel {
+      display: block;
+      animation: fadeSlide 0.3s ease;
+    }
+  }
+
+  @keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .tab-btn {
+    font-weight: 500;
+    color: #666;
+    transition: all 0.2s ease;
+
+  }
+
+  .tab-btn.active {
+    background: linear-gradient(135deg, #198754, #20c997);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}

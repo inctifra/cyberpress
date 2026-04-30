@@ -1,41 +1,42 @@
 <h4 class="fw-bold mb-1">Document Setup</h4>
 <p class="text-muted mb-4">Upload files and configure individual print settings</p>
-
 <div class="pro-tabs">
-  <div class="pro-tab active" data-tab="localUpload">
-    Local Files
-  </div>
-
-  <div class="pro-tab" data-tab="voiceNotes">
-    Voice Instructions
-  </div>
-
+  <div class="pro-tab active" data-tab="localUpload">Local Files</div>
+  <div class="pro-tab" data-tab="voiceNotes">Voice Instructions</div>
   <div class="pro-tab" data-tab="cloudImport">
-    Cloud Import 
+    Cloud Import
     <span class="badge bg-primary ms-2 rounded-pill" style="font-size:0.6rem;">Beta</span>
   </div>
 </div>
-
-
 <div id="tab-localUpload" class="nested-pane">
-  <div class="upload-zone mb-4" id="dropZone" onclick="document.getElementById('fileInputMaster').click()">
-    <i class="bi bi-cloud-arrow-up text-success mb-3" style="font-size: 3rem;"></i>
+  <div class="upload-zone mb-4"
+       id="dropZone"
+       onclick="document.getElementById('fileInputMaster').click()">
+    <i class="bi bi-cloud-arrow-up text-success mb-3"
+       style="font-size: 3rem"></i>
     <h5 class="fw-bold text-light">Drag &amp; Drop files here</h5>
     <p class="text-muted mb-0">or click to browse your computer</p>
     <small class="text-muted mt-2 d-block">Supports PDF, DOCX, JPG up to 50MB</small>
-    <input type="file" id="fileInputMaster" class="d-none" multiple="" onchange="appState.handleFiles(event)" />
+    <input type="file"
+           id="fileInputMaster"
+           class="d-none"
+           multiple=""
+           onchange="appState.handleFiles(event)" />
   </div>
-
   <h6 class="fw-bold mb-3 d-flex justify-content-between">
     <span>Uploaded Files (<span id="fileCount">0</span>)</span>
-    <small class="text-muted fw-normal" style="cursor:pointer;" onclick="appState.clearFiles()"><i class="bi bi-trash"></i> Clear All</small>
+    <small class="text-muted fw-normal"
+           style="cursor:pointer"
+           onclick="appState.clearFiles()"><i class="bi bi-trash"></i> Clear All</small>
   </h6>
-
-  <div id="fileListContainer" style="max-height: 250px; overflow-y: auto; padding-right: 10px;">
-    <div class="text-center p-4 text-muted border border-secondary border-opacity-25 rounded" id="emptyFileState">No files uploaded yet.</div>
+  <div id="fileListContainer"
+       style="max-height: 250px;
+              overflow-y: auto;
+              padding-right: 10px">
+    <div class="text-center p-4 text-muted border border-secondary border-opacity-25 rounded"
+         id="emptyFileState">No files uploaded yet.</div>
   </div>
 </div>
-
 <div id="tab-cloudImport" class="nested-pane d-none">
   <div class="row g-3">
     <div class="col-md-6 p-0 p-md-2 ">
@@ -54,17 +55,25 @@
     </div>
   </div>
 </div>
-
 <div id="tab-voiceNotes" class="nested-pane d-none">
-  <textarea class="form-control pro-input mb-4" rows="5" placeholder="Type general instructions for the cyber attendant..."></textarea>
-  <div class="p-4 rounded text-center" style="background-color: var(--bg-card); border: 1px solid var(--border-color);">
-    <button class="btn btn-pro-outline rounded-circle mb-3" style="width: 60px; height: 60px;"><i class="bi bi-mic-fill fs-4 text-danger"></i></button>
+  <textarea class="form-control pro-input mb-4"
+            rows="5"
+            placeholder="Type general instructions for the cyber attendant..."></textarea>
+  <div class="p-4 rounded text-center"
+       style="background-color: var(--bg-card);
+              border: 1px solid var(--border-color)">
+    <button class="btn btn-pro-outline rounded-circle mb-3"
+            style="width: 60px;
+                   height: 60px">
+      <i class="bi bi-mic-fill fs-4 text-danger"></i>
+    </button>
     <h6 class="fw-bold">Record Voice Note</h6>
     <p class="text-muted small mb-0">Max 60 seconds</p>
   </div>
 </div>
-
 <div class="d-flex flex-column flex-md-row  justify-content-between mt-5 pt-3 border-top border-secondary border-opacity-25">
   <button class="btn btn-pro-outline px-4 navigationBtnBack mb-2 mb-md-0">Back</button>
-  <button class="btn btn-pro-primary px-5 navigationForward">Review Order <i class="bi bi-check2-circle ms-2"></i></button>
+  <button class="btn btn-pro-primary px-5 navigationForward">
+    Review Order <i class="bi bi-check2-circle ms-2"></i>
+  </button>
 </div>

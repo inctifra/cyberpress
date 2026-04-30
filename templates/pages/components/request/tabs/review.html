@@ -1,7 +1,6 @@
 <div class="row h-100 g-4">
   <div class="col-lg-7 p-1 px-md-4">
     <h4 class="fw-bold mb-4">Order Review</h4>
-
     <div class="summary-card mb-4">
       <h6 class="text-muted mb-3 text-uppercase font-monospace small">Destination</h6>
       <div class="d-flex align-items-center gap-3 mb-4">
@@ -10,19 +9,19 @@
         </div>
         <div>
           <h5 class="fw-bold mb-0" id="summaryCyberName">Not Selected</h5>
-          <span class="badge bg-success bg-opacity-25 text-success border border-success mt-1" id="summaryCyberPricing">--</span>
+          <span class="badge bg-success bg-opacity-25 text-success border border-success mt-1"
+                id="summaryCyberPricing">--</span>
         </div>
       </div>
-
-      <h6 class="text-muted mb-3 text-uppercase font-monospace small border-top border-secondary border-opacity-25 pt-3">Document Breakdown</h6>
+      <h6 class="text-muted mb-3 text-uppercase font-monospace small border-top border-secondary border-opacity-25 pt-3">
+        Document Breakdown
+      </h6>
       <div id="summaryFileList" class="small mb-3"></div>
     </div>
   </div>
-
   <div class="col-lg-5 p-1 p-md-2">
     <div class="summary-card h-100 d-flex flex-column">
       <h5 class="fw-bold mb-4">Payment &amp; Collection</h5>
-
       <div class="d-flex justify-content-between mb-2">
         <span class="text-muted">Subtotal</span>
         <span id="checkoutSubtotal">KES 0</span>
@@ -35,27 +34,52 @@
         <span class="fw-bold fs-5">Total</span>
         <span class="fw-bold fs-5 text-success" id="checkoutTotal">KES 0</span>
       </div>
-
       <div class="mb-4">
         <label class="form-label text-muted small">Select Method</label>
-
-        <div class="form-check pro-check mb-2 p-3 rounded" style="background-color: var(--bg-deep); border: 1px solid var(--border-color);">
-          <input class="form-check-input ms-1" type="radio" name="paymentMethod" id="payMpesa" value="mpesa" checked="" />
-          <label class="form-check-label ms-2 fw-bold d-flex align-items-center gap-2" for="payMpesa"><i class="bi bi-phone text-success"></i> Pay via M-PESA</label>
+        <div class="form-check pro-check mb-2 p-3 rounded"
+             style="background-color: var(--bg-deep);
+                    border: 1px solid var(--border-color)">
+          <input class="form-check-input ms-1"
+                 type="radio"
+                 name="paymentMethod"
+                 id="payMpesa"
+                 value="mpesa"
+                 checked="" />
+          <label class="form-check-label ms-2 fw-bold d-flex align-items-center gap-2"
+                 for="payMpesa">
+            <i class="bi bi-phone text-success"></i> Pay via M-PESA
+          </label>
         </div>
-
-        <div class="form-check pro-check mb-2 p-3 rounded" style="background-color: var(--bg-deep); border: 1px solid var(--border-color);">
-          <input class="form-check-input ms-1" type="radio" name="paymentMethod" id="payCash" value="cyber" />
-          <label class="form-check-label ms-2 fw-bold d-flex align-items-center gap-2" for="payCash"><i class="bi bi-shop text-warning"></i> Pay at Cybercafe</label>
+        <div class="form-check pro-check mb-2 p-3 rounded"
+             style="background-color: var(--bg-deep);
+                    border: 1px solid var(--border-color)">
+          <input class="form-check-input ms-1"
+                 type="radio"
+                 name="paymentMethod"
+                 id="payCash"
+                 value="cyber" />
+          <label class="form-check-label ms-2 fw-bold d-flex align-items-center gap-2"
+                 for="payCash">
+            <i class="bi bi-shop text-warning"></i> Pay at Cybercafe
+          </label>
         </div>
-
-        <div class="form-check pro-check p-3 rounded" style="background-color: var(--bg-deep); border: 1px solid var(--border-color);">
-          <input class="form-check-input ms-1" type="radio" name="paymentMethod" id="payDelivery" value="delivery" />
-          <label class="form-check-label ms-2 fw-bold d-flex align-items-center gap-2" for="payDelivery"><i class="bi bi-bicycle text-info"></i> Deliver to Me</label>
+        <div class="form-check pro-check p-3 rounded"
+             style="background-color: var(--bg-deep);
+                    border: 1px solid var(--border-color)">
+          <input class="form-check-input ms-1"
+                 type="radio"
+                 name="paymentMethod"
+                 id="payDelivery"
+                 value="delivery" />
+          <label class="form-check-label ms-2 fw-bold d-flex align-items-center gap-2"
+                 for="payDelivery">
+            <i class="bi bi-bicycle text-info"></i> Deliver to Me
+          </label>
         </div>
       </div>
-
-      <button class="btn btn-pro-primary w-100 mt-auto py-3 fs-5 bg-accent-color-3"><i class="bi bi-lock-fill me-2"></i> Submit Order</button>
+      <button class="btn btn-pro-primary w-100 mt-auto py-3 fs-5 bg-accent-color-3">
+        <i class="bi bi-lock-fill me-2"></i> Submit Order
+      </button>
     </div>
   </div>
 </div>
