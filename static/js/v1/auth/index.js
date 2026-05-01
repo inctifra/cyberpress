@@ -8,8 +8,7 @@ $(document).ready(async function () {
   ToastProvider("top-right");
   setupAjaxForm("#login-form", {
     onSuccess: (data) => {
-      console.log("Login successful", data);
-      const { html: {success, message, redirect_url} } = JSON.parse(data);
+      const { success, message, redirect_url } = JSON.parse(data.html);
       if (success) {
         toast.success(
           "Login Successful",
@@ -24,11 +23,9 @@ $(document).ready(async function () {
       }
     },
     onError: (err, formValues, form, cleanedError) => {
-      console.error("Login failed", err, cleanedError);
-      const {
-        raw: { html },
-      } = cleanedError;
-      const { message } = JSON.parse(html);
+      
+      const { message } = JSON.parse(cleanedError.raw.html);
+      console.error("Login failed", message, cleanedError);
       toast.error(
         "Failed Login",
         message || "Login failed. Please check your credentials.",
