@@ -1,5 +1,4 @@
 import $ from "jquery";
-import { jsx } from "react/jsx-runtime";
 
 $(document).ready(async function () {
   const [{ setupAjaxForm }, { toast, ToastProvider }] = await Promise.all([

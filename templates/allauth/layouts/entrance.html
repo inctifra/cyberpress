@@ -2,11 +2,17 @@
 
 {% load i18n %}
 {% load render_bundle from webpack_loader %}
+{% block css %}
+  {{ block.super }}
+  {% render_bundle 'auth' 'css' %}
+{% endblock %}
 
-{% block bodyclass %}{% endblock %}
 {% block javascript %}
   {{ block.super }}
   {% render_bundle 'auth' 'js' attrs='defer' %}
+{% endblock %}
+
+{% block bodyclass %}
 {% endblock %}
 {% block body %}
   <div class="body-effect-img"></div>
@@ -15,17 +21,16 @@
       <div class="row min-vh-100 g-0">
         <div class="col-12 col-lg-5">
           <div class="bg-body-custom h-100">
-            {% block form %}{% endblock %}
+            {% block form %}
+            {% endblock %}
           </div>
         </div>
         <div class="col-12 col-lg-7 p-0">
           <div class="auth-creative-img position-relative size-100 overflow-hidden">
             {% block authAnim %}
               {% comment %} <img src="./assets/images/auth-creative.webp" alt="Image" class="img-fluid dash-img border rounded-4 position-relative z-2" /> {% endcomment %}
-              <div class="circle-1 rounded-circle border border-secondary opacity-75 position-absolute top-50 start-50 translate-middle">
-              </div>
-              <div class="circle-2 rounded-circle border border-secondary opacity-25 position-absolute top-50 start-50 translate-middle">
-              </div>
+              <div class="circle-1 rounded-circle border border-secondary opacity-75 position-absolute top-50 start-50 translate-middle"></div>
+              <div class="circle-2 rounded-circle border border-secondary opacity-25 position-absolute top-50 start-50 translate-middle"></div>
             {% endblock %}
           </div>
         </div>
