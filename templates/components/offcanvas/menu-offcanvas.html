@@ -27,13 +27,6 @@
       <nav class="d-flex align-items-start justify-content-start">
       </nav>
     </div>
-    {% comment %} <div class="at-offcanvas-gallery d-none d-xl-block">
-      <div class="sec-2-home-5__avatars-row d-flex gap-2">
-        <div class="sec-2-home-5__avatar-sm at-offcanvas-gallery-img at-offcanvas-gallery-scroll">
-          <img class="img-cover" src="{% webpack_static 'images/cafe/placeholder.jpeg' %}" alt="user" />
-        </div>
-      </div>
-    </div> {% endcomment %}
     <div class="at-offcanvas-gallery d-none d-xl-block">
       <div class="at-offcanvas-gallery-scroll">
         {% for x in "12345678989393" %}
@@ -62,6 +55,27 @@
           </a>
         </li>
       </ul>
+      {% with user=request.user %}
+        {% if user.is_authenticated %}
+          <a class="at-btn w-100 mt-4 text-center mb-0 d-xl-none d-block btn-accent green rounded-pill"
+             role="button"
+             href="{{ user.get_dashboard_url }}">
+            <span>
+              <span class="text-1 text-capitalize">Access Dashboard</span>
+              <span class="text-2 text-capitalize">Access Dashboard</span>
+            </span>
+          </a>
+        {% else %}
+          <a class="at-btn w-100 mt-4 text-center mb-0 d-xl-none d-block btn-accent green rounded-pill"
+             role="button"
+             href="{% url 'account_login' %}">
+            <span>
+              <span class="text-1 text-capitalize">Get Started</span>
+              <span class="text-2 text-capitalize">Get Started</span>
+            </span>
+          </a>
+        {% endif %}
+      {% endwith %}
     </div>
     <div class="at-offcanvas-social">
       <h3 class="at-offcanvas-title sm">Follow Us</h3>

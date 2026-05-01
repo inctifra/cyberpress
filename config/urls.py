@@ -13,6 +13,8 @@ from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from apps.core._admin import _admin_site
+from ifidel.users.views import UserAllauthAccountLoginView
+from ifidel.users.views import UserAllauthAccountSignupView
 
 urlpatterns = [
     path("", include("apps.urls")),
@@ -20,6 +22,17 @@ urlpatterns = [
     path("superadmin/", admin.site.urls),
     # User management
     path("users/", include("ifidel.users.urls", namespace="users")),
+    # Django Allauth OVERRIDES
+    path(
+        "accounts/login/",
+        UserAllauthAccountLoginView.as_view(),
+        name="account_login",
+    ),
+    path(
+        "accounts/signup/",
+        UserAllauthAccountSignupView.as_view(),
+        name="account_signup",
+    ),
     path("accounts/", include("allauth.urls")),
     # Wagtail URLs
     # ------------------------------------------------------------------------------

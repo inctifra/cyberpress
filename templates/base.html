@@ -4,7 +4,9 @@
 
 <!DOCTYPE html>
 {% get_current_language as LANGUAGE_CODE %}
-<html lang="{{ LANGUAGE_CODE }}">
+<html lang="{{ LANGUAGE_CODE }}"
+      {% block htmlattr %}
+      {% endblock htmlattr %}>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -95,33 +97,11 @@
     {% endblock %}
     {% block inline_javascript %}{% endblock %}
     {% block extra_js %}{% endblock %}
-    <a x-data
-       :href="$store.app.whatsappLink"
-       class="whatsapp-float"
-       target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <style>
-      .whatsapp-float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 25px;
-        right: 25px;
-        background-color: #25d366;
-        color: #fff;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .whatsapp-float:hover {
-        background-color: #1ebe5d;
-        color: white;
-      }
-    </style>
+    {% block whatsapp %}
+      <a x-data
+         :href="$store.app.whatsappLink"
+         class="whatsapp-float"
+         target="_blank"><i class="fab fa-whatsapp"></i></a>
+    {% endblock whatsapp %}
   </body>
 </html>

@@ -1,36 +1,35 @@
-{% extends "base.html" %}
+{% extends 'dashboard/layout.html' %}
 
 {% load i18n %}
+{% load render_bundle from webpack_loader %}
 
-{% block bodyclass %}
-  bg-light
-{% endblock bodyclass %}
-{% block css %}
+{% block bodyclass %}{% endblock %}
+{% block javascript %}
   {{ block.super }}
-{% endblock css %}
-{% block title %}
-  {% block head_title %}
-    {% trans "Sign In" %}
-  {% endblock head_title %}
-{% endblock title %}
+  {% render_bundle 'auth' 'js' attrs='defer' %}
+{% endblock %}
 {% block body %}
-  <div class="d-flex justify-content-center h-100 py-4">
-    <div class="col-md-4 py-4 my-4 px-4">
-      {% if messages %}
-        {% for message in messages %}
-          <div class="alert alert-dismissible {% if message.tags %}alert-{{ message.tags }}{% endif %}">
-            {{ message }}
-            <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"></button>
+  <div class="body-effect-img"></div>
+  <div class="position-relative container-fluid px-0">
+    {% block content %}
+      <div class="row min-vh-100 g-0">
+        <div class="col-12 col-lg-5">
+          <div class="bg-body-custom h-100">
+            {% block form %}{% endblock %}
           </div>
-        {% endfor %}
-      {% endif %}
-      {% block content %}
-      {% endblock content %}
-      {% block extra_body %}
-      {% endblock extra_body %}
-    </div>
+        </div>
+        <div class="col-12 col-lg-7 p-0">
+          <div class="auth-creative-img position-relative size-100 overflow-hidden">
+            {% block authAnim %}
+              {% comment %} <img src="./assets/images/auth-creative.webp" alt="Image" class="img-fluid dash-img border rounded-4 position-relative z-2" /> {% endcomment %}
+              <div class="circle-1 rounded-circle border border-secondary opacity-75 position-absolute top-50 start-50 translate-middle">
+              </div>
+              <div class="circle-2 rounded-circle border border-secondary opacity-25 position-absolute top-50 start-50 translate-middle">
+              </div>
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    {% endblock %}
   </div>
-{% endblock body %}
+{% endblock %}

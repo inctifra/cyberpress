@@ -1,0 +1,19 @@
+{% extends 'dashboard/layout.html' %}
+
+{% block title %}
+  {{ block.super }}
+  Onboarding
+{% endblock %}
+{% block body %}
+  <div class="d-flex flex-column min-vh-100 px-4 px-md-0">
+    <div class="d-flex flex-grow-1 align-items-md-center justify-content-center flex-column gap-3">
+      <h1>Nice to see you {{ request.user.email }}!</h1>
+      <p>
+        We are actively working on this dashboard to improve your experience.
+        <br class="d-none d-md-block" />
+        We will alert you when we are done with this feature.
+      </p>
+      <a href="{% url 'upload' %}" class="btn btn-primary">Upload your files for printing!</a>
+    </div>
+  </div>
+{% endblock %}

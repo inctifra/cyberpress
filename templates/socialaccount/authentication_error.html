@@ -1,0 +1,21 @@
+{% extends 'allauth/layouts/confirm/base.html' %}
+
+{% load socialaccount %}
+{% load i18n %}
+{% load allauth %}
+
+{% block head_title %}
+  {% trans 'Third-Party Login Failure' %}
+{% endblock %}
+{% block content %}
+  {% element h1 %}
+  {% trans 'Third-Party Login Failure' %}
+{% endelement %}
+{% element p %}
+{% trans 'An error occurred while attempting to login via your third-party account.' %}
+{% endelement %}
+<div class="mt-2">
+  <a href="{% provider_login_url 'google' %}" class="btn btn-primary">Retry Again</a>
+  <a href="{% url 'account_login' %}" class="btn btn-secondary">Normal Login</a>
+</div>
+{% endblock %}

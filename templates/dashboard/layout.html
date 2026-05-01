@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load render_bundle from webpack_loader %}
+{% load webpack_static from webpack_loader %}
+
+{% block htmlattr %}
+  data-bs-theme="dark"
+  data-theme="elegant"
+  data-topbar-colors="dark"
+  data-layout-mode="dark"
+  data-layout="horizontal"
+  data-layout-size="fluid"
+  data-colors="['--bs-primary', '--bs-secondary', '--bs-success', '--bs-info', '--bs-warning', '--bs-danger', '--bs-dark']"
+{% endblock %}
+{% block css %}
+  {% render_bundle 'cybercafeDashboard' 'css' %}
+{% endblock %}
+{% block javascript %}
+  {{ block.super }}
+  {% render_bundle 'cybercafeDashboard' 'js' attrs='defer' %}
+{% endblock %}
+{% block search %}{% endblock %}
+{% block body %}{% endblock %}
+{% block modal %}{% endblock %}
+{% block whatsapp %}{% endblock %}

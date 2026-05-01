@@ -15,6 +15,9 @@ module.exports = {
     base: path.resolve(__dirname, "../static/js/base/index"),
     printingRequest: path.resolve(__dirname, "../static/js/printing/request"),
     access: path.resolve(__dirname, "../static/js/base/pages/access"),
+    cybercafeDashboard: path.resolve(__dirname, "../static/js/v1/dashboard/cybercafe/index.js"),
+    customerDashboard: path.resolve(__dirname, "../static/js/v1/dashboard/customer/index.js"),
+    auth: path.resolve(__dirname, "../static/js/v1/auth/index.js"),
   },
   output: {
     path: path.resolve(__dirname, "../assets/webpack_bundles/"),

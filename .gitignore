@@ -285,3 +285,4 @@ webpack-stats.json
 .envs/*
 !.envs/.local/
 templates/orisa-html.alithemes.net/
+templates/panelo/

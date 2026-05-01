@@ -16,7 +16,13 @@
         "ignore": [
           "speak",
           "scrollbar-width",
-          "scrollbar-width: none"
+          "scrollbar-width: none",
+          "mix-blend-mode: plus-darker",
+          "text-wrap",
+          "background-color: color-mix(in oklab, var(--color-primary) 10%, transparent)",
+          "background-color: color-mix(in oklab, var(--color-danger) 10%, transparent)",
+          "-webkit-text-size-adjust",
+          "-webkit-overflow-scrolling"
         ]
       }
     ]

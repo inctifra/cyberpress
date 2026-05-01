@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # ifidel/
 APPS_DIR = BASE_DIR / "ifidel"
 env = environ.Env()
-APP_NAME = env.str("APP_NAME", default="Ifidel")
+APP_NAME = env.str("APP_NAME", default="cyberconnect")
 
 # OS environment variables take precedence over variables from .env
 env.read_env(str(BASE_DIR / ".env"))
@@ -101,6 +101,7 @@ LOCAL_APPS = [
     "apps.news",
     "apps.feeds",
     "apps.api",
+    "apps.dashboard",
 ]
 
 
@@ -184,6 +185,7 @@ MIDDLEWARE = [
     "allauth.account.middleware.AccountMiddleware",
     "django_browser_reload.middleware.BrowserReloadMiddleware",
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
+    # "apps.dashboard.middleware.AccountTypeRedirectMiddleware",
 ]
 
 # STATIC
@@ -394,6 +396,10 @@ SOCIALACCOUNT_PROVIDERS = {
         "FETCH_USERINFO": True,
     },
 }
+
+SOCIALACCOUNT_LOGIN_ON_GET = True
+ACCOUNT_LOGOUT_ON_GET = True
+
 # django-rest-framework
 # -------------------------------------------------------------------------------
 # django-rest-framework - https://www.django-rest-framework.org/api-guide/settings/

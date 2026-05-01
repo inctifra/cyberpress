@@ -1,0 +1,127 @@
+{% extends 'allauth/layouts/entrance.html' %}
+
+{% load webpack_static from webpack_loader %}
+
+{% block form %}
+  <div class="row justify-content-center h-100 align-items-center g-0">
+    <div class="col-12 col-md-7 col-lg-12 col-xxl-8">
+      <div class="p-md-10 p-6">
+        <h3 class="mb-2 mt-4 text-center text-gradient fw-bold fs-3xl">Create an Account</h3>
+        <p class="text-muted text-center mb-8">please fill in this form to Create an account</p>
+        {% include 'account/socials/login.html' %}
+        <form action="{% url 'account_signup' %}"
+              method="post"
+              class="row g-3"
+              id="signup-form">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+            <input type="hidden"
+                   name="{{ redirect_field_name }}"
+                   value="{{ redirect_field_value }}" />
+          {% endif %}
+          <div class="row g-4 mt-3">
+            <div class="col-12">
+              <label for="{{ form.email.id_for_label }}" class="form-label">{{ form.email.label }}</label>
+              {% render_field form.email|attr:'class:form-control' %}
+            </div>
+            <div class="col-12">
+              <label for="{{ form.password1.id_for_label }}" class="form-label">{{ form.password1.label }}</label>
+              <div class="position-relative password">
+                {% render_field form.password1|attr:'class:form-control pe-8' %}
+                <div class="position-absolute top-50 end-0 me-3 translate-middle-y text-muted cursor-pointer"
+                     id="passwordShowIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round"
+                       data-lucide="eye-off"
+                       class="lucide lucide-eye-off size-5">
+                    <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"></path>
+                    <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path>
+                    <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"></path>
+                    <path d="m2 2 20 20"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round"
+                       data-lucide="eye"
+                       class="lucide lucide-eye size-5 d-none">
+                    <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+                    </path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-2 text-muted text-sm">{{ form.password1.help_text }}</div>
+            </div>
+            <div class="col-12">
+              <label for="{{ form.password2.id_for_label }}" class="form-label">{{ form.password2.label }}</label>
+              <div class="position-relative password">
+                {% render_field form.password2|attr:'class:form-control pe-8' %}
+                <div class="position-absolute top-50 end-0 me-3 translate-middle-y text-muted cursor-pointer"
+                     id="passwordShowIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round"
+                       data-lucide="eye-off"
+                       class="lucide lucide-eye-off size-5">
+                    <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"></path>
+                    <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path>
+                    <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"></path>
+                    <path d="m2 2 20 20"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round"
+                       data-lucide="eye"
+                       class="lucide lucide-eye size-5 d-none">
+                    <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+                    </path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check check-primary">
+                <input type="checkbox" id="rememberMe" class="form-check-input" required />
+                <label for="rememberMe" class="form-check-label">
+                  I Agree with the <a role="button" class="text-primary text-decoration-underline">Terms and conditions</a>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary w-100">Create an account</button>
+            </div>
+          </div>
+        </form>
+        <p class="mt-5 mb-0 text-center">
+          Already have an account? <a href="{% url 'account_login' %}" class="text-primary">Sign In</a>
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

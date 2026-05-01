@@ -672,6 +672,7 @@ dependencies = [
 dev = [
     { name = "djlint" },
     { name = "rav" },
+    { name = "ruff" },
 ]
 
 [package.metadata]
@@ -739,6 +740,7 @@ requires-dist = [
 dev = [
     { name = "djlint", specifier = ">=1.36.4" },
     { name = "rav", specifier = ">=0.1.1" },
+    { name = "ruff", specifier = ">=0.12.4" },
 ]
 
 [[package]]

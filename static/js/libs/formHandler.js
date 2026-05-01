@@ -5,11 +5,7 @@ export function extractApiError(err) {
 
     return {
       status: err.response.status,
-      message:
-        data.error ||
-        data.message ||
-        data.detail ||
-        "Request failed",
+      message: data.error || data.message || data.detail || "Request failed",
       code: data.code || null,
       raw: data,
     };
@@ -30,8 +26,11 @@ export function extractApiError(err) {
   };
 }
 
-export function setupAjaxForm(selector, { onSuccess, onError, modifyFormData } = {}) {
-    $(document).on("submit", selector, async function (e) {
+export function setupAjaxForm(
+  selector,
+  { onSuccess, onError, modifyFormData } = {},
+) {
+  $(document).on("submit", selector, async function (e) {
     e.preventDefault();
 
     const form = $(this);
@@ -44,17 +43,53 @@ export function setupAjaxForm(selector, { onSuccess, onError, modifyFormData } =
       </div>
     `);
 
+
+    // try {
+    //   if (typeof modifyFormData === "function") {
+    //     formData = modifyFormData(formData, form) || formData;
+    //   }
+
+    //   const formValues = Object.fromEntries(formData.entries());
+    //   clearFieldErrors(form);
+    //   const [{ getApiWithHeaders: apiWithHeaders }] = await Promise.all([import("./axios")]);
+
+    //   const { data } = await apiWithHeaders({
+    //     "Content-Type": "multipart/form-data",
+    //   }).post(form.attr("action"), formData);
+
+    //   if (data.success === false) {
+    //     showFieldErrors(form, data.errors);
+    //     if (onError) onError(data, formValues, form);
+    //     return;
+    //   }
+
+    //   if (onSuccess) onSuccess(data, formValues, form);
+    // } catch (err) {
+    //   const cleanedError = extractApiError(err)
+    //   if (onError) onError(err, formValues, form, cleanedError);
+
+    //   if (err.response?.data?.errors) {
+    //     showFieldErrors(form, err.response.data.errors);
+
+    //     if (onError) onError(err.response.data, formValues, form, cleanedError);
+    //   }
+    // } finally {
+    //   submitBtn.prop("disabled", false).html(originalBtnHTML);
+    // }
+
     let formData = new FormData(this);
 
-    if (typeof modifyFormData === "function") {
-      formData = modifyFormData(formData, form) || formData;
-    }
-
-    const formValues = Object.fromEntries(formData.entries());
-    clearFieldErrors(form);
-
     try {
-      const [{ getApiWithHeaders: apiWithHeaders }] = await Promise.all([import("./axios")]);
+      if (typeof modifyFormData === "function") {
+        formData = modifyFormData(formData, form) || formData;
+      }
+
+      const formValues = Object.fromEntries(formData.entries());
+      clearFieldErrors(form);
+
+      const [{ getApiWithHeaders: apiWithHeaders }] = await Promise.all([
+        import("./axios"),
+      ]);
 
       const { data } = await apiWithHeaders({
         "Content-Type": "multipart/form-data",
@@ -68,21 +103,14 @@ export function setupAjaxForm(selector, { onSuccess, onError, modifyFormData } =
 
       if (onSuccess) onSuccess(data, formValues, form);
     } catch (err) {
-      const cleanedError = extractApiError(err)
-      if (onError) onError(err, formValues, form, cleanedError);
+      const cleanedError = extractApiError(err);
 
-      if (err.response?.data?.errors) {
-        showFieldErrors(form, err.response.data.errors);
-        
-        if (onError) onError(err.response.data, formValues, form, cleanedError);
-      }
+      if (onError) onError(err, {}, form, cleanedError);
     } finally {
       submitBtn.prop("disabled", false).html(originalBtnHTML);
     }
   });
 }
-
-
 
 function clearFieldErrors(form) {
   form.find(".error-message").remove();
@@ -102,17 +130,15 @@ function showFieldErrors(form, errors) {
 
       const errorDiv = $(
         `<div class="error-message text-danger" style="font-size: 0.85rem;">${msgs.join(
-          "<br>"
-        )}</div>`
+          "<br>",
+        )}</div>`,
       );
 
       field.after(errorDiv);
     } else {
       form.prepend(
-        `<div class="alert alert-danger">${msgs.join("<br>")}</div>`
+        `<div class="alert alert-danger">${msgs.join("<br>")}</div>`,
       );
     }
   }
 }
-
-

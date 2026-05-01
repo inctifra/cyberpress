@@ -18,12 +18,21 @@ class User(AbstractUser):
     check forms.SignupForm and forms.SocialSignupForms accordingly.
     """
 
-    # First and last name do not cover name patterns around the globe
+    class AccountType(models.TextChoices):
+        CUSTOMER = "customer", _("Customer")
+        CYBERCAFE_OWNER = "cybercafe_owner", _("Cybercafe Owner")
+        NOT_SET = "not_set", _("Not Set")
+
     name = CharField(_("Name of User"), blank=True, max_length=255)
-    first_name = None  # type: ignore[assignment]
-    last_name = None  # type: ignore[assignment]
+    first_name = CharField(_("First Name"), blank=True, max_length=255)
+    last_name = CharField(_("Last Name"), blank=True, max_length=255)
     email = EmailField(_("email address"), unique=True)
-    username = None  # type: ignore[assignment]
+    username = None
+    account_type = models.CharField(
+        max_length=20,
+        choices=AccountType.choices,
+        default=AccountType.NOT_SET,
+    )
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
@@ -31,13 +40,14 @@ class User(AbstractUser):
     objects: ClassVar[UserManager] = UserManager()
 
     def get_absolute_url(self) -> str:
-        """Get URL for user's detail view.
-
-        Returns:
-            str: URL for user detail.
-
-        """
         return reverse("users:detail", kwargs={"pk": self.id})
+
+    def get_dashboard_url(self) -> str:
+        if self.account_type == self.AccountType.CUSTOMER:
+            return reverse("dashboard:customers:index")
+        if self.account_type == self.AccountType.CYBERCAFE_OWNER:
+            return reverse("dashboard:cybercafe:index")
+        return reverse("dashboard:onboarding")
 
 
 class Profile(models.Model):

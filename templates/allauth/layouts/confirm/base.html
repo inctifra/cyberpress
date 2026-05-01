@@ -1,0 +1,20 @@
+{% extends 'allauth/layouts/entrance.html' %}
+
+{% block body %}
+  <div class="body-effect-img"></div>
+  <div class="auth-wrapper">
+    <div class="container min-vh-100 py-10 d-flex align-items-center">
+      <div class="w-100">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 col-xl-6 col-xxl-4">
+            <div class="card mb-0">
+              <div class="p-sm-8 p-md-10 card-body">
+                {% block content %}{% endblock %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

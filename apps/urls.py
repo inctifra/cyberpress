@@ -10,9 +10,9 @@ sitemaps = {
     "articles": ArticleSitemap,
 }
 
-urlpatterns = []
 urlpatterns = [
     path("", include("apps.core.urls")),
+    path("dashboard/", include("apps.dashboard.urls", namespace="dashboard")),
     path("feeds/", LatestArticlesFeed()),
     path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
     path("robots.txt", robots_txt),
