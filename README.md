@@ -12,6 +12,13 @@ Once you have cloned the repository, you can set up and run both the backend (Dj
 ### 1. Sync Python environment
 
 ```bash
+git clone <link> cyberconnect
+
+cd cyberconnect
+
+uv venv
+
+.\.venv\Scripts\activate
 uv sync
 ```
 
