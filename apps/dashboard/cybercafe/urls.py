@@ -1,5 +1,3 @@
-
-
 from django.urls import path
 
 from apps.dashboard.cybercafe.views import cybercafe_dashboard

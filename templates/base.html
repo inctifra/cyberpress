@@ -51,6 +51,7 @@
           rel="stylesheet" />
   </head>
   <body class="{% block bodyclass %}  {% endblock %}">
+    {% csrf_token %}
     <div id="toast-root"></div>
     {% block body %}
       {% block header %}
@@ -65,7 +66,7 @@
       {% endblock %}
       {% block main %}
         <main style="{% block main_style %}     margin-top: 8rem!important;
-                     {% endblock %}"
+                     min-height: 100vh {% endblock %}"
               {% block main_class %}{% endblock %}>
           <div class="container">
             {% if messages %}
@@ -94,6 +95,7 @@
     <!-- /container -->
     {% block modal %}
       {% include 'pages/components/modal/access.html' %}
+      {% include 'pages/components/modal/delete.html' %}
     {% endblock %}
     {% block inline_javascript %}{% endblock %}
     {% block extra_js %}{% endblock %}

@@ -9,4 +9,3 @@ class CustomAdminSite(AdminSite):
 
 
 _admin_site = CustomAdminSite(name="custom_admin")
-

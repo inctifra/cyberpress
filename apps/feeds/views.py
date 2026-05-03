@@ -28,8 +28,6 @@ class LatestArticlesFeed(Feed):
         return item.get_full_url()
 
 
-
-
 class ArticleSitemap(Sitemap):
     changefreq = "weekly"
     priority = 0.8

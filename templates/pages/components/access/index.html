@@ -1,0 +1,125 @@
+{% if user.is_authenticated %}
+  <!-- ─── AUTHENTICATED: Show real stats ─── -->
+  {% with profile=user.profile %}
+    {% with session=profile.session %}
+      <div class="row g-2 mb-3 stats-authenticated">
+        <div class="col-4">
+          <div class="card border-0">
+            <div class="card-body p-3 text-center">
+              <div class="d-flex align-items-center justify-content-center mx-auto mb-2 rounded icon-primary-success icon-container-bg-primary h-36 w-36">
+                <i class="bi bi-files"></i>
+              </div>
+              <h4 class="fw-bold text-white mb-0" style="font-size: 1.125rem">{{ session.files.count|default:'0' }}</h4>
+              <p class="mb-0 access-p">Total Files</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0">
+            <div class="card-body p-3 text-center">
+              <div class="d-flex align-items-center justify-content-center mx-auto mb-2 rounded icon-primary-success icon-container-bg-primary h-36 w-36">
+                <i class="bi bi-check-circle"></i>
+              </div>
+              <h4 class="fw-bold text-white mb-0" style="font-size: 1.125rem">{{ active_files|default:'0' }}</h4>
+              <p class="mb-0 access-p">Active</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0">
+            <div class="card-body p-3 text-center">
+              <div class="d-flex align-items-center justify-content-center mx-auto mb-2 rounded icon-container h-36 w-36">
+                <i class="bi bi-clock-history"
+                   style="color: rgb(248, 113, 113);
+                          font-size: 0.875rem"></i>
+              </div>
+              <h4 class="fw-bold mb-0"
+                  style="font-size: 1.125rem;
+                         color: rgb(248, 113, 113)">{{ expired_files|default:'0' }}</h4>
+              <p class="mb-0 access-p">Expired</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endwith %}
+  {% endwith %}
+{% else %}
+  <!-- ─── UNAUTHENTICATED: Prompt to login ─── -->
+  <div class="row g-2 mb-3 stats-unauthenticated">
+    <div class="col-12">
+      <div class="card border-0">
+        <div class="card-body p-3 text-center">
+          <div class="d-flex align-items-center justify-content-center mx-auto mb-2 rounded icon-container h-36 w-36"
+               style="background-color: rgba(113, 255, 174, 0.06);
+                      border: 1px solid rgba(113, 255, 174, 0.12)">
+            <i class="bi bi-shield-lock"
+               style="color: rgba(113, 255, 174, 0.5);
+                      font-size: 0.875rem"></i>
+          </div>
+          <h6 class="fw-semibold text-white mb-1" style="font-size: 0.875rem">Sign in to view your stats</h6>
+          <p class="mb-3"
+             style="color: rgba(255, 255, 255, 0.25);
+                    font-size: 0.75rem">Track your files, monitor expiry dates, and manage uploads.</p>
+          <a href="{% url 'login' %}"
+             class="btn btn-sm d-inline-flex align-items-center gap-2"
+             style="background-color: rgba(113, 255, 174, 0.1);
+                    border: 1px solid rgba(113, 255, 174, 0.25);
+                    color: rgb(113, 255, 174);
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 1.25rem;
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    text-decoration: none">
+            <i class="bi bi-box-arrow-in-right" style="font-size: 0.875rem"></i>
+            Sign In
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+<div class="card border-0 mb-3">
+  <div class="card-body p-3">
+    <div class="d-flex flex-column flex-sm-row gap-2">
+      <div class="position-relative flex-grow-1 search-filter-form">
+        <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+        <input data-action="{% url 'partials:search_session_files_views' %}"
+               placeholder="Search by filename or session ID..."
+               class="form-control ps-5 pe-5"
+               type="text"
+               value="" />
+      </div>
+      <div class="d-flex gap-1 upload-files-status-filter">
+        <button type="button" class="btn btn-sm active px-md-4" data-filter="all">All</button>
+        <button type="button" class="btn btn-sm" data-filter="active">Active</button>
+        <button type="button" class="btn btn-sm" data-filter="expired">Expired</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-3 files-area">
+  <div class="search-filter-files">
+    <!-- RETRIEVAL EMPTY INCLUDE -->
+    {% comment %} {% include 'pages/components/access/access-empty.html' %} {% endcomment %}
+    <!-- FILTER INCLUDE -->
+    {% comment %} {% include 'pages/components/access/filters/empty.html' %} {% endcomment %}
+    <!-- Skeleton Card 1 -->
+    {% include 'pages/components/access/skeleton-card.html' %}
+  </div>
+</div>
+<div class="d-flex flex-column flex-sm-row gap-2 mb-4">
+  <button type="button"
+          class="btn w-100 py-2 d-flex align-items-center justify-content-center gap-2"
+          style="background-color: rgba(248, 113, 113, 0.08);
+                 color: rgb(248, 113, 113);
+                 border: 1px solid rgba(248, 113, 113, 0.2);
+                 border-radius: 0.75rem;
+                 font-size: 0.875rem;
+                 font-weight: 600;
+                 transition: 0.2s;
+                 cursor: pointer">
+    <i class="bi bi-trash3"></i>Delete Files
+  </button>
+  <a href="{% url 'upload' %}"
+     class="btn btn-accent w-100 py-2 d-flex align-items-center justify-content-center gap-2"><i class="bi bi-cloud-arrow-up"></i>Upload New Files</a>
+</div>

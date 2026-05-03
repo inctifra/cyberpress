@@ -1,0 +1,329 @@
+.upload-page .file-card-hover {
+  cursor: default;
+  transition: all 0.25s;
+  &.access {
+    .cafe-typography {
+       color: rgba(255, 255, 255, 0.35); font-size: 0.6875rem
+    }
+    .file-age {
+      span {
+        color: rgba(255, 255, 255, 0.35); font-size: 0.6875rem
+      }
+    }
+    .cybercafe-tags {
+      .cafe-item {
+        background-color: rgb(11, 13, 12);
+        border: 1px solid rgb(28, 33, 31);
+        border-radius: 0.25rem;
+        padding: 0.125rem 0.5rem;
+        i {
+          color: rgb(113, 255, 174); font-size: 0.625rem
+        }
+      }
+    
+    }
+  }
+}
+.upload-page .file-card-hover:hover {
+  border-color: #252b28;
+  transform: translateY(-1px);
+}
+.icon-primary-success {
+  color: rgb(113, 255, 174);
+  font-size: 0.875rem;
+}
+.access-p {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.625rem;
+}
+.icon-container-bg-primary {
+  background-color: rgba(113, 255, 174, 0.08);
+  border: 1px solid rgba(113, 255, 174, 0.15);
+}
+.icon-container-bg-danger {
+    background-color: rgba(243, 126, 94, 0.08);
+  border: 1px solid rgba(255, 151, 113, 0.15);
+}
+.w-36 {
+  width: 36px;
+}
+.h-36 {
+  height: 36px;
+}
+.w-44 {
+  width: 44px;
+}
+.h-44 {
+  height: 44px;
+}
+.icon-container {
+  background-color: rgba(248, 113, 113, 0.08);
+  border: 1px solid rgba(248, 113, 113, 0.15);
+}
+
+.upload-files-status-filter button {
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.5rem 0.875rem;
+  white-space: nowrap;
+  transition: 0.2s;
+  cursor: pointer;
+  &.active {
+    background-color: rgb(113, 255, 174);
+    color: rgb(16, 20, 18);
+    border: 1px solid rgb(113, 255, 174);
+  }
+  &:not(.active) {
+    background-color: rgb(11, 13, 12);
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgb(28, 33, 31);
+  }
+}
+
+.files-area {
+  .search-filter-files {
+    .icon-container-bg {
+      &.active {
+        background-color: rgb(20, 23, 22);
+        border: 1px solid rgb(28, 33, 31);
+      }
+      &:not(.active) {
+        background-color: rgba(20, 23, 22, 0.527);
+        border: 1px solid rgb(28, 33, 31);
+      }
+    }
+  }
+}
+.access-page {
+  .search-filter-form {
+    i {
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(255, 255, 255, 0.25);
+      font-size: 0.875rem;
+    }
+    input {
+      padding-left: 36px;
+    }
+  }
+}
+
+.search-filter-files {
+  .file-actions a,
+  .file-actions button {
+    border-radius: 0.5rem;
+    background-color: rgba(113, 255, 174, 0.08);
+    border: 1px solid rgba(113, 255, 174, 0.2);
+    color: rgb(113, 255, 174);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+}
+
+/* ─── Skeleton Base ─── */
+.skeleton-card {
+  background: rgb(26, 30, 28);
+  border-radius: 0.5rem;
+  pointer-events: none;
+  user-select: none;
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+/* ─── Shimmer Gradient ─── */
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgb(28, 33, 31) 0%,
+    rgb(45, 54, 50) 25%,
+    rgb(60, 72, 67) 50%,
+    rgb(45, 54, 50) 75%,
+    rgb(28, 33, 31) 100%
+  );
+  background-size: 200% 100%;
+  border-radius: 0.25rem;
+  animation: shimmer-move 1.8s ease-in-out infinite;
+}
+
+/* ─── Skeleton Elements ─── */
+.skeleton-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 0.5rem;
+  animation-delay: 0s;
+}
+
+.skeleton-title {
+  width: 60%;
+  height: 0.875rem;
+  animation-delay: 0.1s;
+}
+
+.skeleton-meta {
+  width: 3.5rem;
+  height: 0.6875rem;
+  animation-delay: 0.2s;
+}
+
+.skeleton-dot {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: rgb(40, 48, 45);
+  animation: none;
+}
+
+.skeleton-tag {
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  animation-delay: 0.3s;
+}
+
+.skeleton-action {
+  width: 36px;
+  height: 36px;
+  border-radius: 0.5rem;
+  animation-delay: 0.15s;
+}
+
+/* ─── Apply shimmer to all ─── */
+.skeleton-icon,
+.skeleton-title,
+.skeleton-meta,
+.skeleton-tag,
+.skeleton-action {
+  background: linear-gradient(
+    90deg,
+    rgb(28, 33, 31) 0%,
+    rgb(45, 54, 50) 25%,
+    rgb(60, 72, 67) 50%,
+    rgb(45, 54, 50) 75%,
+    rgb(28, 33, 31) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-move 1.8s ease-in-out infinite;
+}
+
+/* ─── Stagger delays for organic feel ─── */
+.skeleton-card:nth-child(1) .skeleton-icon {
+  animation-delay: 0s;
+}
+.skeleton-card:nth-child(1) .skeleton-title {
+  animation-delay: 0.05s;
+}
+.skeleton-card:nth-child(1) .skeleton-meta {
+  animation-delay: 0.1s;
+}
+.skeleton-card:nth-child(1) .skeleton-tag {
+  animation-delay: 0.15s;
+}
+.skeleton-card:nth-child(1) .skeleton-action {
+  animation-delay: 0.08s;
+}
+
+.skeleton-card:nth-child(2) .skeleton-icon {
+  animation-delay: 0.2s;
+}
+.skeleton-card:nth-child(2) .skeleton-title {
+  animation-delay: 0.25s;
+}
+.skeleton-card:nth-child(2) .skeleton-meta {
+  animation-delay: 0.3s;
+}
+.skeleton-card:nth-child(2) .skeleton-tag {
+  animation-delay: 0.35s;
+}
+.skeleton-card:nth-child(2) .skeleton-action {
+  animation-delay: 0.28s;
+}
+
+.skeleton-card:nth-child(3) .skeleton-icon {
+  animation-delay: 0.4s;
+}
+.skeleton-card:nth-child(3) .skeleton-title {
+  animation-delay: 0.45s;
+}
+.skeleton-card:nth-child(3) .skeleton-meta {
+  animation-delay: 0.5s;
+}
+.skeleton-card:nth-child(3) .skeleton-tag {
+  animation-delay: 0.55s;
+}
+.skeleton-card:nth-child(3) .skeleton-action {
+  animation-delay: 0.48s;
+}
+
+@media (width < 768px) {
+  .skeleton-card:nth-child(3),
+  .skeleton-card:nth-child(4) {
+    display: none !important;
+    &.active {
+      display: none !important;
+    }
+  }
+}
+
+/* ─── Animation Keyframes ─── */
+@keyframes shimmer-move {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.empty-state-card {
+  &.search-retrieval-empty {
+    .icon-container {
+      border-radius: 1rem;
+      background-color: rgba(113, 255, 174, 0.06);
+      border: 1px solid rgba(113, 255, 174, 0.12);
+      width: 64px;
+      height: 64px;
+    }
+    h6.empty-heading {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.875rem;
+    }
+    p.empty-description {
+      color: rgba(255, 255, 255, 0.25);
+      font-size: 0.75rem;
+      max-width: 280px;
+    }
+    button {
+      &.btn-empty-session {
+        background-color: rgba(113, 255, 174, 0.1);
+        border: 1px solid rgba(113, 255, 174, 0.25);
+        color: rgb(113, 255, 174);
+        border-radius: 0.5rem;
+        padding: 0.5rem 1.25rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}
+
+
+.empty-state-card {
+  background: rgb(26, 30, 28);
+  border-radius: 0.5rem;
+  
+  button {
+    &:hover {
+      background-color: rgba(113, 255, 174, 0.18) !important;
+      border-color: rgba(113, 255, 174, 0.4) !important;
+      color: rgb(140, 255, 190) !important;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}

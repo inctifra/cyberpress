@@ -1,4 +1,4 @@
-<div class="d-flex flex-column gap-4 ps-xl-4 pt-xl-4">
+{% comment %} <div class="d-flex flex-column gap-4 ps-xl-4 pt-xl-4">
   <div class="text-center">
     <h4 class="fw-bold mb-1 text-white">Your Session Files</h4>
     <p class="text-muted">Download or manage your documents below</p>
@@ -19,12 +19,8 @@
           </div>
         </div>
         <div class="d-flex flex-column flex-md-row gap-2 w-100 w-md-50">
-          <a href="{{ file.file.url }}"
-             target="_blank"
-             class="btn btn-dark-action rounded-pill px-3 w-100"><i class="bi bi-eye"></i></a>
-          <a href="{{ file.file.url }}"
-             download
-             class="btn btn-accent rounded-pill px-4 w-100">
+          <a href="{{ file.file.url }}" target="_blank" class="btn btn-dark-action rounded-pill px-3 w-100"><i class="bi bi-eye"></i></a>
+          <a href="{{ file.file.url }}" download class="btn btn-accent rounded-pill px-4 w-100">
             <i class="bi bi-download me-1"></i>
             <span>Download</span>
           </a>
@@ -35,4 +31,4 @@
   <div class="dark-alert text-center small rounded-pill mt-3">
     ⏳ Files are automatically deleted 24 hours after upload.
   </div>
-</div>
+</div> {% endcomment %}

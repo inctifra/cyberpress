@@ -1,9 +1,11 @@
 from allauth.account.forms import SignupForm
 from allauth.socialaccount.forms import SignupForm as SocialSignupForm
+from django import forms
 from django.contrib.auth import forms as admin_forms
 from django.forms import EmailField
 from django.utils.translation import gettext_lazy as _
 
+from .models import Profile
 from .models import User
 
 
@@ -42,3 +44,13 @@ class UserSocialSignupForm(SocialSignupForm):
     Default fields will be added automatically.
     See UserSignupForm otherwise.
     """
+
+
+class ProfileUpdateForm(forms.ModelForm):
+    full_name = forms.CharField(widget=forms.TextInput(), required=False)
+    phone = forms.CharField(widget=forms.NumberInput(), required=False)
+    location = forms.CharField(widget=forms.TextInput(), required=False)
+
+    class Meta:
+        fields = ["full_name", "phone", "location"]
+        model = Profile

@@ -3,7 +3,8 @@
 {% block main %}
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <main {% block main_class %}class="control-main-section{% endblock %} ">
+      <main {% block main_class %}class="control-main-section"{% endblock %}
+            {% block main_style %}style="min-height: inherit !important"{% endblock %}>
         {% block content %}{% endblock %}
       </main>
       {% block footer %}

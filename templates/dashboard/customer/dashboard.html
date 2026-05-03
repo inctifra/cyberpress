@@ -1,0 +1,296 @@
+{% extends 'pages/base.html' %}
+
+{% load render_bundle from webpack_loader %}
+
+{% block css %}
+  {{ block.super }}
+  {% render_bundle 'dashboardCustomer' 'css' %}
+{% endblock %}
+{% block javascript %}
+  {{ block.super }}
+  {% render_bundle 'dashboardCustomer' 'js' attrs='defer' %}
+{% endblock %}
+{% block title %}{{ request.user.get_username|lower }} - {{ block.super }}{% endblock %}
+{% block content %}
+  <div class="section customer-dashboard px-0 mx-0 px-md-4 mx-md-4 pb-5 mb-5 position-relative"
+       style="z-index: 4">
+    <div class="container d-flex flex-column gap-md-3 gap-4 align-items-center justify-content-center">
+      <div class="mx-auto w-100" style="max-width: 1400px;">
+        <div class="row g-2 g-md-3" style="overflow: hidden;">
+          <div class="col-12 col-lg-8">
+            <div class="card-custom border-0 mb-3 overflow-hidden"
+                 x-data="profileEdit"
+                 x-init="init()"
+                 data-customer-update-url="{{ request.path }}">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="d-flex align-items-center justify-content-center rounded-circle fw-bold"
+                       style="width: 56px;
+                              height: 56px;
+                              background-color: rgba(113, 255, 174, 0.1);
+                              border: 1px solid rgba(113, 255, 174, 0.2);
+                              color: rgb(113, 255, 174);
+                              font-size: 1.125rem"
+                       x-text="getInitials(form.full_name || '{{ request.user.profile.full_name }}')">AM</div>
+                  <div class="flex-grow-1">
+                    <h5 class="fw-semibold text-white mb-0"
+                        style="font-size: 0.9375rem"
+                        x-text="form.full_name || '{{ request.user.profile.full_name }}'"></h5>
+                    <p class="mb-0"
+                       style="color: rgba(255, 255, 255, 0.35);
+                              font-size: 0.75rem"
+                       x-text="form.email || '{{ request.user.email }}'"></p>
+                  </div>
+                  <button type="button"
+                          class="btn btn-sm d-flex align-items-center gap-1"
+                          :class="editing ? 'btn-save' : 'btn-edit'"
+                          :style="editing ? 'background-color: rgba(113, 255, 174, 0.15); color: rgb(113, 255, 174); border: 1px solid rgba(113, 255, 174, 0.3); border-radius: 0.5rem; font-size: 0.75rem; font-weight: 600; cursor: pointer; white-space: nowrap;' : 'background-color: rgba(113, 255, 174, 0.08); color: rgb(113, 255, 174); border: 1px solid rgba(113, 255, 174, 0.2); border-radius: 0.5rem; font-size: 0.75rem; font-weight: 600; cursor: pointer; white-space: nowrap;'"
+                          @click="editing ? saveProfile() : startEditing()">
+                    <template x-if="!editing">
+                      <span class="d-flex align-items-center gap-1">
+                        <i class="bi bi-pencil"></i> Edit Profile
+                      </span>
+                    </template>
+                    <template x-if="editing">
+                      <span class="d-flex align-items-center gap-1">
+                        <i class="bi bi-check-lg"></i> Save Changes
+                      </span>
+                    </template>
+                  </button>
+                </div>
+                <div class="row g-3">
+                  <!-- Full Name -->
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label d-block mb-1">Full Name</label>
+                    <input type="text"
+                           class="form-control"
+                           x-model="form.full_name"
+                           name="full_name"
+                           :readonly="!editing"
+                           :style="!editing ? 'opacity: 0.6; cursor: default;' : 'opacity: 1; cursor: text;'"
+                           :class="editing ? 'border-accent' : ''"
+                           value="{{ request.user.profile.full_name }}" />
+                  </div>
+                  <!-- Email Address -->
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label d-block mb-1">Email Address</label>
+                    <input type="email"
+                           class="form-control"
+                           readonly=""
+                           style="opacity: 0.6;
+                                  cursor: default"
+                           value="{{ request.user.email }}"
+                           name="email" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label d-block mb-1">Phone Number</label>
+                    <input class="form-control"
+                           x-model="form.phone"
+                           name="phone"
+                           :readonly="!editing"
+                           :style="!editing ? 'opacity: 0.6; cursor: default;' : 'opacity: 1; cursor: text;'"
+                           :class="editing ? 'border-accent' : ''"
+                           type="tel"
+                           :value="form.phone"
+                           value="{{ request.user.profile.phone }}" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label d-block mb-1">Location</label>
+                    <input class="form-control"
+                           x-model="form.location"
+                           name="location"
+                           :readonly="!editing"
+                           :style="!editing ? 'opacity: 0.6; cursor: default;' : 'opacity: 1; cursor: text;'"
+                           :class="editing ? 'border-accent' : ''"
+                           type="text"
+                           value="{{ request.user.profile.location }}" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-custom border-0 overflow-hidden">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <h6 class="text-accent text-uppercase fw-semibold mb-0"
+                      style="font-size: 0.625rem;
+                             letter-spacing: 0.08em">Account Type</h6>
+                </div>
+                <p class="mb-3"
+                   style="color: rgba(255, 255, 255, 0.35);
+                          font-size: 0.8125rem">
+                  Choose how you want to use cyberconnect. You can always change this later from your dashboard.
+                </p>
+                <div class="row g-2">
+                  <div class="col-12 col-sm-6">
+                    <button type="button"
+                            class="w-100 text-start"
+                            style="background-color: rgba(113, 255, 174, 0.06);
+                                   border: 1px solid rgba(113, 255, 174, 0.3);
+                                   border-radius: 0.5rem;
+                                   padding: 0.875rem 1rem;
+                                   cursor: pointer;
+                                   opacity: 1;
+                                   transition: 0.2s">
+                      <div class="d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center rounded flex-shrink-0"
+                             style="width: 36px;
+                                    height: 36px;
+                                    background-color: rgba(113, 255, 174, 0.1);
+                                    border: 1px solid rgba(113, 255, 174, 0.2)">
+                          <i class="bi bi-person"
+                             style="color: rgb(113, 255, 174);
+                                    font-size: 0.9375rem"></i>
+                        </div>
+                        <div>
+                          <p class="fw-semibold mb-0"
+                             style="font-size: 0.875rem;
+                                    color: rgb(232, 236, 233)">Customer</p>
+                          <p class="mb-0"
+                             style="font-size: 0.75rem;
+                                    color: rgba(255, 255, 255, 0.3)">Upload and manage your print jobs.</p>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <button type="button"
+                            disabled=""
+                            class="w-100 text-start"
+                            style="background-color: rgb(11, 13, 12);
+                                   border: 1px solid rgb(28, 33, 31);
+                                   border-radius: 0.5rem;
+                                   padding: 0.875rem 1rem;
+                                   cursor: not-allowed;
+                                   opacity: 0.5;
+                                   transition: 0.2s">
+                      <div class="d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center rounded flex-shrink-0"
+                             style="width: 36px;
+                                    height: 36px;
+                                    background-color: rgb(20, 23, 22);
+                                    border: 1px solid rgb(28, 33, 31)">
+                          <i class="bi bi-shop"
+                             style="color: rgba(255, 255, 255, 0.3);
+                                    font-size: 0.9375rem"></i>
+                        </div>
+                        <div>
+                          <p class="fw-semibold mb-0"
+                             style="font-size: 0.875rem;
+                                    color: rgba(255, 255, 255, 0.5)">Cyber Cafe</p>
+                          <p class="mb-0"
+                             style="font-size: 0.75rem;
+                                    color: rgba(255, 255, 255, 0.3)">Receive print orders from customers.</p>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="card-custom border-0 mb-3 overflow-hidden">
+              <div class="card-body p-4">
+                <h6 class="text-accent text-uppercase fw-semibold mb-3"
+                    style="font-size: 0.625rem;
+                           letter-spacing: 0.08em">Activity Summary</h6>
+                <div class="d-flex align-items-center gap-3 mb-3 pb-3"
+                     style="border-bottom: 1px solid rgb(26, 30, 28)">
+                  <div class="d-flex align-items-center justify-content-center rounded"
+                       style="width: 40px;
+                              height: 40px;
+                              background-color: rgba(113, 255, 174, 0.08);
+                              border: 1px solid rgba(113, 255, 174, 0.15)">
+                    <i class="bi bi-files"
+                       style="color: rgb(113, 255, 174);
+                              font-size: 1rem"></i>
+                  </div>
+                  <div>
+                    <p class="fw-bold text-white mb-0" style="font-size: 0.9375rem;">{{ sessions.files.count|default:"0" }}</p>
+                    <p class="mb-0"
+                       style="color: rgba(255, 255, 255, 0.35);
+                              font-size: 0.6875rem">Total uploads</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3 mb-3 pb-3"
+                     style="border-bottom: 1px solid rgb(26, 30, 28)">
+                  <div class="d-flex align-items-center justify-content-center rounded"
+                       style="width: 40px;
+                              height: 40px;
+                              background-color: rgba(113, 255, 174, 0.08);
+                              border: 1px solid rgba(113, 255, 174, 0.15)">
+                    <i class="bi bi-check-circle"
+                       style="color: rgb(113, 255, 174);
+                              font-size: 1rem"></i>
+                  </div>
+                  <div>
+                    <p class="fw-bold text-white mb-0" style="font-size: 0.9375rem;">8</p>
+                    <p class="mb-0"
+                       style="color: rgba(255, 255, 255, 0.35);
+                              font-size: 0.6875rem">Active files</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="d-flex align-items-center justify-content-center rounded"
+                       style="width: 40px;
+                              height: 40px;
+                              background-color: rgba(248, 113, 113, 0.08);
+                              border: 1px solid rgba(248, 113, 113, 0.15)">
+                    <i class="bi bi-trash3"
+                       style="color: rgb(248, 113, 113);
+                              font-size: 1rem"></i>
+                  </div>
+                  <div>
+                    <p class="fw-bold mb-0"
+                       style="font-size: 0.9375rem;
+                              color: rgb(248, 113, 113)">3</p>
+                    <p class="mb-0"
+                       style="color: rgba(255, 255, 255, 0.35);
+                              font-size: 0.6875rem">Deleted this month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-custom border-0 overflow-hidden">
+              <div class="card-body p-4">
+                <h6 class="text-accent text-uppercase fw-semibold mb-3"
+                    style="font-size: 0.625rem;
+                           letter-spacing: 0.08em">Quick Actions</h6>
+                <div class="d-flex flex-column gap-2">
+                  <a href="{% url 'upload' %}"
+                     class="btn btn-accent w-100 py-2 d-flex align-items-center justify-content-center gap-2">
+                    <i class="bi bi-cloud-arrow-up"></i>Upload Files
+                  </a>
+                  <a href="{% url 'access' %}"
+                     class="btn w-100 py-2 d-flex align-items-center justify-content-center gap-2"
+                     style="background-color: rgb(11, 13, 12);
+                            color: rgba(255, 255, 255, 0.6);
+                            border: 1px solid rgb(28, 33, 31);
+                            border-radius: 0.75rem;
+                            font-size: 0.875rem;
+                            font-weight: 600;
+                            transition: 0.2s;
+                            cursor: pointer">
+                    <i class="bi bi-folder2-open"></i>View My Files
+                  </a>
+                  <button type="button"
+                          class="btn w-100 py-2 d-flex align-items-center justify-content-center gap-2"
+                          style="background-color: rgba(248, 113, 113, 0.08);
+                                 color: rgb(248, 113, 113);
+                                 border: 1px solid rgba(248, 113, 113, 0.2);
+                                 border-radius: 0.75rem;
+                                 font-size: 0.875rem;
+                                 font-weight: 600;
+                                 transition: 0.2s;
+                                 cursor: pointer">
+                    <i class="bi bi-trash3"></i>Manage Files
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

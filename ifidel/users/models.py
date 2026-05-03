@@ -67,6 +67,7 @@ class Profile(models.Model):
     # Useful tracking
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    full_name = models.CharField(blank=True, max_length=100)
 
     def __str__(self):
         return f"Profile of {self.user.email}"

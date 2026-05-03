@@ -1,5 +1,3 @@
-
-
 from .models import PrintSession
 
 
@@ -16,4 +14,3 @@ def access_session(code, passkey):
         return None
 
     return session
-

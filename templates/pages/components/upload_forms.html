@@ -1,29 +1,345 @@
-<form method="post"
-      action="{{ request.path }}"
-      enctype="multipart/form-data"
-      id="uploadForm"
-      class="d-flex flex-column gap-4">
-  {% csrf_token %}
-  <div class="text-center">
-    <p class="small mb-0">
-      A secure access code will be generated after upload.
-      <br />
-      Use it to print your document at any partner location.
-    </p>
+<div class="row row-cols-1 row-cols-xl-2 g-3">
+  <div class="col col-xl-7 px-0 px-md-3">
+    <form method="post"
+          action="{{ request.path }}"
+          enctype="multipart/form-data"
+          id="uploadForm"
+          class="d-flex flex-column">
+      {% csrf_token %}
+      <div class="card border-0 mb-2">
+        <div class="card-body">
+          <div class="d-flex align-items-start gap-2">
+            <div class="flex-shrink-0 d-none d-md-inline-flex">
+              <div class="d-flex align-items-center justify-content-center rounded-circle"
+                   style="width: 28px;
+                          height: 28px;
+                          background-color: rgb(15, 17, 16);
+                          border: 1px solid rgb(26, 30, 28)">
+                <i class="bi bi-person-circle fs-3"
+                   style="color: rgb(113, 255, 174);
+                          font-size: 0.75rem"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1">
+              <div class="flex-grow-1">
+                <h6 class="fw-semibold mb-1 text-white">Session Owner</h6>
+                {% if user.is_authenticated %}
+                  <p class="text-white-50 small mb-0">
+                    <i class="bi bi-check-circle-fill text-success me-1"></i>
+                    Logged in as
+                    <strong class="text-white">{{ user.email }}</strong>
+                  </p>
+                {% else %}
+                  <p class="text-white-50 small mb-0">
+                    <i class="bi bi-exclamation-circle-fill text-warning me-1"></i>
+                    Guest session —
+                    <a href="{% url 'account_login' %}?next={{ request.path }}"
+                       class="text-info text-decoration-none">Log in</a>
+                    for saved history
+                  </p>
+                {% endif %}
+              </div>
+              {% comment %}
+              <h6 class="fw-semibold mb-0 text-white" style="font-size: 0.75rem">
+                Session Owner
+              </h6>
+              <p class="text-white-50 mb-0" style="font-size: 0.6875rem">
+                <i class="bi bi-exclamation-circle-fill text-warning me-1" style="font-size: 0.625rem"></i>Guest session —
+                <a href="#" class="text-info text-decoration-none">Log in</a>
+                for saved history
+              </p>
+              {% endcomment %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0 mb-2">
+        <div class="card-body">
+          <label class="form-label d-flex align-items-center gap-2 mb-2">
+            <div class="section-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            Select Print Location
+          </label>
+          <div class="row g-2 location-btns-cybercafe">
+            <div class="col-6">
+              <button type="button" class="location-btn active" data-location="self">
+                <div class="icon-box">
+                  <i class="bi bi-printer"></i>
+                </div>
+                <div>
+                  <p class="fw-medium mb-0 text-white" style="font-size: 0.8125rem">Self Print</p>
+                  <p class="mb-0 text-white-50 d-none d-md-inline-block"
+                     style="font-size: 0.6875rem">Use your own printer</p>
+                </div>
+              </button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="location-btn" data-location="cybercafe">
+                <div class="icon-box">
+                  <i class="bi bi-shop"></i>
+                </div>
+                <div>
+                  <p class="fw-medium mb-0 text-white" style="font-size: 0.8125rem">CyberCafe</p>
+                  <p class="mb-0 text-white-50 d-none d-md-inline-block"
+                     style="font-size: 0.6875rem">Partner location, pick-up</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="customer-upload-information-instruction" data-display="false">
+        <div class="card border-0 mb-2 customer-details">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="section-icon">
+                <i class="bi bi-file-text"></i>
+              </div>
+              <h3 class="mb-0 text-white text-accent"
+                  style="font-size: 0.625rem;
+                         font-weight: 600;
+                         text-transform: uppercase;
+                         letter-spacing: 0.08em">Customer Details</h3>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <div>
+                <label class="form-label d-block mb-1">Email Address</label>
+                <input placeholder="john@example.com"
+                       class="form-control"
+                       type="email"
+                       value="" />
+              </div>
+              <div>
+                <label class="form-label d-block mb-1">Phone Number</label>
+                <input placeholder="+1(555) 000-0000"
+                       class="form-control"
+                       type="tel"
+                       value="" />
+              </div>
+              <div>
+                <label class="form-label d-block mb-1">Preferred CyberCafe Location</label>
+                <select class="form-select">
+                  <option value="" disabled="">Choose a location...</option>
+                  <option value="downtown">Downtown CyberCafe</option>
+                  <option value="uptown">Uptown Print Center</option>
+                  <option value="mall">Mall Location</option>
+                  <option value="east">East Side Hub</option>
+                </select>
+              </div>
+            </div>
+            <div class="info-notice mt-2">
+              <i class="bi bi-info-circle"></i>
+              <p class="mb-0">
+                Payment will be processed after upload. Estimated:
+                <span class="accent-text">$0.10/page</span>
+              </p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="section-icon">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <h3 class="mb-0 text-accent"
+                  style="font-size: 0.625rem;
+                         font-weight: 600;
+                         text-transform: uppercase;
+                         letter-spacing: 0.08em">Notes for Operator</h3>
+            </div>
+            <textarea rows="4"
+                      maxlength="500"
+                      placeholder="Specify printing instructions (e.g., Black &amp; White, Double-sided, 2 copies, A4 paper, stapled...)"
+                      class="form-control resize-none"
+                      style="resize: none"></textarea>
+            <div class="d-flex align-items-center justify-content-between mt-2 flex-wrap gap-2">
+              <p class="text-white-25 mb-0" style="font-size: 0.75rem">0/500 characters</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <button type="button" class="btn btn-tag">B&amp;W</button>
+                <button type="button" class="btn btn-tag">Color</button>
+                <button type="button" class="btn btn-tag">Double-sided</button>
+                <button type="button" class="btn btn-tag">Stapled</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0 mb-3">
+        <div class="card-body p-3">
+          <div class="dropzone-area" id="fileDropzone">
+            <div class="dropzone-icon">
+              <i class="bi bi-cloud-arrow-up"></i>
+            </div>
+            <p class="fw-medium text-center px-4 mb-1"
+               style="color: rgba(255, 255, 255, 0.6);
+                      font-size: 0.75rem">Drag &amp; drop files here</p>
+            <p class="text-center px-4 mb-0"
+               style="color: rgba(255, 255, 255, 0.25);
+                      font-size: 0.6875rem">or click to browse your files</p>
+            <input multiple=""
+                   accept=".pdf,.docx,.doc,.png,.jpg,.jpeg,.ppt,.pptx"
+                   class="d-none"
+                   type="file" />
+          </div>
+          <div class="d-flex flex-column gap-2 mt-3" id="fileList"></div>
+        </div>
+      </div>
+      <button type="submit"
+              class="btn btn-accent green w-100 py-3 d-flex align-items-center justify-content-center gap-2">
+        <i class="bi bi-shield-check"></i>Secure &amp; Upload
+      </button>
+      <div class="d-flex align-items-center justify-content-center gap-2 my-2 mt-3 py-2 border rounded-pill"
+           style="background: rgba(255, 255, 255, 0.05);
+                  border: 1px solid rgba(255, 255, 255, 0.1)">
+        <i class="bi bi-lock text-white-25" style="font-size: 0.625rem"></i>
+        <p class="text-white-25 mb-0" style="font-size: 0.6875rem">End-to-end encrypted · Auto-deletes in 24h</p>
+      </div>
+      <div class="card border-0 mt-2 request-your-printer">
+        <div class="card-body">
+          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="printer-icon-box flex-shrink-0 d-none d-md-inline-flex">
+                <i class="bi bi-printer"></i>
+              </div>
+              <div>
+                <h3 class="fw-semibold text-white mb-1" style="font-size: 0.8125rem">Request your favorite printer</h3>
+                <p class="mb-0"
+                   style="color: rgba(255, 255, 255, 0.3);
+                          font-size: 0.6875rem;
+                          line-height: 1.5;
+                          max-width: 480px">
+                  Send a quick notification request to your preferred cyber cafe
+                  printer. They'll receive your file instantly so you can just
+                  walk in and pick it up.
+                </p>
+              </div>
+            </div>
+            <button type="submit"
+                    class="btn flex-shrink-0 d-flex align-items-center gap-2 btn-accent"
+                    style="border-radius: 9999px;
+                           font-size: 0.75rem;
+                           font-weight: 600;
+                           padding: 0.5rem 1rem">
+              <i class="bi bi-send"></i>Send Request
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
-  <!-- Dropzone container ONLY -->
-  <div id="fileDropzone"
-       class="custom-dropzone d-flex flex-column gap-2 align-items-center justify-content-center">
-    <div class="dz-message text-center">
-      <i class="bi bi-cloud-arrow-up fs-1 text-accent mb-2 d-block"></i>
-      <h6 class="fw-semibold">Drag & Drop files here</h6>
-      <p class="small">or click to browse</p>
+  <div class="col col-xl-5 px-0">
+    <div class="d-flex flex-column gap-2">
+      <div class="card border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="section-icon">
+              <i class="bi bi-file-earmark-text"></i>
+            </div>
+            <h3 class="mb-0 text-white"
+                style="font-size: 0.625rem;
+                       font-weight: 600;
+                       text-transform: uppercase;
+                       letter-spacing: 0.08em">Supported Formats</h3>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="format-card">
+              <i class="bi bi-file-earmark-pdf"></i><span>PDF</span>
+            </div>
+            <div class="format-card">
+              <i class="bi bi-file-earmark-word"></i><span>DOCX</span>
+            </div>
+            <div class="format-card">
+              <i class="bi bi-file-earmark-slides"></i><span>PPTX</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-2 mt-2">
+            <i class="bi bi-lightbulb"
+               style="color: rgba(113, 255, 174, 0.5);
+                      font-size: 0.625rem;
+                      margin-top: 2px"></i>
+            <p class="mb-0"
+               style="color: rgba(255, 255, 255, 0.25);
+                      font-size: 0.6875rem;
+                      line-height: 1.5">
+              <span style="color: rgb(113, 255, 174); font-weight: 500">Tip:</span>
+              PDF files produce the highest print quality and fastest
+              processing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="section-icon">
+              <i class="bi bi-bar-chart"></i>
+            </div>
+            <h3 class="mb-0 text-white"
+                style="font-size: 0.625rem;
+                       font-weight: 600;
+                       text-transform: uppercase;
+                       letter-spacing: 0.08em">Upload Limits</h3>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <div>
+              <div class="d-flex align-items-center justify-content-between mb-1">
+                <span style="color: rgba(255, 255, 255, 0.35); font-size: 0.6875rem">Files per session</span><span style="color: rgb(113, 255, 174);
+             font-size: 0.6875rem;
+             font-weight: 500">5 max</span>
+              </div>
+              <div class="limit-bar-bg">
+                <div class="limit-bar-fill" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex align-items-center justify-content-between mb-1">
+                <span style="color: rgba(255, 255, 255, 0.35); font-size: 0.6875rem">Size per file</span><span style="color: rgb(113, 255, 174);
+             font-size: 0.6875rem;
+             font-weight: 500">20 MB max</span>
+              </div>
+              <div class="limit-bar-bg">
+                <div class="limit-bar-fill" style="width: 0%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex align-items-center justify-content-between mb-1">
+                <span style="color: rgba(255, 255, 255, 0.35); font-size: 0.6875rem">Total session size</span><span style="color: rgb(113, 255, 174);
+             font-size: 0.6875rem;
+             font-weight: 500">50 MB max</span>
+              </div>
+              <div class="limit-bar-bg">
+                <div class="limit-bar-fill" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="section-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h3 class="mb-0 text-white"
+                style="font-size: 0.625rem;
+                       font-weight: 600;
+                       text-transform: uppercase;
+                       letter-spacing: 0.08em">Enterprise-Grade Security</h3>
+          </div>
+          <p class="mb-2"
+             style="color: rgba(255, 255, 255, 0.25);
+                    font-size: 0.6875rem;
+                    line-height: 1.5">
+            Your files are encrypted in transit and at rest using AES-256
+            encryption.
+          </p>
+          <div class="d-flex gap-2">
+            <span class="badge-security"><i class="bi bi-shield-lock"></i>TLS 1.3</span><span class="badge-security"><i class="bi bi-lock"></i>AES-256</span>
+          </div>
+        </div>
+        <a class="btn py-2 mt-3 border mx-3 rounded-pill"
+           href="{% url 'access' %}">Access Your files</a>
+      </div>
     </div>
   </div>
-  <button type="submit"
-          class="btn-accent green w-100 py-3 rounded-pill fw-semibold">
-    <i class="bi bi-shield-lock me-2"></i>
-    Secure & Upload
-  </button>
-  <div class="text-center small">🔐 Encrypted session • Files auto-delete in 24 hours</div>
-</form>
+</div>

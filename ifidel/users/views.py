@@ -8,6 +8,7 @@ from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import DetailView
 from django.views.generic import RedirectView
+from django.views.generic import TemplateView
 from django.views.generic import UpdateView
 
 from ifidel.users.models import User
@@ -56,7 +57,11 @@ class UserAllauthAccountLoginView(LoginView):
     def form_valid(self, form):
         response = super().form_valid(form)
         user = self.request.user
-        url = user.get_dashboard_url() if user.is_authenticated else self.get_next_url()
+        url = (
+            self.get_next_url()
+            if self.get_next_url() and user.is_authenticated
+            else user.get_dashboard_url()
+        )
         return JsonResponse(
             {
                 "success": True,
@@ -107,3 +112,5 @@ class UserAllauthAccountSignupView(SignupView):
         )
 
 
+class UserSelectAccountView(LoginRequiredMixin, TemplateView):
+    template_name = "users/select_account.html"

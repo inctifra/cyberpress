@@ -1,0 +1,229 @@
+
+// .upload-page .format-card {
+//   background-color:#0b0d0c;
+//   border:1px solid #1c211f;
+//   border-radius:.5rem;
+//   flex-direction:column;
+//   flex:1;
+//   align-items:center;
+//   gap:.375rem;
+//   padding:.625rem;
+//   display:flex
+// }
+// .upload-page .format-card i {
+//   color:#71ffae;
+//   font-size:1rem
+// }
+// .upload-page .format-card span {
+//   color:#fff6;
+//   text-transform:uppercase;
+//   letter-spacing:.05em;
+//   font-size:.625rem;
+//   font-weight:500
+// }
+// .upload-page .badge-security {
+//   color:#fff6;
+//   background-color:#0b0d0c;
+//   border:1px solid #1c211f;
+//   border-radius:.375rem;
+//   align-items:center;
+//   gap:.375rem;
+//   padding:.25rem .625rem;
+//   font-size:.625rem;
+//   display:inline-flex
+// }
+// .upload-page .badge-security i {
+//   color:#71ffae;
+//   font-size:.625rem
+// }
+// .upload-page .info-notice {
+//   background-color:#0b0d0c;
+//   border:1px solid #1c211f;
+//   border-radius:.5rem;
+//   align-items:center;
+//   gap:.5rem;
+//   padding:.5rem .75rem;
+//   display:flex
+// }
+// .upload-page .info-notice i {
+//   color:#71ffae99;
+//   font-size:.75rem
+// }
+// .upload-page .info-notice p {
+//   color:#ffffff40;
+//   margin:0;
+//   font-size:.75rem
+// }
+// .upload-page .info-notice .accent-text {
+//   color:#71ffae;
+//   font-weight:500
+// }
+// .upload-page .navbar-custom {
+//   -webkit-backdrop-filter:blur(12px);
+//   backdrop-filter:blur(12px);
+//   background-color:#080a09d9;
+//   border-bottom:1px solid #111413
+// }
+// .upload-page .nav-pill-group {
+//   background-color:#0f1110;
+//   border:1px solid #1a1e1c;
+//   border-radius:9999px;
+//   align-items:center;
+//   padding:.25rem;
+//   display:flex
+// }
+// .upload-page .nav-pill-group a {
+//   color:#ffffff73;
+//   white-space:nowrap;
+//   border-radius:9999px;
+//   padding:.375rem 1rem;
+//   font-size:.75rem;
+//   text-decoration:none;
+//   transition:color .2s
+// }
+// .upload-page .nav-pill-group a:hover {
+//   color:#e8ece9
+// }
+// .upload-page .btn-nav {
+//   color:#fff6;
+//   cursor:pointer;
+//   background-color:#0f1110;
+//   border:1px solid #1a1e1c;
+//   border-radius:50%;
+//   justify-content:center;
+//   align-items:center;
+//   width:2rem;
+//   height:2rem;
+//   transition:all .2s;
+//   display:flex
+// }
+// .upload-page .btn-nav:hover {
+//   background-color:#141716
+// }
+// .upload-page .btn-get-started {
+//   color:#101412;
+//   white-space:nowrap;
+//   background-color:#71ffae;
+//   border-radius:9999px;
+//   padding:.5rem 1rem;
+//   font-size:.75rem;
+//   font-weight:600;
+//   text-decoration:none;
+//   transition:background-color .2s
+// }
+// .upload-page .btn-get-started:hover {
+//   background-color:#8cffc2
+// }
+// .upload-page .footer-custom {
+//   border-top:1px solid #111413;
+//   padding:1.25rem 0
+// }
+// .upload-page .footer-custom a {
+//   color:#fff3;
+//   font-size:.75rem;
+//   text-decoration:none;
+//   transition:color .2s
+// }
+// .upload-page .footer-custom a:hover {
+//   color:#71ffae
+// }
+// .upload-page .page-header-icon {
+//   background-color:#0f1110;
+//   border:1px solid #1c211f;
+//   border-radius:50%;
+//   justify-content:center;
+//   align-items:center;
+//   width:2rem;
+//   height:2rem;
+//   margin:0 auto .75rem;
+//   display:flex
+// }
+// .upload-page .page-header-icon i {
+//   color:#71ffae;
+//   font-size:.875rem
+// }
+// .upload-page .printer-icon-box {
+//   background-color:#0f1110;
+//   border:1px solid #1c211f;
+//   border-radius:.375rem;
+//   flex-shrink:0;
+//   justify-content:center;
+//   align-items:center;
+//   width:2.25rem;
+//   height:2.25rem;
+//   display:flex
+// }
+// .upload-page .printer-icon-box i {
+//   color:#71ffae;
+//   font-size:1rem
+// }
+// .upload-page .section-icon {
+//   background-color:#71ffae14;
+//   border-radius:.25rem;
+//   justify-content:center;
+//   align-items:center;
+//   width:1.125rem;
+//   height:1.125rem;
+//   display:flex
+// }
+// .upload-page .section-icon i {
+//   color:#71ffae;
+//   font-size:.625rem
+// }
+// .upload-page .spinner-accent {
+//   animation:1s linear infinite spin
+// }
+// @keyframes spin {
+//   0% {
+//     transform:rotate(0)
+//   }
+//   to {
+//     transform:rotate(360deg)
+//   }
+// }
+
+// .upload-page .btn-tag {
+//   color:#ffffff80;
+//   white-space:nowrap;
+//   cursor:pointer;
+//   background:0 0;
+//   border:1px solid #ffffff1a;
+//   border-radius:9999px;
+//   padding:.25rem .625rem;
+//   font-size:.75rem;
+//   transition:all .2s
+// }
+// .upload-page .btn-tag:hover {
+//   color:#71ffae;
+//   border-color:#71ffae80
+// }
+// .upload-page .text-accent {
+//   color:#71ffae!important
+// }
+
+// .upload-page .success-badge {
+//   color:#71ffae;
+//   background-color:#71ffae1a;
+//   border:1px solid #71ffae4d;
+//   border-radius:9999px;
+//   align-items:center;
+//   gap:.5rem;
+//   padding:.5rem 1rem;
+//   font-size:.75rem;
+//   font-weight:600;
+//   display:inline-flex
+// }
+
+.customer-dashboard {
+    
+    .card-custom {
+      border: none;
+      border-radius: 10px;
+      transition: all 0.5s;
+      background-color: var(--primary);
+    }
+    .card:hover{
+        transform: translateY(-1px);
+    }
+
+}

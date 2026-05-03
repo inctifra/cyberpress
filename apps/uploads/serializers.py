@@ -9,8 +9,10 @@ class FileMediaSerializer(ModelSerializer):
         model = File
         fields = "__all__"
 
+
 class PrintSessionSerializer(ModelSerializer):
     files = FileMediaSerializer(many=True)
+
     class Meta:
         model = PrintSession
         fields = ["access_code", "files"]

@@ -1,0 +1,455 @@
+@import "upload.scss";
+
+.select-account-page .form-select option {
+  color: #e8ece9;
+  background-color: #0b0d0c;
+}
+.select-account-page .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2371ffae' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 6 6 6-6'/%3e%3c/svg%3e");
+}
+.select-account-page .btn-accent {
+  color: #101412;
+  background-color: #71ffae;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.select-account-page .btn-accent:hover {
+  background-color: #8cffc2;
+  box-shadow: 0 0 24px #71ffae4d;
+}
+.select-account-page .btn-accent:disabled {
+  color: #fff3;
+  box-shadow: none;
+  background-color: #1a1e1c;
+  border: 1px solid #ffffff0f;
+}
+.select-account-page .btn-outline-accent {
+  color: #71ffae;
+  background-color: #0000;
+  border: 1px solid #71ffae4d;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.select-account-page .btn-outline-accent:hover {
+  background-color: #71ffae1a;
+  border-color: #71ffae;
+}
+.select-account-page .location-btn {
+  color: #e8ece9;
+  text-align: left;
+  cursor: pointer;
+  background-color: #0b0d0c;
+  border: 1px solid #1c211f;
+  border-radius: 0.5rem;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.625rem;
+  transition: all 0.3s;
+  display: flex;
+}
+.select-account-page .location-btn:hover {
+  border-color: #252b28;
+}
+.select-account-page .location-btn.active {
+  background-color: #71ffae0a;
+  border-color: #71ffae66;
+}
+.select-account-page .location-btn .icon-box {
+  background-color: #141716;
+  border: 1px solid #1c211f;
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+}
+.select-account-page .location-btn .icon-box i {
+  color: #71ffae;
+  font-size: 0.875rem;
+}
+
+.select-account-page .dropzone-area.drag-over {
+  background-color: #71ffae0d;
+  border-color: #71ffae;
+  box-shadow: 0 0 20px #71ffae14;
+}
+.select-account-page .dropzone-icon {
+  background-color: #141716;
+  border: 1px solid #1c211f;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 0.625rem;
+  transition: all 0.3s;
+  display: flex;
+}
+.select-account-page .dropzone-area.drag-over .dropzone-icon {
+  border-color: #71ffae4d;
+  transform: scale(1.05);
+}
+.select-account-page .dropzone-icon i {
+  color: #71ffae;
+  font-size: 1rem;
+}
+.select-account-page .file-item {
+  background-color: #0b0d0c;
+  border: 1px solid #1c211f;
+  border-radius: 0.5rem;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  display: flex;
+}
+.select-account-page .file-icon {
+  background-color: #141716;
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+}
+.select-account-page .file-icon i {
+  color: #71ffae;
+  font-size: 0.75rem;
+}
+.select-account-page .progress-bg {
+  background-color: #ffffff0f;
+  border-radius: 9999px;
+  width: 100%;
+  height: 0.25rem;
+  margin-top: 0.375rem;
+  overflow: hidden;
+}
+.select-account-page .progress-fill {
+  background-color: #71ffae;
+  border-radius: 9999px;
+  height: 100%;
+  transition: width 0.5s;
+}
+.select-account-page .progress-fill.error {
+  background-color: #f87171;
+}
+.select-account-page .btn-remove {
+  color: #fff6;
+  cursor: pointer;
+  background: 0 0;
+  border: none;
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  transition: all 0.2s;
+  display: flex;
+}
+.select-account-page .btn-remove:hover {
+  color: #fff;
+  background-color: #ffffff0d;
+}
+.select-account-page .limit-bar-bg {
+  background-color: #ffffff0f;
+  border-radius: 9999px;
+  width: 100%;
+  height: 0.25rem;
+  overflow: hidden;
+}
+.select-account-page .limit-bar-fill {
+  background-color: #71ffae;
+  border-radius: 9999px;
+  height: 100%;
+  transition: width 0.3s;
+}
+.select-account-page .format-card {
+  background-color: #0b0d0c;
+  border: 1px solid #1c211f;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.625rem;
+  display: flex;
+}
+.select-account-page .format-card i {
+  color: #71ffae;
+  font-size: 1rem;
+}
+.select-account-page .format-card span {
+  color: #fff6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+.select-account-page .badge-security {
+  color: #fff6;
+  background-color: #0b0d0c;
+  border: 1px solid #1c211f;
+  border-radius: 0.375rem;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.625rem;
+  display: inline-flex;
+}
+.select-account-page .badge-security i {
+  color: #71ffae;
+  font-size: 0.625rem;
+}
+.select-account-page .info-notice {
+  background-color: #0b0d0c;
+  border: 1px solid #1c211f;
+  border-radius: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+}
+.select-account-page .info-notice i {
+  color: #71ffae99;
+  font-size: 0.75rem;
+}
+.select-account-page .info-notice p {
+  color: #ffffff40;
+  margin: 0;
+  font-size: 0.75rem;
+}
+.select-account-page .info-notice .accent-text {
+  color: #71ffae;
+  font-weight: 500;
+}
+.select-account-page .navbar-custom {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: #080a09d9;
+  border-bottom: 1px solid #111413;
+}
+.select-account-page .nav-pill-group {
+  background-color: #0f1110;
+  border: 1px solid #1a1e1c;
+  border-radius: 9999px;
+  align-items: center;
+  padding: 0.25rem;
+  display: flex;
+}
+.select-account-page .nav-pill-group a {
+  color: #ffffff73;
+  white-space: nowrap;
+  border-radius: 9999px;
+  padding: 0.375rem 1rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.select-account-page .nav-pill-group a:hover {
+  color: #e8ece9;
+}
+.select-account-page .btn-nav {
+  color: #fff6;
+  cursor: pointer;
+  background-color: #0f1110;
+  border: 1px solid #1a1e1c;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.2s;
+  display: flex;
+}
+.select-account-page .btn-nav:hover {
+  background-color: #141716;
+}
+.select-account-page .btn-get-started {
+  color: #101412;
+  white-space: nowrap;
+  background-color: #71ffae;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.select-account-page .btn-get-started:hover {
+  background-color: #8cffc2;
+}
+.select-account-page .footer-custom {
+  border-top: 1px solid #111413;
+  padding: 1.25rem 0;
+}
+.select-account-page .footer-custom a {
+  color: #fff3;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.select-account-page .footer-custom a:hover {
+  color: #71ffae;
+}
+.select-account-page .page-header-icon {
+  background-color: #0f1110;
+  border: 1px solid #1c211f;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto 0.75rem;
+  display: flex;
+}
+.select-account-page .page-header-icon i {
+  color: #71ffae;
+  font-size: 0.875rem;
+}
+.select-account-page .printer-icon-box {
+  background-color: #0f1110;
+  border: 1px solid #1c211f;
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+}
+.select-account-page .printer-icon-box i {
+  color: #71ffae;
+  font-size: 1rem;
+}
+.select-account-page .section-icon {
+  background-color: #71ffae14;
+  border-radius: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  display: flex;
+}
+.select-account-page .section-icon i {
+  color: #71ffae;
+  font-size: 0.625rem;
+}
+.select-account-page .spinner-accent {
+  animation: 1s linear infinite spin;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (width<=991.98px) {
+  .select-account-page .card {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.select-account-page {
+  .header-primary {
+    background-color: rgba(113, 255, 174, 0.08);
+    border: 1px solid rgba(113, 255, 174, 0.15);
+  }
+  .cybercafe-account,
+  .customer-account {
+    background-color: rgb(11, 13, 12);
+    border: 1px solid rgb(28, 33, 31);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    opacity: 1;
+    transition: 0.2s;
+    .customer-account {
+      cursor: pointer;
+    }
+  .status-check {
+      transition: 0.2s;
+      .bi {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 1.25rem;
+        &.bi-check {
+            display: none
+        }
+      }
+    }
+    &.active {
+      background-color: rgba(113, 255, 174, 0.06);
+      border: 1px solid rgba(113, 255, 174, 0.35);
+        .status-check  {
+      &.active {
+        border: 1px solid rgba(113, 255, 174, 0.4);
+        background-color: rgba(113, 255, 174, 0.15);
+        .bi {
+          color: rgb(113, 255, 174);
+          &.bi-check{
+            display: inline;
+          }
+        }}
+        
+      
+    }
+    }
+    .status-check {
+      transition: 0.2s;
+      i.bi {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 1.25rem;
+      }
+      &.active {
+        border: 1px solid rgba(113, 255, 174, 0.4);
+        background-color: rgba(113, 255, 174, 0.15);
+        .bi {
+          color: rgb(113, 255, 174);
+        }
+      }
+    }
+  }
+  .cybercafe-account {
+    cursor: not-allowed;
+    .status-check {
+      background-color: rgb(20, 23, 22);
+      border: 1px solid rgb(28, 33, 31);
+      transition: 0.2s;
+      i {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 1.25rem;
+      }
+    }
+    .badge {
+      background-color: rgba(248, 113, 113, 0.08);
+      color: rgb(248, 113, 113);
+      border: 1px solid rgba(248, 113, 113, 0.2);
+      font-size: 0.625rem;
+      font-weight: 600;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.375rem;
+    }
+  }
+  .select-account-btn {
+    
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.h-64 {
+  height: 64px;
+}
+.w-64 {
+  width: 64px;
+}

@@ -1,0 +1,88 @@
+{% extends 'pages/base.html' %}
+
+{% load render_bundle from webpack_loader %}
+
+{% block css %}
+  {{ block.super }} {% render_bundle 'selectAccount' 'css' %}
+{% endblock %}
+{% block javascript %}
+  {{ block.super }} {% render_bundle 'selectAccount' 'js' attrs='defer' %}
+{% endblock %}
+{% block title %}Upload PDFs - {{ block.super }}{% endblock %}
+{% block content %}
+  <div class="select-account-page mx-auto mt-5 pt-4 container"
+       style="max-width: 600px">
+    <div class="text-center mb-5">
+      <div class="d-inline-flex align-items-center justify-content-center header-primary h-64 w-64 rounded-circle mb-3">
+        <i class="bi bi-person-check"
+           style="color: rgb(113, 255, 174);
+                  font-size: 1.5rem"></i>
+      </div>
+      <h1 class="fw-bold text-white mb-2" style="font-size: 1.375rem">Pick Your Account Type</h1>
+      <p class="text-white-50 mb-0" style="font-size: 0.8125rem">
+        Tell us how you plan to use cyberconnect so we can personalize your experience.
+      </p>
+    </div>
+    <div class="d-flex flex-column gap-3 mb-4">
+      <button account-choices
+              type="button"
+              class="w-100 text-start customer-account"
+              data-account="customer">
+        <div class="d-flex align-items-start gap-3">
+          <div class="d-flex align-items-center justify-content-center status-check h-48 w-48 rounded flex-shrink-0">
+            <i class="bi bi-person"></i>
+          </div>
+          <div class="flex-grow-1">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <p class="fw-semibold mb-0" style="font-size: 1rem;">Customer</p>
+            </div>
+            <p class="mb-0"
+               style="font-size: 0.8125rem;
+                      color: rgba(255, 255, 255, 0.35)">
+              Upload and manage your print jobs. Visit a cyber cafe and collect your prints.
+            </p>
+          </div>
+          <div class="d-flex align-items-center justify-content-center status-check h-24 w-24 rounded-circle flex-shrink-0">
+            <i class="bi bi-check"></i>
+          </div>
+        </div>
+      </button>
+      <button account-choices
+              type="button"
+              disabled=""
+              class="w-100 text-start cybercafe-account coming-soon">
+        <div class="d-flex align-items-start gap-3">
+          <div class="d-flex align-items-center justify-content-center h-48 w-48 status-check rounded flex-shrink-0">
+            <i class="bi bi-shop"></i>
+          </div>
+          <div class="flex-grow-1">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <p class="fw-semibold mb-0"
+                 style="font-size: 1rem;
+                        color: rgba(255, 255, 255, 0.5)">Cyber Cafe</p>
+              <span class="badge">Coming Soon</span>
+            </div>
+            <p class="mb-0"
+               style="font-size: 0.8125rem;
+                      color: rgba(255, 255, 255, 0.35)">
+              Receive print orders from customers. Manage incoming jobs and earnings.
+            </p>
+          </div>
+          <div class="d-flex align-items-center justify-content-center h-24 w-24 rounded-circle flex-shrink-0"
+               style="width: 24px;
+                      height: 24px;
+                      border: 1px solid rgb(28, 33, 31);
+                      background-color: transparent;
+                      transition: 0.2s"></div>
+        </div>
+      </button>
+    </div>
+    <button type="button"
+            data-action="{{ request.path }}"
+            class="btn btn-accent green select-account-btn  w-100 py-3 d-flex align-items-center justify-content-center gap-2"
+            disabled>Continue to Dashboard</button>
+    <p class="text-center mt-3 mb-0"
+       style="color: rgba(255, 255, 255, 0.25);
+              font-size: 0.75rem">You can always change this later from your dashboard settings.</p>
+  </div>
+{% endblock %}

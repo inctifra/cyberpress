@@ -1,5 +1,3 @@
-import uuid
-
 from cyberpress_cybercafe.models import CyberCafe
 from django.db import IntegrityError
 from django.http import HttpRequest
@@ -13,9 +11,6 @@ from apps.uploads.forms import AccessSessionForm
 from apps.uploads.forms import PrintSessionForm
 from apps.uploads.models import File
 from apps.uploads.models import PrintSession
-from config.redis.jobs import FilePayload
-from config.redis.jobs import JobPayload
-from config.redis.jobs import publish_job
 
 
 def home(request):
@@ -48,7 +43,10 @@ class FileUploadView(TemplateView):
 
         if form.is_valid():
             try:
-                session = form.save()
+                session = form.save(commit=False)
+                if self.request.user.is_authenticated:
+                    session.customer = self.request.user.profile
+                    session.save()
                 for f in files:
                     File.objects.create(
                         session=session,
@@ -87,53 +85,6 @@ class AccessView(TemplateView):
         context["form"] = self.form_class()
         return context
 
-    def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)
-        publish_job(
-            JobPayload(
-                id=str(uuid.uuid4()),
-                cafe_id=123,
-                file=FilePayload(url="http://localhost:8000/media/files/kwasa.jpg"),
-                status="pending",
-            ),
-        )
-        if form.is_valid():
-            access_code = form.cleaned_data.get("access_code")
-            session = PrintSession.objects.filter(access_code=access_code).first()
-            if session:
-                if session.is_expired():
-                    session.delete()
-                    return render(
-                        request,
-                        "pages/partials/access_empty.html",
-                        {"files": None, "error_message": "This session has expired."},
-                    )
-
-                files = File.objects.filter(session=session)
-                if files.exists():
-                    return render(
-                        request,
-                        "pages/partials/access.html",
-                        {"files": files},
-                    )
-                return render(
-                    request,
-                    "pages/partials/access_empty.html",
-                    {"error_message": "No files found for this session."},
-                )
-
-            return render(
-                request,
-                "pages/partials/access_empty.html",
-                {"error_message": "Invalid access code."},
-            )
-
-        return render(
-            request,
-            "pages/partials/access_empty.html",
-            {"error_message": "Access code is required."},
-        )
-
 
 access_view = AccessView.as_view()
 
@@ -152,6 +103,7 @@ class DeleteFilesView(View):
 
 
 delete_files_view = DeleteFilesView.as_view()
+
 
 class RequestPrintingView(ListView):
     template_name = "pages/request.html"

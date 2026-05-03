@@ -57,4 +57,3 @@ class ProfileAdmin(admin.ModelAdmin):
     search_fields = ("user__email", "phone", "location")
     list_filter = ("created_at", "updated_at")
     autocomplete_fields = ("user",)
-

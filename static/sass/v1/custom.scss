@@ -105,9 +105,10 @@ body,
 }
 .form-control:focus {
   border-color: #2dfe87 !important;
+  border-width: 1px !important;
   box-shadow:
     0 0 0 1px #2dfe87,
-    0 0 0 3px #2dfe87 !important;
+    0 0 0 1px #2dfe87 !important;
   outline: none !important;
 }
 

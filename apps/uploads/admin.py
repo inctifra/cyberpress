@@ -40,4 +40,3 @@ class FileAdmin(admin.ModelAdmin):
     list_display = ("name", "session", "size")
     search_fields = ("name", "session__code")
     list_filter = ("session__created_at",)
-
