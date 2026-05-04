@@ -47,6 +47,7 @@ class FileUploadView(TemplateView):
                 if self.request.user.is_authenticated:
                     session.customer = self.request.user.profile
                     session.save()
+                form.save()
                 for f in files:
                     File.objects.create(
                         session=session,
